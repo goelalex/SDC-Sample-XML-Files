@@ -637,3 +637,43 @@
   </Footer>
 </FormDesign>
 
+    <MapTemplate templateID="M2" targetTemplateID="FHIR PRPH">
+      <ItemMap>
+        <TemplateTarget>
+          <TargetItemID val="37385"/>
+          <TargetDisplayText val="Patient's First Name"/>
+        </TemplateTarget>
+        <DataSource>
+          <XML type="FHIR">
+            <XPath val="/Patient/name[1]/given[1]/@value"/>
+            <!-- How do we capture multiple given names here? --> 
+          </XML>
+        </DataSource>
+      </ItemMap>
+      
+      <ItemMap>
+        <TemplateTarget>
+          <TargetItemID val="37386"/>
+          <TargetDisplayText val="Patient's Last Name"/>
+        </TemplateTarget>
+        <DataSource>
+          <XML type="FHIR">
+            <XPath val="/Patient/name[1]/family[1]/@value"/>
+          </XML>
+        </DataSource>
+      </ItemMap>
+      
+      <ItemMap>
+        <TemplateTarget>
+          <TargetItemID val="37485"/>
+          <TargetDisplayText val="Patient's Date of Birth"/>
+        </TemplateTarget>
+        <DataSource>
+          <XML type="FHIR">
+            <XPath val="/Patient/birthDate[1]/@value"/>
+          </XML>
+        </DataSource>
+      </ItemMap>
+      
+    </MapTemplate>
+
