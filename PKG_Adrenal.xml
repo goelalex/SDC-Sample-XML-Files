@@ -6,7 +6,7 @@
  <Property name="Copyright" type="CAPeCC_static_text" styleClass="copyright" order="1" propName="Copyright" val="(c) 2018 College of American Pathologists.  All rights reserved.  License required for use." />
  <Property name="GenericHeaderText" type="CAPeCC_static_text" order="2" propName="GenericHeaderText" val="Surgical Pathology Cancer Case Summary (Checklist)" />
  <Property name="Category" type="CAPeCC_meta" order="3" propName="Category" val="Endocrine" />
- <Property name="OfficialName" type="CAPeCC_meta" order="4" propName="OfficialName" val="ADRENAL GLAND" />
+ <Property name="OfficialName" type="CAPeCC_meta" order="4" propName="OfficialName" val="ADRENAL GLAND"/>
  <Property name="CAP_ProtocolName" type="CAPeCC_meta" order="5" propName="CAP_ProtocolName" val="Adrenal Gland" />
  <Property name="CAP_ProtocolVersion" type="CAPeCC_meta" order="6" propName="CAP_ProtocolVersion" val="4.0.1.1" />
  <Property name="TemplateID" type="CAPeCC_meta" order="7" propName="TemplateID" val="129.100004300" />

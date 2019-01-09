@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
 
-<SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" packageID="PRPH_Demog + CCDA Map" lineage="PRPH" version="1"  fullURI="www.cdc.gov/prph/SDC/IHE/3.0/PRPH/1">
+<SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" packageID="PRPH_Demog + CCDA Map" lineage="PRPH" version="1"  fullURI="_baseURI=www.cdc.gov/prph/SDC/IHE/&amp;_lineage=PRHP&amp;_version=1amp;_docType=sdcFDF">
    <XMLPackage>
-
-      <FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="226.1000043" baseURI="www.cap.org/eCC/SDC/IHE" xmlns="urn:ihe:qrph:sdc:2016" lineage="PRPH" version="1"  fullURI="www.cdc.gov/prph/SDC/IHE/3.0/PRPH/1" >
+      <FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="226.1000043" baseURI="www.cdc.gov/prph/SDC/IHE/" xmlns="urn:ihe:qrph:sdc:2016" lineage="PRPH" version="1"  fullURI="_baseURI=www.cdc.gov/prph/SDC/IHE/&amp;_lineage=PRHP&amp;_version=1amp;_docType=sdcFDF" >
          <Header styleClass="left" ID="Header.226.1000043" title="CDC">
             <Property name="Copyright" type="meta" styleClass="copyright" order="2" val="(c) 2017 College of American Pathologists.  All rights reserved.  License required for use." propName="metadata"/>
             <Property styleClass="float-right" order="3" val="CAP approved" propName="metadata"/>
@@ -12,8 +11,8 @@
             <Property name="OfficialName" type="meta" order="5" val="CDC: Physician Reporting to Public Health - Cancer (PRPH-C)" propName="OfficialName" propClass="eCC_CAP_Protocol"/>
             <Property name="Category" type="meta" order="6" val="Genitourinary" propName="Category" propClass="eCC_CAP_Protocol"/>
             <Property name="Restrictions" type="meta" order="7" val="test" propName="Restrictions" propClass="eCC_CAP_Protocol"/>
-            <Property name="Required" type="meta" order="8" val="true" propClass="eCC_CAP_Protocol"/>
-            <Property name="CTV_Ckey" type="meta" order="9" val="226.1000043" propName="CTV_Ckey" propClass="eCC_" propName="metadata"/>
+            <Property name="Required" type="meta" order="8" val="true" propClass="eCC_CAP_Protocol" propName="metadata"/>
+            <Property name="CTV_Ckey" type="meta" order="9" val="226.1000043" propName="CTV_Ckey" propClass="eCC_" />
             <Property name="ChecklistCKey" type="meta" order="10" val="138.100004300" propName="ChecklistCKey" propClass="eCC_"/>
             <Property name="VersionID" type="meta" order="11" val="1.000.000.1000043" propName="VersionID" propClass="eCC_"/>
             <Property name="CurrentFileName" type="meta" order="12" val="text" propName="CurrentFileName" propClass="eCC_"/>

@@ -1,4 +1,4 @@
-<SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 ../Schemas/RFD+SDCRetrieveForm.xsd" packageID="PKG_Lung_Surgery_Test">
+<SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 ../Schemas/RFD+SDCRetrieveForm.xsd" packageID="PKG_Lung_Surgery_Test" version="1.0.0.DRAFT" lineage="LungSurgCCO.357" fullURI="_baseURI=cap.org&amp;_lineage=LungSurgCCO.357&amp;_version=1.0.0.DRAFT&amp;_docType=sdcFDF" >
 	<XMLPackage>
 		<FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF" baseURI="cap.org" fullURI="_baseURI=cap.org&amp;_lineage=LungSurgCCO.357&amp;_version=1.0.0.DRAFT&amp;_docType=sdcFDF" formTitle="Lung Surgery CCO" lineage="LungSurgCCO.357" filename="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF.xml" version="1.0.0.DRAFT" xmlns="urn:ihe:qrph:sdc:2016">
 			<Property name="Copyright" type="CAPeCC_static_text" styleClass="copyright" propName="Copyright" val="(c) 2018 Cancer Care Ontario.  All rights reserved.  License required for use." />
@@ -576,7 +576,7 @@
 									<Question name="Q_76469" ID="76469.100004300" title="FEV1% predicted pre-op: Litres Per Minute">
 										<ResponseField name="rf_76469_1">
 											<Response name="rsp_76469_2">
-												<decmical name="dec_76469_3" unitSystem="Litres Per Minute" />
+												<string name="dec_76469_3"/>
 											</Response>
 										</ResponseField>
 									</Question>
@@ -611,7 +611,7 @@
 														<Question name="Q_77569" ID="77569.100004300" title="VO2 max pre-op result (ml/kg/min)" minCard="0">
 															<ResponseField name="rf_77569_1">
 																<Response name="rsp_77569_2">
-																	<dec name="dec_77569_3" unitSystem="ml/kg/min" />
+																	<string name="dec_77569_3" />
 																</Response>
 															</ResponseField>
 														</Question>
@@ -717,12 +717,12 @@
 									<Question name="Q_76484" ID="76484.100004300" title="6 minute walk pre-op" minCard="0">
 										<ListField name="lf_76484_1">
 											<List name="lst_76484_2">
-												<ListItem name="LI_76749" ID="76749.100004300" title="Yes" minCard="0">
+												<ListItem name="LI_76749" ID="76749.100004300" title="Yes">
 													<ChildItems name="ch_76749_1">
 														<Question name="Q_76748" ID="76748.100004300" title="Metres walked:" minCard="0">
 															<ResponseField name="rf_76748_1">
 																<Response name="rsp_76748_2">
-																	<Decimal name="ce_76748_3" unitSystem="m" />
+																	<string name="ce_76748_3" />
 																</Response>
 															</ResponseField>
 														</Question>
@@ -955,7 +955,7 @@
 									<Question name="Q_76517" ID="76517.100004300" title="Time of Surgery Started" minCard="0">
 										<ResponseField name="rf_76517_1">
 											<Response name="rsp_76517_2">
-												<datetime name="dt_76517_3" />
+												<string name="dt_76517_3" />
 											</Response>
 										</ResponseField>
 									</Question>
