@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
 <SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" packageID="PRPH_Demog + FHIR Map" lineage="PRPH" version="1"  fullURI="_baseURI=www.cdc.gov/prph/SDC/IHE/&amp;_lineage=PRHP&amp;_version=1&amp;_docType=sdcPKG" >
   <XMLPackage>
     <FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="226.1000043" baseURI="www.cdc.gov/prph/SDC/IHE/" xmlns="urn:ihe:qrph:sdc:2016" lineage="PRPH" version="1"  fullURI="_baseURI=www.cdc.gov/prph/SDC/IHE/&amp;_lineage=PRHP&amp;_version=1&amp;_docType=sdcFDF" >
