@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
 <SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 ../Schemas/RFD+SDCRetrieveForm.xsd" packageID="PKG_LDCT_Lung" version="1.0.0" lineage="LDCTLung" fullURI="_baseURI=www.cancercare.on.ca/LDCTlung/SDC/IHE/&amp;_lineage=LDCTLung&amp;_version=1.0.0&amp;_docType=sdcPKG">
 	<XMLPackage>
 		<FormDesign xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 SDCFormDesign.xsd" ID="FORM_LDCT_Lung" formTitle="Lung Cancer Screening Template" baseURI="www.cancercare.on.ca/LDCTlung/SDC/IHE/" version="1.0.0" lineage="LDCTLung" fullURI="_baseURI=www.cancercare.on.ca/LDCTlung/SDC/IHE/&amp;_lineage=LDCTLung&amp;_version=1.0.0&amp;_docType=sdcFDF">

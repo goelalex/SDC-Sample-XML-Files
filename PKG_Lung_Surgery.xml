@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
 <SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 ../Schemas/RFD+SDCRetrieveForm.xsd" packageID="PKG_Lung_Surgery" version="1.0.0.DRAFT" lineage="LungSurgCCO.357" fullURI="_baseURI=cap.org&amp;_lineage=LungSurgCCO.357&amp;_version=1.0.0.DRAFT&amp;_docType=sdcPKG" >
 	<XMLPackage>
 		<FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF" baseURI="cap.org" fullURI="_baseURI=cap.org&amp;_lineage=LungSurgCCO.357&amp;_version=1.0.0.DRAFT&amp;_docType=sdcFDF" formTitle="Lung Surgery CCO" lineage="LungSurgCCO.357" filename="LungSurgCCO.357_1.0.0.DRAFT_sdcFDF.xml" version="1.0.0.DRAFT" xmlns="urn:ihe:qrph:sdc:2016">

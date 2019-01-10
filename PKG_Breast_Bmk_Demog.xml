@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
 <SDCPackage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" baseURI="http://www.cap.org/eCC" fullURI="_baseURI=www.cap.org/eCC&amp;_lineage=Breast.Bmk.169_demog&amp;_version=1.003.001.CTP3&amp;_docType=sdcFDF" lineage="Breast.Bmk.169_demog" version="1.003.001.CTP3" xmlns="urn:ihe:qrph:sdc:2016" packageID="PKG_Breast_Bmk_Demog">
 	<XMLPackage>

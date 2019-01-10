@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Patient xmlns="http://hl7.org/fhir">
     <id value="example"/>
     <meta>
@@ -31,7 +30,7 @@
             <p>
                 <b>race</b>: American Indian or Alaska Native</p>
             <p>
-                <b>ethnicity</b>: Hispanic or Latino/p>
+                <b>ethnicity</b>: Hispanic or Latino </p>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
