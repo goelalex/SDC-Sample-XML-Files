@@ -12,7 +12,6 @@
 			<Property propName="Required" propClass="meta" val="true" />
 			<Property propName="CTV_Dkey" propClass="meta" val="" />
 			<Property propName="ChecklistCKey" propClass="meta" val="" />
-			<Property propName="VersionID" propClass="meta" val="1.1" />
 			<Property propName="CurrentFileName" propClass="meta" val="LDCT Lung Screening Pilot ver 1.1" />
 			<Property propName="ApprovalStatus" propClass="meta" val="0" />
 			<Property propName="EffectiveDate" propClass="meta" val="2017-02-24" styleClass="right" />
