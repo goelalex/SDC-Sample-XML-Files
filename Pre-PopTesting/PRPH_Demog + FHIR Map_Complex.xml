@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
+<SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" packageID="PRPH_Demog + FHIR Map" lineage="PRPH" version="1"  fullURI="_baseURI=www.cdc.gov/prph/SDC/IHE/&amp;_lineage=PRHP&amp;_version=1&amp;_docType=sdcPKG" >
+  <XMLPackage>
+    <FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="226.1000043" baseURI="www.cdc.gov/prph/SDC/IHE/" xmlns="urn:ihe:qrph:sdc:2016" lineage="PRPH" version="1"  fullURI="_baseURI=www.cdc.gov/prph/SDC/IHE/&amp;_lineage=PRHP&amp;_version=1&amp;_docType=sdcFDF" >
+  <Header styleClass="left" ID="Header.226.1000043" title="CDC">
+    <Property name="Copyright" type="meta" styleClass="copyright" order="2" val="(c) 2017 College of American Pathologists.  All rights reserved.  License required for use." propName="metadata"/>
+    <Property styleClass="float-right" order="3" val="CAP approved" propName="metadata"/>
+    <Property name="GenericHeaderText" type="meta" styleClass="left" order="4" val="test" propName="GenericHeaderText" propClass="eCC_CAP_Protocol" />
+    <Property name="OfficialName" type="meta" order="5" val="CDC: Physician Reporting to Public Health - Cancer (PRPH-C)" propName="OfficialName" propClass="eCC_CAP_Protocol" />
+    <Property name="Category" type="meta" order="6" val="Genitourinary" propName="Category" propClass="eCC_CAP_Protocol" />
+    <Property name="Restrictions" type="meta" order="7" val="test" propName="Restrictions" propClass="eCC_CAP_Protocol" />
+    <Property name="Required" type="meta" order="8" val="true" propClass="eCC_CAP_Protocol" propName="metadata"/>
+    <Property name="CTV_Ckey" type="meta" order="9" val="226.1000043" propName="CTV_Ckey" propClass="eCC_" />
+    <Property name="ChecklistCKey" type="meta" order="10" val="138.100004300" propName="ChecklistCKey" propClass="eCC_" />
+    <Property name="VersionID" type="meta" order="11" val="1.000.000.1000043" propName="VersionID" propClass="eCC_" />
+    <Property name="CurrentFileName" type="meta" order="12" val="text" propName="CurrentFileName" propClass="eCC_" />
+    <Property name="ApprovalStatus" type="meta" order="13" propName="ApprovalStatus" propClass="eCC_" />
+    <Property name="EffectiveDate" type="meta dt.dateTime" styleClass="right" order="14" propName="EffectiveDate" propClass="eCC_Dates" />
+    <Property name="WebPostingDate" type="meta dt.dateTime" styleClass="right" order="15" val="8/30/2016 12:00:00 AM" propName="WebPostingDate" propClass="eCC_Dates" />
+    <Property name="AJCC_UICC_Version" type="meta" styleClass="right" order="16" propName="AJCC_UICC_Version" propClass="eCC_Data_Sources" />
+    <Property name="CS_Version" type="meta" styleClass="right" order="17" propName="CS_Version" propClass="eCC_Data_Sources" />
+    <Property name="FIGO_Version" type="meta" styleClass="right" order="18" propName="FIGO_Version" propClass="eCC_Data_Sources" />
+  </Header>
+  <Body ID="1">
+    <!-- oroginal body line was causing error becasue ID value was not valid for 'anyURI' <Body ID="226.1000043_DefaultBodyGUID:_bacc59c7-f719-480f-b74d-0b075c3b6899">-->
+    <ChildItems>
+      <Section order="21" ID="37508.100004300" title="Demographic Information" minCard="0">
+        <ChildItems>
+          <Question order="23" ID="37333.100004300" title="Date/Time of Report">
+            <ResponseField order="24">
+              <Response>
+                <string order="26" maxLength="80" />
+              </Response>
+            </ResponseField>
+          </Question>
+          <Question order="27" ID="48739.100004300" title="Participant Identifier" minCard="0" maxCard="5">
+            <ResponseField order="28">
+              <Response>
+                <string order="30" maxLength="80" />
+              </Response>
+            </ResponseField>
+            <ChildItems>
+              <Question order="32" ID="37939.100004300" title="Identifier Type">
+                <ListField>
+                  <List>
+                    <ListItem order="35" ID="42745.100004300" title="Health Card Number">
+                      <ChildItems>
+                        <Question order="37" ID="46163.100004300" title="Health Card Type">
+                          <ResponseField order="38">
+                            <Response>
+                              <string order="40" maxLength="4000" />
+                            </Response>
+                          </ResponseField>
+                        </Question>
+                      </ChildItems>
+                    </ListItem>
+                    <ListItem order="41" ID="44394.100004300" title="Insurance Card">
+                      <ChildItems>
+                        <Question order="43" ID="54819.100004300" title="Insurance Type">
+                          <ResponseField order="44">
+                            <Response>
+                              <string order="46" maxLength="80" />
+                            </Response>
+                          </ResponseField>
+                        </Question>
+                      </ChildItems>
+                    </ListItem>
+                    <ListItem order="47" ID="40959.100004300" title="Cell Phone Number">
+                      <ChildItems>
+                        <Question order="49" ID="43561.100004300" title="Cell Phone Type">
+                          <ResponseField order="50">
+                            <Response>
+                              <string order="52" maxLength="80" />
+                            </Response>
+                          </ResponseField>
+                        </Question>
+                      </ChildItems>
+                    </ListItem>
+                    <ListItem order="53" ID="41726.100004300" title="Specimen ID">
+                      <ChildItems>
+                        <Question order="55" ID="54381.100004300" title="Specimen ID Source">
+                          <ResponseField order="56">
+                            <Response>
+                              <string order="58" maxLength="80" />
+                            </Response>
+                          </ResponseField>
+                        </Question>
+                      </ChildItems>
+                    </ListItem>
+                    <ListItem order="59" ID="56419.100004300" title="Other (specify)">
+                      <ListItemResponseField order="60" responseRequired="true">
+                        <Response>
+                          <string order="62" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+            </ChildItems>
+          </Question>
+          <Section order="63" ID="37516.100004300" title="Patient">
+            <ChildItems>
+              <Question order="65" ID="37385.100004300" title="Patient's First Name">
+                <ResponseField order="66">
+                  <Response>
+                    <string order="68" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="69" ID="37386.100004300" title="Patient's Last Name">
+                <ResponseField order="70">
+                  <Response>
+                    <string order="72" maxLength="4000" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="73" ID="37387.100004300" title="Patient's Middle Name" minCard="0">
+                <ResponseField order="74">
+                  <Response>
+                    <string order="76" maxLength="4000" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="77" ID="37478.100004300" title="Patient's Street Address" minCard="0">
+                <ResponseField order="78">
+                  <Response>
+                    <string order="80" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="81" ID="37479.100004300" title="Patient's City" minCard="0">
+                <ListField>
+                  <List>
+                    <ListItem order="84" ID="37535.100004300" title="Atlanta" />
+                    <ListItem order="85" ID="37537.100004300" title="Chicago" />
+                    <ListItem order="86" ID="37538.100004300" title="Minneapolis" />
+                    <ListItem order="87" ID="37758.100004300" title="Toronto" />
+                    <ListItem order="88" ID="37539.100004300" title="Other (specify)">
+                      <ListItemResponseField order="89" responseRequired="true">
+                        <Response>
+                          <string order="91" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="92" ID="37480.100004300" title="Patient's State/Province">
+                <ListField>
+                  <List>
+                    <ListItem order="95" ID="37540.100004300" title="GA" />
+                    <ListItem order="96" ID="37541.100004300" title="IL" />
+                    <ListItem order="97" ID="37542.100004300" title="MN" />
+                    <ListItem order="98" ID="42356.100004300" title="Ontario" />
+                    <ListItem order="99" ID="37544.100004300" title="Other (specify)">
+                      <ListItemResponseField order="100" responseRequired="true">
+                        <Response>
+                          <string order="102" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="103" ID="37481.100004300" title="Patient's Postal Code" minCard="0">
+                <ListField>
+                  <List>
+                    <ListItem order="106" ID="37543.100004300" title="30301" />
+                    <ListItem order="107" ID="37546.100004300" title="60609" />
+                    <ListItem order="108" ID="37549.100004300" title="55401" />
+                    <ListItem order="109" ID="53883.100004300" title="M5J2L7" />
+                    <ListItem order="110" ID="37550.100004300" title="Other (specify)">
+                      <ListItemResponseField order="111" responseRequired="true">
+                        <Response>
+                          <string order="113" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="114" ID="37488.100004300" title="Patient's Phone Number" minCard="0">
+                <ResponseField order="115">
+                  <Response>
+                    <string order="117" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="118" ID="37485.100004300" title="Patient's Date of Birth">
+                <ResponseField order="119">
+                  <Response>
+                    <string order="121" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="122" ID="37491.100004300" title="Patient's Medical Record Number" mustImplement="false" minCard="0">
+                <ResponseField order="123">
+                  <Response>
+                    <string order="125" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="126" ID="37521.100004300" title="Patient's Social Security Number">
+                <ResponseField order="127">
+                  <Response>
+                    <string order="129" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="130" ID="37492.100004300" title="Patient's Race Code">
+                <ListField>
+                  <List>
+                    <ListItem order="133" ID="37504.100004300" title="American Indian or Alaska Native" />
+                    <ListItem order="134" ID="37503.100004300" title="Asian" />
+                    <ListItem order="135" ID="37505.100004300" title="Black or African American" />
+                    <ListItem order="136" ID="37502.100004300" title="Native Hawaiian/Other Pacific Islander" />
+                    <ListItem order="137" ID="37507.100004300" title="Not Reported" />
+                    <ListItem order="138" ID="37590.100004300" title="Unknown" />
+                    <ListItem order="139" ID="37591.100004300" title="White" />
+                    <ListItem order="140" ID="37592.100004300" title="Other (specify)">
+                      <ListItemResponseField order="141" responseRequired="true">
+                        <Response>
+                          <string order="143" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="144" ID="37593.100004300" title="Patient's Additional Race Code">
+                <ListField>
+                  <List>
+                    <ListItem order="147" ID="37594.100004300" title="American Indian or Alaska Native" />
+                    <ListItem order="148" ID="37595.100004300" title="Asian" />
+                    <ListItem order="149" ID="37596.100004300" title="Black or African American" />
+                    <ListItem order="150" ID="37597.100004300" title="Native Hawaiian/Other Pacific Islander" />
+                    <ListItem order="151" ID="37598.100004300" title="Not Reported" />
+                    <ListItem order="152" ID="37599.100004300" title="Unknown" />
+                    <ListItem order="153" ID="37600.100004300" title="White" />
+                    <ListItem order="154" ID="37601.100004300" title="Other (specify)">
+                      <ListItemResponseField order="155" responseRequired="true">
+                        <Response>
+                          <string order="157" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="158" ID="37487.100004300" title="Patient's Ethnicity Code">
+                <ListField maxSelections="0">
+                  <List>
+                    <ListItem order="161" ID="37513.100004300" title="Hispanic or Latino" />
+                    <ListItem order="162" ID="37517.100004300" title="Not Hispanic or Latino" />
+                    <ListItem order="163" ID="37514.100004300" title="Not Reported" />
+                    <ListItem order="164" ID="37515.100004300" title="Unknown" />
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="165" ID="37482.100004300" title="Highest Educational Level">
+                <ListField>
+                  <List>
+                    <ListItem order="168" ID="37560.100004300" title="Bachelor's Degree" />
+                    <ListItem order="169" ID="37506.100004300" title="Professional Doctorate or Doctorate Degree" />
+                    <ListItem order="170" ID="37554.100004300" title="Grade School" />
+                    <ListItem order="171" ID="37552.100004300" title="Graduation Or Professional Degree" />
+                    <ListItem order="172" ID="37509.100004300" title="High School Completion or General" />
+                    <ListItem order="173" ID="37512.100004300" title="Equivalency Diploma (GED) Completion" />
+                    <ListItem order="174" ID="37510.100004300" title="Master's Degree" />
+                    <ListItem order="175" ID="37547.100004300" title="No Formal Schooling" />
+                    <ListItem order="176" ID="37548.100004300" title="Not High School Graduate" />
+                    <ListItem order="177" ID="37602.100004300" title="Some College or Associates Degree" />
+                    <ListItem order="178" ID="37545.100004300" title="Other (specify)">
+                      <ListItemResponseField order="179" responseRequired="true">
+                        <Response>
+                          <string order="181" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="182" ID="37511.100004300" title="Patient's Gender Code">
+                <ListField>
+                  <List>
+                    <ListItem order="185" ID="37518.100004300" title="Ambiguous" />
+                    <ListItem order="186" ID="37519.100004300" title="Female" />
+                    <ListItem order="187" ID="37520.100004300" title="Male" />
+                    <ListItem order="188" ID="37574.100004300" title="FTM female to male transsexual" />
+                    <ListItem order="189" ID="37575.100004300" title="MTF male to female transsexual" />
+                    <ListItem order="190" ID="37522.100004300" title="Other (specify)">
+                      <ListItemResponseField order="191" responseRequired="true">
+                        <Response>
+                          <string order="193" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                    <ListItem order="194" ID="37573.100004300" title="Refused to answer" />
+                  </List>
+                </ListField>
+              </Question>
+            </ChildItems>
+          </Section>
+          <Section order="195" ID="37486.100004300" title="Author">
+            <ChildItems>
+              <Question order="197" ID="37759.100004300" title="Author Type">
+                <ListField>
+                  <List>
+                    <ListItem order="200" ID="37760.100004300" title="Radiologist" />
+                    <ListItem order="201" ID="52343.100004300" title="Pathologist" />
+                    <ListItem order="202" ID="42997.100004300" title="*****" />
+                    <ListItem order="203" ID="37761.100004300" title="Other (specify)">
+                      <ListItemResponseField order="204" responseRequired="true">
+                        <Response>
+                          <string order="206" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="207" ID="37490.100004300" title="Author NPI">
+                <ResponseField order="208">
+                  <Response>
+                    <string order="210" maxLength="12" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="211" ID="37489.100004300" title="Author First Name">
+                <ResponseField order="212">
+                  <Response>
+                    <string order="214" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="215" ID="37493.100004300" title="Author Last Name">
+                <ResponseField order="216">
+                  <Response>
+                    <string order="218" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="219" ID="37494.100004300" title="Author Name Suffix">
+                <ResponseField order="220">
+                  <Response>
+                    <string order="222" maxLength="40" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="223" ID="37603.100004300" title="Author Organization Name">
+                <ResponseField order="224">
+                  <Response>
+                    <string order="226" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="227" ID="37604.100004300" title="Author Organization NPI">
+                <ResponseField order="228">
+                  <Response>
+                    <string order="230" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="231" ID="37605.100004300" title="Author Organization Street Address">
+                <ResponseField order="232">
+                  <Response>
+                    <string order="234" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="235" ID="37606.100004300" title="Author Organization City">
+                <ListField>
+                  <List>
+                    <ListItem order="238" ID="37607.100004300" title="Atlanta" />
+                    <ListItem order="239" ID="37608.100004300" title="Chicago" />
+                    <ListItem order="240" ID="37609.100004300" title="Minneapolis" />
+                    <ListItem order="241" ID="37610.100004300" title="Other (specify)">
+                      <ListItemResponseField order="242" responseRequired="true">
+                        <Response>
+                          <string order="244" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="245" ID="37611.100004300" title="Author Organization Zip Code">
+                <ListField>
+                  <List>
+                    <ListItem order="248" ID="37612.100004300" title="30301" />
+                    <ListItem order="249" ID="37613.100004300" title="60609" />
+                    <ListItem order="250" ID="37614.100004300" title="55401" />
+                    <ListItem order="251" ID="37615.100004300" title="Other (specify)">
+                      <ListItemResponseField order="252" responseRequired="true">
+                        <Response>
+                          <string order="254" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="255" ID="37616.100004300" title="Author Organization State">
+                <ListField>
+                  <List>
+                    <ListItem order="258" ID="37617.100004300" title="GA" />
+                    <ListItem order="259" ID="37618.100004300" title="IL" />
+                    <ListItem order="260" ID="37619.100004300" title="MN" />
+                    <ListItem order="261" ID="37620.100004300" title="Other (specify)">
+                      <ListItemResponseField order="262" responseRequired="true">
+                        <Response>
+                          <string order="264" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="265" ID="37621.100004300" title="Author Organization Country">
+                <ListField>
+                  <List>
+                    <ListItem order="268" ID="37622.100004300" title="USA" />
+                    <ListItem order="269" ID="37623.100004300" title="CAN" />
+                    <ListItem order="270" ID="37624.100004300" title="MEX" />
+                    <ListItem order="271" ID="37625.100004300" title="Other (specify)">
+                      <ListItemResponseField order="272" responseRequired="true">
+                        <Response>
+                          <string order="274" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="275" ID="37626.100004300" title="Author Organization Telephone #">
+                <ResponseField order="276">
+                  <Response>
+                    <string order="278" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+            </ChildItems>
+          </Section>
+          <Section order="279" ID="37483.100004300" title="Reporting Organization">
+            <ChildItems>
+              <Question order="281" ID="37495.100004300" title="Reporting Organization Name (Custodian)">
+                <ResponseField order="282">
+                  <Response>
+                    <string order="284" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="285" ID="37484.100004300" title="Reporting Organization NPI (Custodian)">
+                <ResponseField order="286">
+                  <Response>
+                    <string order="288" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="289" ID="37496.100004300" title="Reporting Organization Street Address  (Custodian)">
+                <ResponseField order="290">
+                  <Response>
+                    <string order="292" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="293" ID="37497.100004300" title="Reporting Organization City (Custodian)">
+                <ListField>
+                  <List>
+                    <ListItem order="296" ID="37525.100004300" title="Atlanta" />
+                    <ListItem order="297" ID="37526.100004300" title="Chicago" />
+                    <ListItem order="298" ID="37524.100004300" title="Minneapolis" />
+                    <ListItem order="299" ID="37527.100004300" title="Other (specify)">
+                      <ListItemResponseField order="300" responseRequired="true">
+                        <Response>
+                          <string order="302" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="303" ID="37499.100004300" title="Reporting Organization Zip Code (Custodian)">
+                <ListField>
+                  <List>
+                    <ListItem order="306" ID="37555.100004300" title="30301" />
+                    <ListItem order="307" ID="37556.100004300" title="60609" />
+                    <ListItem order="308" ID="37558.100004300" title="55401" />
+                    <ListItem order="309" ID="37553.100004300" title="Other (specify)">
+                      <ListItemResponseField order="310" responseRequired="true">
+                        <Response>
+                          <string order="312" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="313" ID="37498.100004300" title="Reporting Organization State (Custodian)">
+                <ListField>
+                  <List>
+                    <ListItem order="316" ID="37528.100004300" title="GA" />
+                    <ListItem order="317" ID="37529.100004300" title="IL" />
+                    <ListItem order="318" ID="37530.100004300" title="MN" />
+                    <ListItem order="319" ID="37531.100004300" title="Other (specify)">
+                      <ListItemResponseField order="320" responseRequired="true">
+                        <Response>
+                          <string order="322" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="323" ID="37500.100004300" title="Reporting Organization Country (Custodian)">
+                <ListField>
+                  <List>
+                    <ListItem order="326" ID="37532.100004300" title="USA" />
+                    <ListItem order="327" ID="37533.100004300" title="CAN" />
+                    <ListItem order="328" ID="37534.100004300" title="MEX" />
+                    <ListItem order="329" ID="37536.100004300" title="Other (specify)">
+                      <ListItemResponseField order="330" responseRequired="true">
+                        <Response>
+                          <string order="332" maxLength="80" />
+                        </Response>
+                      </ListItemResponseField>
+                    </ListItem>
+                  </List>
+                </ListField>
+              </Question>
+              <Question order="333" ID="37501.100004300" title="Reporting Organization Telephone # (Custodian)">
+                <ResponseField order="334">
+                  <Response>
+                    <string order="336" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+            </ChildItems>
+          </Section>
+        </ChildItems>
+      </Section>
+      <Section order="337" ID="37563.100004300" title="Active Problems Section">
+        <ChildItems>
+          <Section order="339" ID="37551.100004300" title="Active Problem" maxCard="50">
+            <ChildItems>
+              <Question order="341" ID="37557.100004300" title="Active Problems Section Narrative">
+                <ResponseField order="342">
+                  <Response>
+                    <string order="344" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="345" ID="37559.100004300" title="Active Problem Code">
+                <ResponseField order="346">
+                  <Response>
+                    <string order="348" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="349" ID="37561.100004300" title="Active Problem Start Date">
+                <ResponseField order="350">
+                  <Response>
+                    <string order="352" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="353" ID="37562.100004300" title="Active Problem Stop Date">
+                <ResponseField order="354">
+                  <Response>
+                    <string order="356" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+            </ChildItems>
+          </Section>
+        </ChildItems>
+      </Section>
+      <Section order="357" ID="37564.100004300" title="Coded Results Section">
+        <ChildItems>
+          <Section order="359" ID="37565.100004300" title="Coded Result" maxCard="50">
+            <ChildItems>
+              <Question order="361" ID="37566.100004300" title="Coded Results Narrative">
+                <ResponseField order="362">
+                  <Response>
+                    <string order="364" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="365" ID="37568.100004300" title="Lab Test Code">
+                <ResponseField order="366">
+                  <Response>
+                    <string order="368" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="369" ID="37567.100004300" title="Result Value (Text)">
+                <ResponseField order="370">
+                  <Response>
+                    <string order="372" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="373" ID="37569.100004300" title="Result Value (Quantitative)">
+                <ResponseField order="374">
+                  <Response>
+                    <string order="376" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="377" ID="37570.100004300" title="Result Value Units (Quantitative)">
+                <ResponseField order="378">
+                  <Response>
+                    <string order="380" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="381" ID="37572.100004300" title="Result Date">
+                <ResponseField order="382">
+                  <Response>
+                    <string order="384" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+              <Question order="385" ID="37571.100004300" title="Results Interpretation Code" mustImplement="false" minCard="0">
+                <ResponseField order="386">
+                  <Response>
+                    <string order="388" maxLength="80" />
+                  </Response>
+                </ResponseField>
+              </Question>
+            </ChildItems>
+          </Section>
+        </ChildItems>
+      </Section>
+    </ChildItems>
+  </Body>
+  <Footer styleClass="left" ID="Footer.226.1000043">
+    <Property name="CopyrightFooter" type="meta" styleClass="copyright" order="390" val="(c) 2017 College of American Pathologists.  All rights reserved.  License required for use." propName="copyright"/>
+  </Footer>
+  </FormDesign>
+  <MapTemplate templateID="M2" targetTemplateID="FHIR PRPH">
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="37385"/>
+        <TargetDisplayText val="Patient's First Name"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/name/given/@value"/>
+          <!-- How do we capture multiple given names here? Can the pre-pop handle multiple values or should we limit to value for now?--> 
+        </XML>
+      </DataSource>
+    </ItemMap>
+    
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="37386"/>
+        <TargetDisplayText val="Patient's Last Name"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/name/family/@value"/>
+        </XML>
+      </DataSource>
+    </ItemMap>
+    
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="37485"/>
+        <TargetDisplayText val="Patient's Date of Birth"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/birthDate[1]/@value"/>
+        </XML>
+      </DataSource>
+    </ItemMap>
+    
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="37488"/>
+        <TargetDisplayText val="Patient's Phone Number"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/telecom/value/@value"/>
+        </XML>
+      </DataSource>
+    </ItemMap>
+
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="37511"/>
+        <TargetDisplayText val="Patient's Gender Code"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/gender[1]/@value"/>
+        </XML>
+      </DataSource>
+    </ItemMap>
+
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="37478"/>
+        <TargetDisplayText val="Patient's Street Address"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/address[1]/line[1]/@value"/>
+        </XML>
+      </DataSource>
+    </ItemMap>
+
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="37479"/>
+        <TargetDisplayText val="Patient's City"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/address[1]/city[1]/@value"/>
+        </XML>
+      </DataSource>
+    </ItemMap>
+
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="37480"/>
+        <TargetDisplayText val="Patient's State/Province"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/address[1]/state[1]/@value"/>
+        </XML>
+      </DataSource>
+    </ItemMap>
+
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="37481"/>
+        <TargetDisplayText val="Patient's Postal Code"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/address[1]/postalCode[1]/@value"/>
+        </XML>
+      </DataSource>
+    </ItemMap>
+
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="48739"/>
+        <TargetDisplayText val="Participant Identifier"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/identifier[1]/value[1]/@value"/>
+        </XML>
+      </DataSource>
+    </ItemMap>
+
+  </MapTemplate>
+  </XMLPackage>
+</SDCPackage>
+
