@@ -762,6 +762,30 @@
       </DataSource>
     </ItemMap>
 
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="37487"/>
+        <TargetDisplayText val="Patient's Ethnicity Code"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/extension[2]/extension[1]/valueCoding[1]/code[1]/@value"/>
+        </XML>
+      </DataSource>
+    </ItemMap>
+    
+    <ItemMap>
+      <TemplateTarget>
+        <TargetItemID val="37492"/>
+        <TargetDisplayText val="Patient's Race Code"/>
+      </TemplateTarget>
+      <DataSource>
+        <XML type="FHIR">
+          <XPath val="/Patient/extension[1]/extension[1]/valueCoding[1]/code[1]/@value"/>
+        </XML>
+      </DataSource>
+    </ItemMap>
+    
   </MapTemplate>
   </XMLPackage>
 </SDCPackage>
