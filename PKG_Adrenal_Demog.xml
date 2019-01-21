@@ -518,7 +518,7 @@
 				</ChildItems>
 			</Body>
 		</DemogFormDesign>
-		<FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" order="0" ID="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF" baseURI="cap.org" fullURI="_baseURI=cap.org&amp;_lineage=Adrenal.Bx.Res.129&amp;_version=3.002.011.RC1&amp;_docType=sdcFDF" filename="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.xml" lineage="Adrenal.Bx.Res.129" formTitle="ADRENAL GLAND" version="3.002.011.RC1" xmlns="urn:ihe:qrph:sdc:2016">
+		<FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" order="0" ID="Adrenal.Bx.Res.Demog_129_3.002.011.RC1_sdcFDF" baseURI="cap.org" fullURI="_baseURI=cap.org&amp;_lineage=Adrenal.Bx.Res.129&amp;_version=3.002.011.RC1&amp;_docType=sdcFDF" filename="Adrenal.Bx.Res.129_3.002.011.RC1_sdcFDF.xml" lineage="Adrenal.Bx.Res.129" formTitle="ADRENAL GLAND" version="3.002.011.RC1" xmlns="urn:ihe:qrph:sdc:2016">
  <Property name="Copyright" type="CAPeCC_static_text" styleClass="copyright" order="1" propName="Copyright" val="(c) 2018 College of American Pathologists.  All rights reserved.  License required for use." />
  <Property name="GenericHeaderText" type="CAPeCC_static_text" order="2" propName="GenericHeaderText" val="Surgical Pathology Cancer Case Summary (Checklist)" />
  <Property name="Category" type="CAPeCC_meta" order="3" propName="Category" val="Endocrine" />
