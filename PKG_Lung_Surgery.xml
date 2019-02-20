@@ -316,7 +316,7 @@
 							</Section>
 						</ChildItems>
 					</Section>
-					<Section name="S_76027" ID="76027.100004300" title="Procedure Planned and Performed&#xA;">
+					<Section name="S_76027" ID="76027.100004300" title="Procedure Planned and Performed">
 						<ChildItems name="ch_76027_1">
 							<Question name="Q_76449" ID="76449.100004300" title="Date of Surgery">
 								<ResponseField name="rf_76449_1">
@@ -355,7 +355,7 @@
 								</ListField>
 							</Question>
 							<Question name="Q_76452" ID="76452.100004300" title="Pre-Operative diagnosis (Indication for surgery)">
-								<ListField name="lf_76452_1">
+								<ListField name="lf_76452_1" maxselections="0">
 									<List name="lst_76452_2">
 										<ListItem name="LI_76655" ID="76655.100004300" title="Lung Primary Cancer" />
 										<ListItem name="LI_76656" ID="76656.100004300" title="Mediastinal tumor " />
@@ -466,7 +466,7 @@
 										</ListField>
 									</Question>
 									<Question name="Q_76461" ID="76461.100004300" title="Symptoms" minCard="0">
-										<ListField name="lf_76461_1">
+										<ListField name="lf_76461_1" maxselections="0">
 											<List name="lst_76461_2">
 												<ListItem name="LI_76699" ID="76699.100004300" title="SVC Syndrome" />
 												<ListItem name="LI_76700" ID="76700.100004300" title="Hemoptysis " />
@@ -1238,7 +1238,7 @@
 										</ChildItems>
 									</Section>
 									<!--end test this question first-->
-									<Question name="Q_76545" ID="76545.100004300" title="Procedures Performed - Diaphragm/Phrenic Nerve&#xA;">
+									<Question name="Q_76545" ID="76545.100004300" title="Procedures Performed - Diaphragm/Phrenic Nerve">
 										<ListField name="lf_76545_1" maxSelections="0">
 											<List name="lst_76545_2">
 												<ListItem name="LI_76915" ID="76915.100004300" title="Not Applicable" />
@@ -1247,7 +1247,7 @@
 												<ListItem name="LI_76917" ID="76917.100004300" title="Reconstruction of diaphragm" />
 												<ListItem name="LI_76919" ID="76919.100004300" title="Phrenic nerve resected" />
 												<ListItem name="LI_76920" ID="76920.100004300" title="Phrenic nerve crushed" />
-												<ListItem name="LI_76921" ID="76921.100004300" title="Other &#xA;">
+												<ListItem name="LI_76921" ID="76921.100004300" title="Other">
 													<ChildItems name="ch_76921_1">
 														<Question name="Q_77616" ID="77616.100004300" title="Specify">
 															<ResponseField name="rf_77616_1">
@@ -1277,7 +1277,7 @@
 												<ListItem name="LI_76931" ID="76931.100004300" title="Serratus anterior muscle flap" />
 												<ListItem name="LI_76933" ID="76933.100004300" title="Pericardial fat flap " />
 												<ListItem name="LI_76934" ID="76934.100004300" title="Omentum flap " />
-												<ListItem name="LI_76935" ID="76935.100004300" title="Other &#xA;">
+												<ListItem name="LI_76935" ID="76935.100004300" title="Other">
 													<ChildItems name="ch_76935_1">
 														<Question name="Q_77617" ID="77617.100004300" title="Specify">
 															<ResponseField name="rf_77617_1">
@@ -1450,7 +1450,7 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76509" ID="76509.100004300" title="Procedures Performed - Tracheobronchial&#xA;">
+									<Question name="Q_76509" ID="76509.100004300" title="Procedures Performed - Tracheobronchial">
 										<ListField name="lf_76509_1" maxSelections="0">
 											<List name="lst_76509_2">
 												<ListItem name="LI_77027" ID="77027.100004300" title="Not applicable" selectionDeselectsSiblings="1" />
@@ -1508,7 +1508,7 @@
 										</ResponseField>
 									</Question>
 									<Question name="Q_76504" ID="76504.100004300" title="Veins Ligated">
-										<ListField name="lf_76504_1">
+										<ListField name="lf_76504_1" maxSelections="0">
 											<List name="lst_76504_2">
 												<ListItem name="LI_77042" ID="77042.100004300" title="Right Upper" />
 												<ListItem name="LI_77044" ID="77044.100004300" title="Right Lower" />
@@ -1517,8 +1517,8 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76512" ID="76512.100004300" title="Technique of vein ligation">
-										<ListField name="lf_76512_1">
+									<Question name="Q_76512" ID="76512.100004300" title="Technique of vein ligation" maxcard="4">
+										<ListField name="lf_76512_1" maxSelections="0">
 											<List name="lst_76512_2">
 												<ListItem name="LI_77047" ID="77047.100004300" title="Suture Ligation" />
 												<ListItem name="LI_77048" ID="77048.100004300" title="GIA Stapler" />
@@ -1527,7 +1527,7 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76514" ID="76514.100004300" title="Vein ligation Staple Color">
+									<Question name="Q_76514" ID="76514.100004300" title="Vein ligation Staple Color" maxcard="4">
 										<ListField name="lf_76514_1">
 											<List name="lst_76514_2">
 												<ListItem name="LI_77051" ID="77051.100004300" title="Covidien White" />
@@ -1558,8 +1558,8 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76513" ID="76513.100004300" title="Pulmonary arteries ligated&#xA;">
-										<ListField name="lf_76513_1">
+									<Question name="Q_76513" ID="76513.100004300" title="Pulmonary arteries ligated" maxcard="4">
+										<ListField name="lf_76513_1" maxSelections="0">
 											<List name="lst_76513_2">
 												<ListItem name="LI_77084" ID="77084.100004300" title="Right - Truncus Anterior" />
 												<ListItem name="LI_77085" ID="77085.100004300" title="Right - Truncus Anterior - Apical Branch" />
@@ -1586,8 +1586,8 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76548" ID="76548.100004300" title="Technique of pulmonary artery ligation&#xA;">
-										<ListField name="lf_76548_1">
+									<Question name="Q_76548" ID="76548.100004300" title="Technique of pulmonary artery ligation" maxcard="4">
+										<ListField name="lf_76548_1" maxSelections="0">
 											<List name="lst_76548_2">
 												<ListItem name="LI_77093" ID="77093.100004300" title="Tie" />
 												<ListItem name="LI_77094" ID="77094.100004300" title="GIA Stapler" />
@@ -1610,7 +1610,7 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76551" ID="76551.100004300" title="Pulmonary artery ligation Staple Color&#xA;">
+									<Question name="Q_76551" ID="76551.100004300" title="Pulmonary artery ligation Staple Color" maxcard="4">
 										<ListField name="lf_76551_1">
 											<List name="lst_76551_2">
 												<ListItem name="LI_77097" ID="77097.100004300" title="Other, specify">
@@ -1637,7 +1637,7 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76563" ID="76563.100004300" title="Was the fissure opened&#xA;">
+									<Question name="Q_76563" ID="76563.100004300" title="Was the fissure opened">
 										<ListField name="lf_76563_1">
 											<List name="lst_76563_2">
 												<ListItem name="LI_77112" ID="77112.100004300" title="Yes" />
@@ -1647,7 +1647,7 @@
 										</ListField>
 									</Question>
 									<Question name="Q_76562" ID="76562.100004300" title="How was fissure dividied">
-										<ListField name="lf_76562_1">
+										<ListField name="lf_76562_1" maxSelections="0">
 											<List name="lst_76562_2">
 												<ListItem name="LI_77115" ID="77115.100004300" title="GIA Stapler" />
 												<ListItem name="LI_77116" ID="77116.100004300" title="Endo GIA Stapler" />
@@ -1668,7 +1668,7 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76550" ID="76550.100004300" title="Was the middle lobe fixed?&#xA;">
+									<Question name="Q_76550" ID="76550.100004300" title="Was the middle lobe fixed">
 										<ListField name="lf_76550_1">
 											<List name="lst_76550_2">
 												<ListItem name="LI_77121" ID="77121.100004300" title="Yes" />
@@ -1676,8 +1676,8 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76561" ID="76561.100004300" title="Method of fixing middle lobe&#xA;">
-										<ListField name="lf_76561_1">
+									<Question name="Q_76561" ID="76561.100004300" title="Method of fixing middle lobe">
+										<ListField name="lf_76561_1" maxSelections="0">
 											<List name="lst_76561_2">
 												<ListItem name="LI_77123" ID="77123.100004300" title="Suture" />
 												<ListItem name="LI_77124" ID="77124.100004300" title="GIA Stapler" />
@@ -1696,7 +1696,7 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76560" ID="76560.100004300" title="Which bronchi were divided&#xA;">
+									<Question name="Q_76560" ID="76560.100004300" title="Which bronchi were divided">
 										<ListField name="lf_76560_1">
 											<List name="lst_76560_2">
 												<ListItem name="LI_77127" ID="77127.100004300" title="None" />
@@ -1779,7 +1779,7 @@
 										</ListField>
 									</Question>
 									<Question name="Q_76558" ID="76558.100004300" title="Which bronchi were covered">
-										<ListField name="lf_76558_1">
+										<ListField name="lf_76558_1" maxSelections="0">
 											<List name="lst_76558_2">
 												<ListItem name="LI_77165" ID="77165.100004300" title="Right Mainstem Bronchus" />
 												<ListItem name="LI_77166" ID="77166.100004300" title="Right Upper Lobe Bronchus" />
@@ -1868,7 +1868,7 @@
 										</ListField>
 									</Question>
 									<Question name="Q_76574" ID="76574.100004300" title="Which lymph nodes taken as separate specimens">
-										<ListField name="lf_76574_1">
+										<ListField name="lf_76574_1" maxSelections="0">
 											<List name="lst_76574_2">
 												<ListItem name="LI_77210" ID="77210.100004300" title="1 - Low Cervical" />
 												<ListItem name="LI_77211" ID="77211.100004300" title="1 - Supraclavicular" />
@@ -1900,7 +1900,7 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76568" ID="76568.100004300" title="Intra-operative frozen section lymph node results">
+									<Question name="Q_76568" ID="76568.100004300" title="Intra-operative frozen section lymph node results" maxcard="4">
 										<ListField name="lf_76568_1">
 											<List name="lst_76568_2">
 												<ListItem name="LI_77231" ID="77231.100004300" title="Positive" />
@@ -2125,7 +2125,7 @@
 																</List>
 															</ListField>
 														</Question>
-														<Question name="Q_76571" ID="76571.100004300" title="Intra-operative imaging result:&#xA;">
+														<Question name="Q_76571" ID="76571.100004300" title="Intra-operative imaging result:">
 															<ResponseField name="rf_76571_1">
 																<Response name="rsp_76571_2">
 																	<string name="str_76571_3" />
@@ -2179,7 +2179,7 @@
 										</ResponseField>
 									</Question>
 									<Question name="Q_76611" ID="76611.100004300" title="Chest Tube size">
-										<ListField name="lf_76611_1">
+										<ListField name="lf_76611_1" maxSelections="0">
 											<List name="lst_76611_2">
 												<ListItem name="LI_77274" ID="77274.100004300" title="Not applicable" />
 												<ListItem name="LI_77275" ID="77275.100004300" title="14" />
@@ -2189,7 +2189,7 @@
 												<ListItem name="LI_77279" ID="77279.100004300" title="22" />
 												<ListItem name="LI_77280" ID="77280.100004300" title="24" />
 												<ListItem name="LI_77281" ID="77281.100004300" title="26" />
-												<ListItem name="LI_77282" ID="77282.100004300" title="28" />
+												<ListItem name="LI_77282" ID="77282.100004300" title="28" /> <!-- 28 may be default entry--> 
 												<ListItem name="LI_77283" ID="77283.100004300" title="32" />
 											</List>
 										</ListField>
@@ -2285,7 +2285,7 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76601" ID="76601.100004300" title="Muscle closure sulture type">
+									<Question name="Q_76601" ID="76601.100004300" title="Muscle closure suture type">
 										<ListField name="lf_76601_1">
 											<List name="lst_76601_2">
 												<ListItem name="LI_77302" ID="77302.100004300" title="Dexon" />
@@ -2309,7 +2309,7 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76602" ID="76602.100004300" title="Fat closure sulture type">
+									<Question name="Q_76602" ID="76602.100004300" title="Fat closure suture type">
 										<ListField name="lf_76602_1">
 											<List name="lst_76602_2">
 												<ListItem name="LI_77310" ID="77310.100004300" title="Dexon" />
@@ -2338,7 +2338,7 @@
 											<List name="lst_76603_2">
 												<ListItem name="LI_77318" ID="77318.100004300" title="Suture">
 													<ChildItems name="ch_77318_1">
-														<Question name="Q_76608" ID="76608.100004300" title="Skin closure sulture type">
+														<Question name="Q_76608" ID="76608.100004300" title="Skin closure suture type">
 															<ListField name="lf_76608_1">
 																<List name="lst_76608_2">
 																	<ListItem name="LI_77322" ID="77322.100004300" title="Dexon" />
@@ -2380,7 +2380,7 @@
 									</Question>
 								</ChildItems>
 							</Section>
-							<Section name="S_76210" ID="76210.100004300" title="Outcomes, Complications and Patient Transfer&#xA;">
+							<Section name="S_76210" ID="76210.100004300" title="Outcomes, Complications and Patient Transfer">
 								<ChildItems name="ch_76210_1">
 									<Question name="Q_76614" ID="76614.100004300" title="Patient stability throughout case in OR">
 										<ListField name="lf_76614_1">
@@ -2419,7 +2419,7 @@
 										</ListField>
 									</Question>
 									<Question name="Q_76617" ID="76617.100004300" title="Intra-operative events">
-										<ListField name="lf_76617_1">
+										<ListField name="lf_76617_1" maxSelections="0">
 											<List name="lst_76617_2">
 												<ListItem name="LI_77337" ID="77337.100004300" title="CVA">
 													<ChildItems name="ch_77337_1">
