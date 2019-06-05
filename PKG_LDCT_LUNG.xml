@@ -1,23 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
-<SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 ../Schemas/RFD+SDCRetrieveForm.xsd" packageID="PKG_LDCT_Lung">
+<SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 ../Schemas/RFD+SDCRetrieveForm.xsd" packageID="PKG_LDCT_Lung" version="1.0.0" lineage="LDCTLung" fullURI="_baseURI=www.cancercare.on.ca/LDCTlung/SDC/IHE/&amp;_lineage=LDCTLung&amp;_version=1.0.0&amp;_docType=sdcPKG">
 	<XMLPackage>
-		<FormDesign xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 SDCFormDesign.xsd" ID="FORM_LDCT_Lung" baseURI="http://hl7.org/ihe/2016Sep/questionnaire.xsd">
-			<!-- responsetype="initial" formInstanceURI="1234"	formInstanceVersionURI="8w74d7w3678348347b6587423b/v.1.2"> -->
-			<Header styleClass="left" ID="LDCT_Lung" title="Lung Cancer Screening Template">
-				<Property propName="Copyright" propClass="meta" styleClass="copyright" val="(c) 2017 Cancer Care Ontario.  All rights reserved." />
-				<Property propName="Approval" propClass="meta" styleClass="float-right" val="CCO Cancer Imaging Program approved" />
-				<Property propName="GenericHeaderText" propClass="meta" styleClass="left" val="High Risk Lung Cancer Screening Summary (Checklist)" />
-				<Property propName="OfficialName" propClass="meta" val="LDCT Lung Cancer Screening Reporting Template" />
-				<Property propName="Category" propClass="meta" val="Thoracic" />
-				<Property propName="Restrictions" propClass="meta" val="Protocol LDCT Lung Cancer Screening." />
-				<Property propName="Required" propClass="meta" val="true" />
-				<Property propName="CTV_Dkey" propClass="meta" val="" />
-				<Property propName="ChecklistCKey" propClass="meta" val="" />
-				<Property propName="VersionID" propClass="meta" val="1.1" />
-				<Property propName="CurrentFileName" propClass="meta" val="LDCT Lung Screening Pilot ver 1.1" />
-				<Property propName="ApprovalStatus" propClass="meta" val="0" />
-				<Property propName="EffectiveDate" propClass="meta" val="2017-02-24" styleClass="right" />
-			</Header>
+		<FormDesign xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 SDCFormDesign.xsd" ID="FORM_LDCT_Lung" formTitle="Lung Cancer Screening Template" baseURI="www.cancercare.on.ca/LDCTlung/SDC/IHE/" version="1.0.0" lineage="LDCTLung" fullURI="_baseURI=www.cancercare.on.ca/LDCTlung/SDC/IHE/&amp;_lineage=LDCTLung&amp;_version=1.0.0&amp;_docType=sdcFDF">
+			<Property type="meta" styleClass="copyright" order="1" propName="Copyright" val="(c) 2017 Cancer Care Ontario.  All rights reserved." />
+			<Property propName="Approval" propClass="meta" order="2" styleClass="float-right" val="CCO Cancer Imaging Program approved" />
+			<Property propName="GenericHeaderText" type="meta" styleClass="left" val="High Risk Lung Cancer Screening Summary (Checklist)" />
+			<Property propName="OfficialName" propClass="meta" val="LDCT Lung Cancer Screening Reporting Template" />
+			<Property propName="Category" propClass="meta" val="Thoracic" />
+			<Property propName="Restrictions" propClass="meta" val="Protocol LDCT Lung Cancer Screening." />
+			<Property propName="Required" propClass="meta" val="true" />
+			<Property propName="CTV_Dkey" propClass="meta" val="" />
+			<Property propName="ChecklistCKey" propClass="meta" val="" />
+			<Property propName="VersionID" propClass="meta" val="1.1" />
+			<Property propName="CurrentFileName" propClass="meta" val="LDCT Lung Screening Pilot ver 1.1" />
+			<Property propName="ApprovalStatus" propClass="meta" val="0" />
+			<Property propName="EffectiveDate" propClass="meta" val="2017-02-24" styleClass="right" />
 			<Body title="LDCT Lung Screening Template" ID="root" styleClass="title">
 				<Property propName="Publisher" propClass="Reporttext" val="Cancer Care Ontario" />
 				<Property propName="Version" propClass="Reporttext" val="version 1.1" />
@@ -659,7 +657,7 @@
 																					</Question>
 																				</ChildItems>
 																			</ListItem>
-																			<ListItem title="Pure ground glass nodule:" ID="000072">
+																			<ListItem title="Pure ground glass nodule:" ID="000150">
 																				<ChildItems>
 																					<Question title="Previous mean diameter:" ID="2384278">
 																						<ResponseField>
