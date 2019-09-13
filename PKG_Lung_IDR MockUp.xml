@@ -1,0 +1,1816 @@
+<?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
+<SDCPackage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:qrph:sdc:2016 ../../../SDC_Form_Transaction_Kit-2.0/Schemas/SDCRetrieveForm.xsd" xmlns="urn:ihe:qrph:sdc:2016" xmlns:xsd="http://www.w3.org/2001/XMLSchema" packageID="Lung_PRPH-C_Demog">
+	<XMLPackage>
+		<DemogFormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="PRPH-C_Demog" baseURI="www.cap.org/eCC/SDC/IHE" xmlns="urn:ihe:qrph:sdc:2016">
+			<Body ID="1f501304-dc05-425b-89d1-abfb0d046058">
+				<ChildItems>
+					<Section order="21" ID="37508.100004300" title="Demographic Information" minCard="0">
+						<ChildItems>
+							<Question order="23" ID="37333.100004300" title="Date/Time of Report">
+								<ResponseField order="24">
+									<Response>
+										<string order="26" maxLength="80" />
+									</Response>
+								</ResponseField>
+							</Question>
+							<Section order="27" ID="37516.100004300" title="Patient">
+								<ChildItems>
+									<Question order="29" ID="37385.100004300" title="Patient's First Name">
+										<ResponseField order="30">
+											<Response>
+												<string order="32" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question order="33" ID="37386.100004300" title="Patient's Last Name">
+										<ResponseField order="34">
+											<Response>
+												<string order="36" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question order="37" ID="37387.100004300" title="Patient's Middle Name">
+										<ResponseField order="38">
+											<Response>
+												<string order="40" maxLength="4000" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question order="41" ID="37478.100004300" title="Patient's Street Address">
+										<ResponseField order="42">
+											<Response>
+												<string order="44" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question order="45" ID="37479.100004300" title="Patient's City" minCard="0">
+										<ResponseField order="42">
+											<Response>
+												<string order="44" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question order="56" ID="37480.100004300" title="Patient's State">
+										<ResponseField order="42">
+											<Response>
+												<string order="44" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question order="66" ID="37481.100004300" title="Patient's Zipcode">
+										<ResponseField order="42">
+											<Response>
+												<integer order="44" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question order="76" ID="37488.100004300" title="Patient's Phone Number">
+										<ResponseField order="77">
+											<Response>
+												<string order="79" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question order="80" ID="37485.100004300" title="Patient's Date of Birth">
+										<ResponseField order="81">
+											<Response>
+												<string order="83" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question order="84" ID="37491.100004300" title="Patient's Medical Record Number" mustImplement="false" minCard="0">
+										<ResponseField order="85">
+											<Response>
+												<string order="87" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question order="88" ID="37521.100004300" title="Patient's Social Security Number">
+										<ResponseField order="89">
+											<Response>
+												<string order="91" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question order="92" ID="37492.100004300" title="Patient's Race Code">
+										<ListField>
+											<List>
+												<ListItem order="95" ID="37504.100004300" title="American Indian or Alaska Native" />
+												<ListItem order="96" ID="37503.100004300" title="Asian" />
+												<ListItem order="97" ID="37505.100004300" title="Black or African American" />
+												<ListItem order="98" ID="37502.100004300" title="Native Hawaiian/Other Pacific Islander" />
+												<ListItem order="99" ID="37507.100004300" title="Not Reported" />
+												<ListItem order="100" ID="37590.100004300" title="Unknown" />
+												<ListItem order="101" ID="37591.100004300" title="White" />
+												<ListItem order="102" ID="37592.100004300" title="Other (specify)">
+													<ListItemResponseField order="103" responseRequired="true">
+														<Response>
+															<string order="105" maxLength="80" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+											</List>
+										</ListField>
+									</Question>
+									<Question order="144" ID="37511.100004300" title="Patient's Gender Code">
+										<ListField>
+											<List>
+												<ListItem order="148" ID="37519.100004300" title="Female" />
+												<ListItem order="149" ID="37520.100004300" title="Male" />
+												<ListItem order="152" ID="37522.100004300" title="Other (specify)">
+													<ListItemResponseField order="153" responseRequired="true">
+														<Response>
+															<string order="155" maxLength="80" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+											</List>
+										</ListField>
+									</Question>
+								</ChildItems>
+							</Section>
+							<Section title="Author" ID="37486.100004300" order="157">
+								<ChildItems>
+									<Question title="Author NPI" ID="37490.100004300" order="159">
+										<ResponseField order="160">
+											<Response>
+												<string order="162" maxLength="12" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question title="Author First Name" ID="37489.100004300" order="163">
+										<ResponseField order="164">
+											<Response>
+												<string order="166" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question title="Author Last Name" ID="37493.100004300" order="167">
+										<ResponseField order="168">
+											<Response>
+												<string order="170" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question title="Author Name Suffix" ID="37494.100004300" order="171">
+										<ResponseField order="172">
+											<Response>
+												<string order="174" maxLength="40" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question title="Author Organization Name" ID="37603.100004300" order="175">
+										<ResponseField order="176">
+											<Response>
+												<string order="178" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question title="Author Organization NPI" ID="37604.100004300" order="179">
+										<ResponseField order="180">
+											<Response>
+												<string order="182" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question title="Author Organization Street Address" ID="37605.100004300" order="183">
+										<ResponseField order="184">
+											<Response>
+												<string order="186" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question title="Author Organization City" ID="37606.100004300" order="187">
+										<ResponseField order="42">
+											<Response>
+												<string order="44" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question title="Author Organization Zip Code" ID="37611.100004300" order="197">
+										<ResponseField order="42">
+											<Response>
+												<integer order="44" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question title="Author Organization State" ID="37616.100004300" order="207">
+										<ResponseField order="42">
+											<Response>
+												<string order="44" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question title="Author Organization Country" ID="37621.100004300" order="217">
+										<ResponseField order="42">
+											<Response>
+												<string order="44" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+									<Question title="Author Organization Telephone #" ID="37626.100004300" order="227">
+										<ResponseField order="228">
+											<Response>
+												<string order="230" maxLength="80" />
+											</Response>
+										</ResponseField>
+									</Question>
+								</ChildItems>
+							</Section>
+						</ChildItems>
+					</Section>
+				</ChildItems>
+			</Body>
+			<Footer styleClass="left" ID="Footer.226.1000043">
+				<Property name="CopyrightFooter" type="meta" styleClass="copyright" order="350" val="(c) 2016 College of American Pathologists.  All rights reserved.  License required for use." />
+			</Footer>
+		</DemogFormDesign>
+		<FormDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="Lung_PRPH-C_Demog" baseURI="www.cap.org/eCC/SDC/IHE" xmlns="urn:ihe:qrph:sdc:2016" lineage="1" version="0" fullURI="integratedreportmockup0">
+			<Header styleClass="left" ID="Header.119.1000043" title="LUNG CANCER CASE REPORT (DEMO)">
+				<Property type="meta" styleClass="copyright" propName="copyright" order="2" val="(c) 2017 College of American Pathologists, mTuitive, Cancer Care Ontario.  All rights reserved.  License required for use." />
+				<Property styleClass="float-right" order="3" val="CAP approved" propName="Approval" />
+				<Property type="meta" styleClass="left" order="4" val="Cancer Case Summary (Checklist)" propName="GenericHeaderText" propClass="eCC_CAP_Protocol" />
+				<Property type="meta" order="5" val="LUNG: Resection" propName="OfficialName" propClass="eCC_CAP_Protocol" />
+				<Property type="meta" order="6" val="Thorax" propName="Category" propClass="eCC_CAP_Protocol" />
+				<Property type="meta" order="7" val="Protocol for patients with primary non-small cell carcinoma, small cell carcinoma, or carcinoid tumor of the lung." propName="Restrictions" propClass="eCC_CAP_Protocol" />
+				<!--Property type="meta" order="8" val="true" propClass="eCC_CAP_Protocol"/-->
+				<Property type="meta" order="9" val="119.1000043" propName="CTV_Ckey" propClass="eCC_" />
+				<Property type="meta" order="10" val="50.100004300" propName="ChecklistCKey" propClass="eCC_" />
+				<Property type="meta" order="11" val="3.000.001.1000043" propName="VersionID" propClass="eCC_" />
+				<Property type="meta" order="12" val="Lung_PRPH-C_Demog_OpNote_LDCT.xml" propName="CurrentFileName" propClass="eCC_" />
+				<Property type="meta" order="13" val="1" propName="ApprovalStatus" propClass="eCC_" />
+				<Property type="meta dt.dateTime" styleClass="right" order="14" propName="EffectiveDate" val="1/1/2018 12:00:00 AM" propClass="eCC_Dates" />
+				<Property type="meta dt.dateTime" styleClass="right" order="15" val="1/28/2016 12:00:00 AM" propName="WebPostingDate" propClass="eCC_Dates" />
+				<Property type="meta" styleClass="right" order="16" val="8th Edition" propName="AJCC_UICC_Version" propClass="eCC_Data_Sources" />
+				<Property type="meta" styleClass="right" order="17" val="SDC" propName="CS_Version" propClass="eCC_Data_Sources" />
+				<!--Property type="meta" styleClass="right" order="18" propName="FIGO_Version" propClass="eCC_Data_Sources"/-->
+			</Header>
+			<Body ID="111">
+				<ChildItems>
+					<Section ID="S_Spacer_0" />
+					<Section ID="S_LDCT" title="IMAGING">
+						<ChildItems>
+							<Section ID="S_CCO_LDCT" title="CCO - Lung Low Dose CT Screening Report">
+								<ChildItems>
+									<Section title="CLINICAL INFORMATION" type="level1" ID="000001">
+										<CodedValue>
+											<Code val="55752-0" />
+											<CodeText val="Clinical Information" />
+											<CodeSystem>
+												<CodeSystemName val="LOINC" />
+											</CodeSystem>
+										</CodedValue>
+										<ChildItems>
+											<Question title="Clinical Information:" ID="000002">
+												<Property propName="numbering" propClass="numbering" val="1." />
+												<ResponseField>
+													<Response>
+														<string val="" />
+													</Response>
+												</ResponseField>
+											</Question>
+											<Question title="Reason for exam:" ID="000004">
+												<Property propName="numbering" propClass="numbering" val="2." />
+												<CodedValue>
+													<Code val="RID10393" />
+													<CodeText val="imaging purpose" />
+													<CodeSystem>
+														<CodeSystemName val="RADLEX" />
+													</CodeSystem>
+												</CodedValue>
+												<ListField>
+													<List>
+														<ListItem title="Baseline scan" ID="000005">
+															<CodedValue>
+																<Code val="RID49571" />
+																<CodeText val="Baseline" />
+																<CodeSystem>
+																	<CodeSystemName val="RADLEX" />
+																</CodeSystem>
+															</CodedValue>
+														</ListItem>
+														<ListItem title="12 month recall" ID="000006">
+															<CodedValue>
+																<Code val="RID50144" />
+																<CodeText val="12 month follow-up procedure" />
+																<CodeSystem>
+																	<CodeSystemName val="RADLEX" />
+																</CodeSystem>
+															</CodedValue>
+														</ListItem>
+														<ListItem title="6 month follow-up" ID="000007">
+															<CodedValue>
+																<Code val="RID50145" />
+																<CodeText val=" 6 month follow-Up" />
+																<CodeSystem>
+																	<CodeSystemName val="RADLEX" />
+																</CodeSystem>
+															</CodedValue>
+														</ListItem>
+														<ListItem title="Other" ID="000008">
+															<ListItemResponseField>
+																<Response>
+																	<string val="" />
+																</Response>
+															</ListItemResponseField>
+														</ListItem>
+													</List>
+												</ListField>
+											</Question>
+										</ChildItems>
+									</Section>
+									<Section title="COMPARISON STUDIES" type="level1" ID="000010">
+										<CodedValue>
+											<Code val="18834-2" />
+											<CodeText val="Radiology Comparison study" />
+											<CodeSystem>
+												<CodeSystemName val="LOINC" />
+											</CodeSystem>
+										</CodedValue>
+										<ChildItems>
+											<Question title="Comparison Study:" ID="000011">
+												<Property propName="numbering" propClass="numbering" val="1." />
+												<ListField>
+													<List>
+														<ListItem title="None Available" ID="000012" />
+														<ListItem title="Previous CT Exam:" ID="000013">
+															<CodedValue>
+																<Code val="RID28454" />
+																<CodeText val="comparison image" />
+																<CodeSystem>
+																	<CodeSystemName val="RADLEX" />
+																</CodeSystem>
+															</CodedValue>
+															<ChildItems>
+																<Question ID="000014" maxCard="0">
+																	<ResponseField>
+																		<Response>
+																			<date xsi:nil="true" />
+																		</Response>
+																		<TextAfterResponse val="(dates)" />
+																	</ResponseField>
+																</Question>
+															</ChildItems>
+														</ListItem>
+													</List>
+												</ListField>
+											</Question>
+										</ChildItems>
+									</Section>
+									<Section title="IMAGING PROCEDURE DESCRIPTION" type="level1" ID="000016">
+										<CodedValue>
+											<Code val="55111-9" />
+											<CodeText val="Current imaging procedure descriptions" />
+											<CodeSystem>
+												<CodeSystemName val="LOINC" />
+											</CodeSystem>
+										</CodedValue>
+										<ChildItems>
+											<Question title="Overall Image Quality:" ID="000017">
+												<Property propName="numbering" propClass="numbering" val="1." />
+												<CodedValue>
+													<Code val="RID10" />
+													<CodeText val="image quality" />
+													<CodeSystem>
+														<CodeSystemName val="RADLEX" />
+													</CodeSystem>
+												</CodedValue>
+												<ListField numCols="3">
+													<DefaultCodeSystem>
+														<CodeSystemName val="RADLEX" />
+														<OID val="2.16.840.1.113883.6.256" />
+													</DefaultCodeSystem>
+													<List>
+														<ListItem title="Adequate" ID="000018">
+															<CodedValue>
+																<Code val="RID11" />
+																<CodeText val="exemplary quality" />
+															</CodedValue>
+														</ListItem>
+														<ListItem title="Suboptimal" ID="000019">
+															<CodedValue>
+																<Code val="RID13" />
+																<CodeText val="limited quality" />
+															</CodedValue>
+														</ListItem>
+														<ListItem title="Non-diagnostic" ID="000020">
+															<CodedValue>
+																<Code val="RID14" />
+																<CodeText val="non-diagnostic quality" />
+															</CodedValue>
+														</ListItem>
+													</List>
+												</ListField>
+											</Question>
+											<Question title="Procedure protocol:" ID="000021">
+												<Property propName="numbering" propClass="numbering" val="2." />
+												<CodedValue>
+													<Code val="RID38760" />
+													<CodeText val="imaging protocol" />
+													<CodeSystem>
+														<CodeSystemName val="RADLEX" />
+													</CodeSystem>
+												</CodedValue>
+												<ListField>
+													<List>
+														<ListItem title="LDCT Study Protocol" ID="000022">
+															<CodedValue>
+																<Code val="RPID1377" />
+																<CodeText val="CT CHEST LOW DOSE SCREENING" />
+																<CodeSystem>
+																	<CodeSystemName val="RADLEX" />
+																</CodeSystem>
+															</CodedValue>
+														</ListItem>
+														<ListItem title="Other" ID="000023">
+															<ListItemResponseField>
+																<Response>
+																	<string val="" />
+																</Response>
+															</ListItemResponseField>
+														</ListItem>
+													</List>
+												</ListField>
+											</Question>
+											<Question title="All measurements obtained on axial CT lung reconstruction series:" ID="000025">
+												<Property propName="numbering" propClass="numbering" val="3." />
+												<ResponseField>
+													<Response>
+														<string val="" />
+													</Response>
+												</ResponseField>
+											</Question>
+										</ChildItems>
+									</Section>
+									<Section title="FINDINGS" type="level1" ID="000026">
+										<CodedValue>
+											<Code val="59776-5" />
+											<CodeText val="Procedure Findings" />
+											<CodeSystem>
+												<CodeSystemName val="LOINC" />
+											</CodeSystem>
+										</CodedValue>
+										<ChildItems>
+											<Section title="Nodules" ID="000027">
+												<Property propName="numbering" propClass="numbering" val="A." />
+												<ChildItems>
+													<Question title="Number of lung nodules present in total:" ID="000028">
+														<Property propName="numbering" propClass="numbering" val="1." />
+														<CodedValue>
+															<Code val="RID50150" />
+															<CodeText val="Number of pulmonary nodules" />
+															<CodeSystem>
+																<CodeSystemName val="RADLEX" />
+															</CodeSystem>
+														</CodedValue>
+														<ResponseField>
+															<Response>
+																<positiveInteger xsi:nil="true" />
+															</Response>
+														</ResponseField>
+													</Question>
+													<Section ID="000032" title="Nodule:" minCard="0" maxCard="11">
+														<Property propName="numbering" propClass="instruction" val="The 10 most dominant nodules ( 4 mm) need to be measured." />
+														<Property propName="numbering" propClass="instruction" val="(If more than 10 nodules please enter 11)" />
+														<CodedValue>
+															<Code val="RID50149" />
+															<CodeText val="pulmonary nodule" />
+															<CodeSystem>
+																<CodeSystemName val="RADLEX" />
+															</CodeSystem>
+														</CodedValue>
+														<ChildItems>
+															<Question title="Image Number:" ID="000033">
+																<Property propName="numbering" propClass="numbering" val="i." />
+																<ResponseField>
+																	<Response>
+																		<string val="" />
+																	</Response>
+																</ResponseField>
+															</Question>
+															<Question title="Lobe:" ID="000035">
+																<Property propClass="numbering" val="ii." propName="numbering" />
+																<CodedValue>
+																	<Code val="RID34694" />
+																	<CodeText val="lobe of lung" />
+																	<CodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																	</CodeSystem>
+																</CodedValue>
+																<ListField numCols="6">
+																	<DefaultCodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																		<OID val="2.16.840.1.113883.6.256" />
+																	</DefaultCodeSystem>
+																	<List>
+																		<ListItem title="RUL" ID="000036">
+																			<CodedValue>
+																				<Code val="RID1303" />
+																				<CodeText val="upper lobe of right lung" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="RML" ID="000037">
+																			<CodedValue>
+																				<Code val="RID1310" />
+																				<CodeText val="middle lobe of lung (part of Right lung)" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="RLL" ID="000038">
+																			<CodedValue>
+																				<Code val="RID1315" />
+																				<CodeText val="lower lobe of right lung" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="LUL" ID="000039">
+																			<CodedValue>
+																				<Code val="RID1327" />
+																				<CodeText val="upper lobe of left lung" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Lingula" ID="000040">
+																			<CodedValue>
+																				<Code val="RID1333" />
+																				<CodeText val="lingula" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="LLL" ID="000041">
+																			<CodedValue>
+																				<Code val="RID1338" />
+																				<CodeText val="lower lobe of left lung" />
+																			</CodedValue>
+																		</ListItem>
+																	</List>
+																</ListField>
+															</Question>
+															<Question title="Location:" ID="000042">
+																<Property propClass="numbering" val="iii." propName="numbering" />
+																<CodedValue>
+																	<Code val="RID5817" />
+																	<CodeText val="location descriptor" />
+																	<CodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																	</CodeSystem>
+																</CodedValue>
+																<ListField numCols="3">
+																	<DefaultCodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																		<OID val="2.16.840.1.113883.6.256" />
+																	</DefaultCodeSystem>
+																	<List>
+																		<ListItem title="Parenchymal" ID="000043">
+																			<CodedValue>
+																				<Code val="RID35739" />
+																				<CodeText val="lung parenchyma" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Subpleural" ID="000044">
+																			<CodedValue>
+																				<Code val="RID46032" />
+																				<CodeText val="subpleural" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Fissural" ID="000045">
+																			<CodedValue>
+																				<Code val="RID43257" />
+																				<CodeText val="pulmonary fissure" />
+																			</CodedValue>
+																		</ListItem>
+																	</List>
+																</ListField>
+															</Question>
+															<Question title="Attenuation:" ID="000046">
+																<Property propClass="numbering" val="iv." propName="numbering" />
+																<CodedValue>
+																	<Code val="RID6037" />
+																	<CodeText val="attenuation characteristic" />
+																	<CodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																	</CodeSystem>
+																</CodedValue>
+																<ListField>
+																	<List>
+																		<ListItem title="Solid" ID="000047">
+																			<CodedValue>
+																				<Code val="RID50151" />
+																				<CodeText val="solid pulmonary nodule" />
+																				<CodeSystem>
+																					<CodeSystemName val="RADLEX" />
+																				</CodeSystem>
+																			</CodedValue>
+																			<ChildItems>
+																				<Question title="Mean diameter:" ID="000048">
+																					<CodedValue>
+																						<Code val="RID50155" />
+																						<CodeText val="average diameter" />
+																						<CodeSystem>
+																							<CodeSystemName val="RADLEX" />
+																						</CodeSystem>
+																					</CodedValue>
+																					<ResponseField>
+																						<Response>
+																							<integer xsi:nil="true" />
+																						</Response>
+																						<ResponseUnits val="mm" />
+																					</ResponseField>
+																				</Question>
+																				<Question title="+Length:" ID="000049" minCard="0">
+																					<!-- <CodedValue>
+                                                <Code val="RID39123"/>
+                                                <CodeText val="length"/>
+                                                <CodeSystem>
+                                                   <CodeSystemName val="RADLEX"/>
+                                                </CodeSystem>
+                                             </CodedValue>-->
+																					<ResponseField>
+																						<Response>
+																							<integer xsi:nil="true" />
+																						</Response>
+																						<ResponseUnits val="mm" />
+																					</ResponseField>
+																				</Question>
+																				<Question title="+Width:" ID="000050" minCard="0">
+																					<!--  <CodedValue>
+                                                <Code val="RID39144"/>
+                                                <CodeText val="width"/>
+                                                <CodeSystem>
+                                                   <CodeSystemName val="RADLEX"/>
+                                                </CodeSystem>
+                                             </CodedValue>-->
+																					<ResponseField>
+																						<Response>
+																							<integer xsi:nil="true" />
+																						</Response>
+																						<ResponseUnits val="mm" />
+																					</ResponseField>
+																				</Question>
+																			</ChildItems>
+																		</ListItem>
+																		<ListItem title="Part-solid" ID="000051">
+																			<CodedValue>
+																				<Code val="RID50152" />
+																				<CodeText val="part-solid pulmonary nodule" />
+																				<CodeSystem>
+																					<CodeSystemName val="RADLEX" />
+																				</CodeSystem>
+																			</CodedValue>
+																			<ChildItems>
+																				<Section title="Overall size:" type="level3" ID="000052">
+																					<ChildItems>
+																						<Question title="Mean diameter:" ID="000053">
+																							<CodedValue>
+																								<Code val="RID50155" />
+																								<CodeText val="average diameter" />
+																								<CodeSystem>
+																									<CodeSystemName val="RADLEX" />
+																								</CodeSystem>
+																							</CodedValue>
+																							<ResponseField>
+																								<Response>
+																									<integer xsi:nil="true" />
+																								</Response>
+																								<ResponseUnits val="mm" />
+																							</ResponseField>
+																						</Question>
+																						<Question title="+Length:" ID="000054" minCard="0">
+																							<!--<CodedValue>
+                                                      <Code val="RID39123"/>
+                                                      <CodeText val="length"/>
+                                                      <CodeSystem>
+                                                         <CodeSystemName val="RADLEX"/>
+                                                      </CodeSystem>
+                                                   </CodedValue>-->
+																							<ResponseField>
+																								<Response>
+																									<integer xsi:nil="true" />
+																								</Response>
+																								<ResponseUnits val="mm" />
+																							</ResponseField>
+																						</Question>
+																						<Question title="+Width:" ID="000055" minCard="0">
+																							<!--<CodedValue>
+                                                      <Code val="RID39144"/>
+                                                      <CodeText val="width"/>
+                                                      <CodeSystem>
+                                                         <CodeSystemName val="RADLEX"/>
+                                                      </CodeSystem>
+                                                   </CodedValue>-->
+																							<ResponseField>
+																								<Response>
+																									<integer xsi:nil="true" />
+																								</Response>
+																								<ResponseUnits val="mm" />
+																							</ResponseField>
+																						</Question>
+																					</ChildItems>
+																				</Section>
+																				<Section title="Size of Solid component:" type="level3" ID="000056">
+																					<CodedValue>
+																						<Code val="RID50154" />
+																						<CodeText val="solid component of part-solid pulmonary nodule" />
+																						<CodeSystem>
+																							<CodeSystemName val="RADLEX" />
+																						</CodeSystem>
+																					</CodedValue>
+																					<ChildItems>
+																						<Question title="Mean diameter:" ID="000057">
+																							<CodedValue>
+																								<Code val="RID50155" />
+																								<CodeText val="average diameter" />
+																								<CodeSystem>
+																									<CodeSystemName val="RADLEX" />
+																								</CodeSystem>
+																							</CodedValue>
+																							<ResponseField>
+																								<Response>
+																									<integer xsi:nil="true" />
+																								</Response>
+																								<ResponseUnits val="mm" />
+																							</ResponseField>
+																						</Question>
+																						<Question title="+Length:" ID="000058" minCard="0">
+																							<!--<CodedValue>
+                                                      <Code val="RID39123"/>
+                                                      <CodeText val="length"/>
+                                                      <CodeSystem>
+                                                         <CodeSystemName val="RADLEX"/>
+                                                      </CodeSystem>
+                                                   </CodedValue>-->
+																							<ResponseField>
+																								<Response>
+																									<integer xsi:nil="true" />
+																								</Response>
+																								<ResponseUnits val="mm" />
+																							</ResponseField>
+																						</Question>
+																						<Question title="+Width:" ID="000059" minCard="0">
+																							<!--<CodedValue>
+                                                      <Code val="RID39144"/>
+                                                      <CodeText val="width"/>
+                                                      <CodeSystem>
+                                                         <CodeSystemName val="RADLEX"/>
+                                                      </CodeSystem>
+                                                   </CodedValue>-->
+																							<ResponseField>
+																								<Response>
+																									<integer xsi:nil="true" />
+																								</Response>
+																								<ResponseUnits val="mm" />
+																							</ResponseField>
+																						</Question>
+																					</ChildItems>
+																				</Section>
+																			</ChildItems>
+																		</ListItem>
+																		<ListItem title="Pure Ground Glass" ID="000060">
+																			<CodedValue>
+																				<Code val="RID50153" />
+																				<CodeText val="non-solid pulmonary nodule" />
+																				<CodeSystem>
+																					<CodeSystemName val="RADLEX" />
+																				</CodeSystem>
+																			</CodedValue>
+																			<ChildItems>
+																				<Question title="Mean diameter:" ID="000061">
+																					<CodedValue>
+																						<Code val="RID50155" />
+																						<CodeText val="average diameter" />
+																						<CodeSystem>
+																							<CodeSystemName val="RADLEX" />
+																						</CodeSystem>
+																					</CodedValue>
+																					<ResponseField>
+																						<Response>
+																							<integer xsi:nil="true" />
+																						</Response>
+																						<ResponseUnits val="mm" />
+																					</ResponseField>
+																				</Question>
+																				<Question title="+Length:" ID="000062" minCard="0">
+																					<!--<CodedValue>
+                                                <Code val="RID39123"/>
+                                                <CodeText val="length"/>
+                                                <CodeSystem>
+                                                   <CodeSystemName val="RADLEX"/>
+                                                </CodeSystem>
+                                             </CodedValue>-->
+																					<ResponseField>
+																						<Response>
+																							<integer xsi:nil="true" />
+																						</Response>
+																						<ResponseUnits val="mm" />
+																					</ResponseField>
+																				</Question>
+																				<Question title="+Width:" ID="000063" minCard="0">
+																					<!--<CodedValue>
+                                                <Code val="RID39144"/>
+                                                <CodeText val="width"/>
+                                                <CodeSystem>
+                                                   <CodeSystemName val="RADLEX"/>
+                                                </CodeSystem>
+                                             </CodedValue>-->
+																					<ResponseField>
+																						<Response>
+																							<integer xsi:nil="true" />
+																						</Response>
+																						<ResponseUnits val="mm" />
+																					</ResponseField>
+																				</Question>
+																			</ChildItems>
+																		</ListItem>
+																	</List>
+																</ListField>
+															</Question>
+															<Question title="Comparison:" ID="000064">
+																<Property propClass="numbering" val="v." propName="numbering" />
+																<CodedValue>
+																	<Code val="RID28483" />
+																	<CodeText val="comparison section" />
+																	<CodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																	</CodeSystem>
+																</CodedValue>
+																<ListField>
+																	<DefaultCodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																		<OID val="2.16.840.1.113883.6.256" />
+																	</DefaultCodeSystem>
+																	<List>
+																		<ListItem title="No Prior Comparison" ID="000065" />
+																		<ListItem title="Stable Nodule" ID="000066">
+																			<CodedValue>
+																				<Code val="RID11514" />
+																				<CodeText val="stable disease" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="New Nodule" ID="000067">
+																			<CodedValue>
+																				<Code val="RID49578" />
+																				<CodeText val="new diagnosis" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Interval increase in solid component" ID="000068">
+																			<ChildItems>
+																				<Question title="Previous mean diameter:" ID="000069">
+																					<ResponseField>
+																						<Response>
+																							<positiveInteger xsi:nil="true" />
+																						</Response>
+																						<ResponseUnits val="mm" />
+																					</ResponseField>
+																				</Question>
+																				<Question ID="000070">
+																					<ListField>
+																						<List>
+																							<ListItem title="Compared to most recent CT" ID="000071">
+																								<CodedValue>
+																									<Code val="RID50133" />
+																									<CodeText val="Most recent comparison" />
+																								</CodedValue>
+																							</ListItem>
+																							<ListItem title="Compared to:" ID="000072">
+																								<ListItemResponseField>
+																									<Response>
+																										<date xsi:nil="true" />
+																									</Response>
+																									<TextAfterResponse val=" (date)" />
+																								</ListItemResponseField>
+																							</ListItem>
+																						</List>
+																					</ListField>
+																				</Question>
+																			</ChildItems>
+																		</ListItem>
+																		<ListItem title="Interval increase in ground glass component" ID="000074">
+																			<ChildItems>
+																				<Question title="Previous mean diameter:" ID="000075">
+																					<ResponseField>
+																						<Response>
+																							<positiveInteger xsi:nil="true" />
+																						</Response>
+																						<ResponseUnits val="mm" />
+																					</ResponseField>
+																				</Question>
+																			</ChildItems>
+																		</ListItem>
+																		<ListItem title="Interval decreased in size" ID="000076" />
+																	</List>
+																</ListField>
+															</Question>
+															<Question title="Margins:" ID="000077">
+																<Property propClass="numbering" val="vi" propName="numbering" />
+																<CodedValue>
+																	<Code val="RID5972" />
+																	<CodeText val="margin" />
+																	<CodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																	</CodeSystem>
+																</CodedValue>
+																<ListField numCols="6">
+																	<DefaultCodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																		<OID val="2.16.840.1.113883.6.256" />
+																	</DefaultCodeSystem>
+																	<List>
+																		<ListItem title="Spiculated" ID="000078">
+																			<CodedValue>
+																				<Code val="RID5713" />
+																				<CodeText val="spiculated margin" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Smooth" ID="000079">
+																			<CodedValue>
+																				<Code val="RID5714" />
+																				<CodeText val="smooth margin" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Lobulated" ID="000080">
+																			<CodedValue>
+																				<Code val="RID5711" />
+																				<CodeText val="lobulated margin" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Polygonal" ID="000081">
+																			<CodedValue>
+																				<Code val="RID34291" />
+																				<CodeText val="polygonal" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Halo" ID="000082">
+																			<CodedValue>
+																				<Code val="RID35260" />
+																				<CodeText val="halo sign of lung" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Obscured" ID="000083">
+																			<CodedValue>
+																				<Code val="RID5710" />
+																				<CodeText val="obscured margin" />
+																			</CodedValue>
+																		</ListItem>
+																	</List>
+																</ListField>
+															</Question>
+															<Question title="Calcification:" ID="000084">
+																<Property propClass="numbering" val="vii." propName="numbering" />
+																<CodedValue>
+																	<Code val="RID5196" />
+																	<CodeText val="calcification" />
+																	<CodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																	</CodeSystem>
+																</CodedValue>
+																<ListField numCols="3">
+																	<DefaultCodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																		<OID val="2.16.840.1.113883.6.256" />
+																	</DefaultCodeSystem>
+																	<List>
+																		<ListItem title="None" ID="000085"></ListItem>
+																		<ListItem title="Benign Pattern" ID="000086">
+																			<CodedValue>
+																				<Code val="RID49675" />
+																				<CodeText val="typically benign calcification" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Indeterminate" ID="000087">
+																			<CodedValue>
+																				<Code val="RID39110" />
+																				<CodeText val="indeterminate" />
+																			</CodedValue>
+																		</ListItem>
+																	</List>
+																</ListField>
+															</Question>
+															<Question title="Other characteristics:" ID="000088">
+																<Property propClass="numbering" val="viii." propName="numbering" />
+																<ListField numCols="4">
+																	<DefaultCodeSystem>
+																		<CodeSystemName val="RADLEX" />
+																		<OID val="2.16.840.1.113883.6.256" />
+																	</DefaultCodeSystem>
+																	<List>
+																		<ListItem title="None" ID="000089"></ListItem>
+																		<ListItem title="Fat" ID="000090">
+																			<CodedValue>
+																				<Code val="RID5878" />
+																				<CodeText val="fatty" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Cavitation" ID="000091">
+																			<CodedValue>
+																				<Code val="RID46014" />
+																				<CodeText val="cavitated" />
+																			</CodedValue>
+																		</ListItem>
+																		<ListItem title="Other" ID="000092">
+																			<ListItemResponseField>
+																				<Response>
+																					<string val="" />
+																				</Response>
+																			</ListItemResponseField>
+																		</ListItem>
+																	</List>
+																</ListField>
+															</Question>
+															<Question title="+Other comments:" ID="000094">
+																<Property propClass="numbering" val="ix." propName="numbering" />
+																<ResponseField>
+																	<Response>
+																		<string val="" />
+																	</Response>
+																</ResponseField>
+															</Question>
+															<DisplayedItem title="If there are additional nodules, please repeat Nodule Section for nodules 2-10 " ID="000096" />
+														</ChildItems>
+													</Section>
+													<Question title="+Other comments" ID="000097" minCard="0">
+														<ResponseField>
+															<Response>
+																<string val="" />
+															</Response>
+														</ResponseField>
+													</Question>
+												</ChildItems>
+											</Section>
+											<Section title="Incidental Findings" ID="000098">
+												<Property type="numbering" val="B." propName="numbering" />
+												<CodedValue>
+													<Code val="RID50142" />
+													<CodeText val="Incidental Finding" />
+												</CodedValue>
+												<ChildItems>
+													<Question ID="Q4.B">
+														<ListField maxSelections="0">
+															<DefaultCodeSystem>
+																<CodeSystemName val="RADLEX" />
+																<OID val="2.16.840.1.113883.6.256" />
+															</DefaultCodeSystem>
+															<List>
+																<ListItem title="Lung or Pleura:" ID="000100">
+																	<Property propClass="numbering" val="1." propName="numbering" />
+																	<CodedValue>
+																		<Code val="RID1301" />
+																		<CodeText val="Lung" />
+																	</CodedValue>
+																	<ListItemResponseField>
+																		<Response>
+																			<string val="" />
+																		</Response>
+																	</ListItemResponseField>
+																</ListItem>
+																<ListItem title="Mediastinum and Hila:" ID="000102">
+																	<Property propClass="numbering" val="2." propName="numbering" />
+																	<CodedValue>
+																		<Code val="RID1384" />
+																		<CodeText val="Mediastinum" />
+																	</CodedValue>
+																	<ListItemResponseField>
+																		<Response>
+																			<string val="" />
+																		</Response>
+																	</ListItemResponseField>
+																</ListItem>
+																<ListItem title="Chest Wall and Axilla:" ID="000104">
+																	<Property propClass="numbering" val="3." propName="numbering" />
+																	<CodedValue>
+																		<Code val="RID2468" />
+																		<CodeText val="Chest Wall" />
+																	</CodedValue>
+																	<ListItemResponseField>
+																		<Response>
+																			<string val="" />
+																		</Response>
+																	</ListItemResponseField>
+																</ListItem>
+																<ListItem title="Bones:" ID="000106">
+																	<Property propClass="numbering" val="4." propName="numbering" />
+																	<CodedValue>
+																		<Code val="RID39064" />
+																		<CodeText val="Bones" />
+																	</CodedValue>
+																	<ListItemResponseField>
+																		<Response>
+																			<string val="" />
+																		</Response>
+																	</ListItemResponseField>
+																</ListItem>
+																<ListItem title="Upper Abdomen:" ID="000108">
+																	<Property propClass="numbering" val="5." propName="numbering" />
+																	<CodedValue>
+																		<Code val="RID29990" />
+																		<CodeText val="Upper Abdomen" />
+																	</CodedValue>
+																	<ListItemResponseField>
+																		<Response>
+																			<string val="" />
+																		</Response>
+																	</ListItemResponseField>
+																</ListItem>
+																<ListItem title="+Other:" ID="000110">
+																	<Property propClass="numbering" val="6." propName="numbering" />
+																	<ChildItems>
+																		<Question ID="Q4.B.6.a">
+																			<ResponseField>
+																				<Response>
+																					<string val="" />
+																				</Response>
+																			</ResponseField>
+																		</Question>
+																	</ChildItems>
+																</ListItem>
+															</List>
+														</ListField>
+													</Question>
+												</ChildItems>
+											</Section>
+										</ChildItems>
+									</Section>
+								</ChildItems>
+							</Section>
+						</ChildItems>
+					</Section>
+					<Section ID="S_Spacer1" />
+					<Section order="21" ID="56926.100004300" title="mTuitive - LUNG CANCER OpNote" minCard="0">
+						<ChildItems>
+							<Question order="23" ID="50282.100004300" title="Date of Surgery">
+								<ResponseField order="24">
+									<Response>
+										<string order="26" maxLength="80" />
+									</Response>
+								</ResponseField>
+							</Question>
+							<Question order="27" ID="59508.100004300" title="Presentation">
+								<ListField>
+									<List>
+										<ListItem order="30" ID="46916.100004300" title="Asymptomatic" />
+										<ListItem order="31" ID="48253.100004300" title="Symptomatic" />
+									</List>
+								</ListField>
+							</Question>
+							<Question order="32" ID="47211.100004300" title="Active Smoker" readOnly="true">
+								<ListField>
+									<List>
+										<ListItem order="35" ID="55867.100004300" title="Yes" />
+										<ListItem order="36" ID="45339.100004300" title="No" />
+									</List>
+								</ListField>
+							</Question>
+							<Question order="37" ID="59382.100004300" title="Pre-operative Imaging Done">
+								<ListField maxSelections="0">
+									<List>
+										<ListItem order="40" ID="58864.100004300" title="CT Head" />
+										<ListItem order="41" ID="58323.100004300" title="CT Chest" />
+										<ListItem order="42" ID="53368.100004300" title="CT Abdomen" />
+										<ListItem order="43" ID="42233.100004300" title="MRI Head" />
+										<ListItem order="44" ID="40885.100004300" title="PET Scan" />
+										<ListItem order="45" ID="50082.100004300" title="Bone Scan" />
+										<ListItem order="46" ID="50371.100004300" title="Other (specify)">
+											<ListItemResponseField order="47" responseRequired="true">
+												<Response>
+													<string order="49" maxLength="80" />
+												</Response>
+											</ListItemResponseField>
+										</ListItem>
+									</List>
+								</ListField>
+							</Question>
+							<Question order="50" ID="47626.100004300" title="Pre-operative Biopsy - Staging">
+								<ListField maxSelections="0">
+									<List>
+										<ListItem order="53" ID="57467.100004300" title="None" selectionDeselectsSiblings="true" />
+										<ListItem order="54" ID="38675.100004300" title="Bronchoscopy - Endobronchial Biopsy" />
+										<ListItem order="55" ID="44924.100004300" title="Bronchoscopy - Transbronchial Biopsy" />
+										<ListItem order="56" ID="40656.100004300" title="Bronchoscopy - Bronchoalveolar Lavage" />
+										<ListItem order="57" ID="48897.100004300" title="Bronchoscopy - Bronchial Brush" />
+										<ListItem order="58" ID="45611.100004300" title="EBUS - Transbronchial Biopsy Lymph Node" />
+										<ListItem order="59" ID="41403.100004300" title="EBUS - Transbronchial Biopsy Lung Mass" />
+										<ListItem order="60" ID="53640.100004300" title="Percutaneous Transthoracic Needle Biopsy" />
+										<ListItem order="61" ID="54825.100004300" title="Mediastinoscopy" />
+										<ListItem order="62" ID="51396.100004300" title="Pleural Biopsy" />
+										<ListItem order="63" ID="45110.100004300" title="Other (specify)">
+											<ListItemResponseField order="64" responseRequired="true">
+												<Response>
+													<string order="66" maxLength="80" />
+												</Response>
+											</ListItemResponseField>
+										</ListItem>
+									</List>
+								</ListField>
+							</Question>
+							<Question order="67" ID="52810.100004300" title="Side of Surgery">
+								<ListField>
+									<List>
+										<ListItem order="70" ID="59923.100004300" title="Right" />
+										<ListItem order="71" ID="57679.100004300" title="Left" />
+										<ListItem order="72" ID="48373.100004300" title="Midline" />
+									</List>
+								</ListField>
+							</Question>
+							<Question order="73" ID="56637.100004300" title="Procedures Performed - Lung">
+								<ListField maxSelections="0">
+									<List>
+										<ListItem order="76" ID="43401.100004300" title="Wedge resection single" />
+										<ListItem order="77" ID="43942.100004300" title="Wedge resection multiple" />
+										<ListItem order="78" ID="48270.100004300" title="Segmentectomy" />
+										<ListItem order="79" ID="48914.100004300" title="Lobectomy" />
+										<ListItem order="80" ID="53242.100004300" title="Bilobectomy" />
+										<ListItem order="81" ID="58306.100004300" title="Pneumonectomy standard" />
+										<ListItem order="82" ID="44383.100004300" title="Pneumonectomy completion" />
+										<ListItem order="83" ID="51141.100004300" title="Pneumonectomy extrapleural" />
+										<ListItem order="84" ID="50835.100004300" title="Pneumonectomy intrapericardial" />
+										<ListItem order="85" ID="56408.100004300" title="Pneumonectomy carinal" />
+										<ListItem order="86" ID="54622.100004300" title="Bronchial sleeve" />
+										<ListItem order="87" ID="50294.100004300" title="Pulmonary arterial sleeve" />
+										<ListItem order="88" ID="43112.100004300" title="Other (specify)" />
+									</List>
+								</ListField>
+							</Question>
+						</ChildItems>
+					</Section>
+					<Section ID="S_Spacer2" />
+					<Section ID="S_CAP_Lung_Template" title="CAP - LUNG PATHOLOGY CASE SUMMARY">
+						<ChildItems>
+							<Section order="21" ID="15656.100004300" title="SPECIMEN">
+								<ChildItems>
+									<Question order="23" ID="15653.100004300" title="Specimen">
+										<ListField>
+											<List>
+												<ListItem order="26" ID="15677.100004300" title="Lung" />
+												<ListItem order="27" ID="33271.100004300" title="Lobe(s) of lung">
+													<ChildItems>
+														<Question order="29" ID="33355.100004300">
+															<ListField maxSelections="0">
+																<List>
+																	<ListItem order="32" ID="33356.100004300" title="Upper lobe" />
+																	<ListItem order="33" ID="33359.100004300" title="Middle lobe" />
+																	<ListItem order="34" ID="33365.100004300" title="Lower lobe" />
+																	<ListItem order="35" ID="33367.100004300" title="Mainstem bronchus" />
+																	<ListItem order="36" ID="33368.100004300" title="Other(s) (specify)">
+																		<Property name="Oth_37" type="reportText" order="37" val="{no text}" propName="Oth" />
+																		<ListItemResponseField name="Oth_38" order="38" responseRequired="true">
+																			<Response>
+																				<string name="Oth_40" order="40" maxLength="4000" />
+																			</Response>
+																		</ListItemResponseField>
+																	</ListItem>
+																	<ListItem order="41" ID="33369.100004300" title="Not specified" />
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem order="42" ID="15679.100004300" title="Bronchus (specify)">
+													<Property name="Bronchus_43" type="reportText" order="43" val="Bronchus" propName="Bronchus43" />
+													<ListItemResponseField name="Bronchus_44" order="44" responseRequired="true">
+														<Response>
+															<string name="Bronchus_46" order="46" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+												<ListItem order="47" ID="15680.100004300" title="Other (specify)">
+													<Property name="Oth_48" type="reportText" order="48" val="{no text}" propName="Oth48" />
+													<ListItemResponseField name="Oth_49" order="49" responseRequired="true">
+														<Response>
+															<string name="Oth_51" order="51" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+												<ListItem order="52" ID="15716.100004300" title="Not specified" />
+											</List>
+										</ListField>
+									</Question>
+									<Question order="53" ID="1685.100004300" title="Procedure">
+										<ListField>
+											<List>
+												<ListItem order="56" ID="1686.100004300" title="Major airway resection" />
+												<ListItem order="57" ID="1687.100004300" title="Wedge resection" />
+												<ListItem order="58" ID="1688.100004300" title="Segmentectomy" />
+												<ListItem order="59" ID="1689.100004300" title="Lobectomy" />
+												<ListItem order="60" ID="15717.100004300" title="Bilobectomy" />
+												<ListItem order="61" ID="1690.100004300" title="Pneumonectomy" />
+												<ListItem order="62" ID="1691.100004300" title="Other (specify)">
+													<Property name="Oth_63" type="reportText" order="63" val="{no text}" propName="Oth63" />
+													<ListItemResponseField name="Oth_64" order="64" responseRequired="true">
+														<Response>
+															<string name="Oth_66" order="66" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+												<ListItem order="67" ID="1692.100004300" title="Not specified" />
+											</List>
+										</ListField>
+									</Question>
+									<Question order="68" ID="1693.100004300" title="Specimen Laterality">
+										<ListField>
+											<List>
+												<ListItem order="71" ID="1694.100004300" title="Right" />
+												<ListItem order="72" ID="1695.100004300" title="Left" />
+												<ListItem order="73" ID="1696.100004300" title="Not specified" />
+											</List>
+										</ListField>
+									</Question>
+								</ChildItems>
+							</Section>
+							<Section order="74" ID="15657.100004300" title="TUMOR">
+								<ChildItems>
+									<Question order="76" ID="1697.100004300" title="Primary Tumor Site">
+										<ListField maxSelections="0">
+											<List>
+												<ListItem order="79" ID="1698.100004300" title="Upper lobe" />
+												<ListItem order="80" ID="1699.100004300" title="Middle lobe" />
+												<ListItem order="81" ID="1700.100004300" title="Lower lobe" />
+												<ListItem order="82" ID="20478.100004300" title="Main bronchus" />
+												<ListItem order="83" ID="1701.100004300" title="Other(s) (specify)">
+													<Property name="Oth_84" type="reportText" order="84" val="{no text}" propName="Oth84" />
+													<ListItemResponseField name="Oth_85" order="85" responseRequired="true">
+														<Response>
+															<string name="Oth_87" order="87" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+												<ListItem order="88" ID="1702.100004300" title="Not specified" />
+											</List>
+										</ListField>
+									</Question>
+									<Question order="89" ID="57833.100004300" title="Histologic Type (Note C)">
+										<Property type="reportText" order="90" val="Histologic Type " propName="HistologicType" />
+										<ListField>
+											<List>
+												<ListItem order="93" ID="1714.100004300" title="Adenocarcinoma">
+													<ChildItems>
+														<Question order="95" ID="33376.100004300">
+															<ListField>
+																<List>
+																	<ListItem order="98" ID="30020.100004300" title="Lepidic predominant" />
+																	<ListItem order="99" ID="30014.100004300" title="Acinar predominant" />
+																	<ListItem order="100" ID="30015.100004300" title="Papillary predominant" />
+																	<ListItem order="101" ID="30017.100004300" title="Micropapillary predominant" />
+																	<ListItem order="102" ID="30016.100004300" title="Solid predominant" />
+																	<ListItem order="103" ID="58171.100004300" title="Additional non-predominant adenocarcinoma histologic subtypes present (specify)">
+																		<Property type="reportText" order="104" val="Additional non-predominant adenocarcinoma histologic subtypes present" propName="104" />
+																		<ListItemResponseField order="105" responseRequired="true">
+																			<Response>
+																				<string order="107" maxLength="4000" />
+																			</Response>
+																		</ListItemResponseField>
+																	</ListItem>
+																	<ListItem order="108" ID="45121.100004300" title="+Spread through air spaces (STAS) present" mustImplement="false">
+																		<Property type="reportText" order="109" val="Spread through air spaces (STAS) present" propName="109" />
+																		<ListItemResponseField order="110">
+																			<Response>
+																				<string order="112" maxLength="4000" />
+																			</Response>
+																		</ListItemResponseField>
+																	</ListItem>
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem order="113" ID="34382.100004300" title="Invasive mucinous adenocarcinoma" />
+												<ListItem order="114" ID="33377.100004300" title="Mixed invasive mucinous and non-mucinous adenocarcinoma" />
+												<ListItem order="115" ID="33378.100004300" title="Colloid adenocarcinoma" />
+												<ListItem order="116" ID="15940.100004300" title="Fetal adenocarcinoma" />
+												<ListItem order="117" ID="30022.100004300" title="Enteric adenocarcinoma" />
+												<ListItem order="118" ID="30018.100004300" title="Minimally invasive adenocarcinoma">
+													<ChildItems>
+														<Question order="120" ID="51447.100004300">
+															<ListField>
+																<List>
+																	<ListItem order="123" ID="33384.100004300" title="Non-mucinous" />
+																	<ListItem order="124" ID="33386.100004300" title="Mucinous" />
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem order="125" ID="30019.100004300" title="Adenocarcinoma in situ (AIS)">
+													<ChildItems>
+														<Question order="127" ID="41268.100004300">
+															<ListField>
+																<List>
+																	<ListItem order="130" ID="33388.100004300" title="Non-mucinous" />
+																	<ListItem order="131" ID="33390.100004300" title="Mucinous" />
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem order="132" ID="1710.100004300" title="Squamous cell carcinoma">
+													<ChildItems>
+														<Question order="134" ID="43893.100004300">
+															<ListField>
+																<List>
+																	<ListItem order="137" ID="33379.100004300" title="Keratinizing squamous cell carcinoma" />
+																	<ListItem order="138" ID="33380.100004300" title="Non-keratinizing squamous cell carcinoma" />
+																	<ListItem order="139" ID="33381.100004300" title="Basaloid squamous cell carcinoma" />
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem order="140" ID="51278.100004300" title="Squamous cell carcinoma in situ (SCIS)" />
+												<ListItem order="141" ID="1712.100004300" title="Small cell carcinoma" />
+												<ListItem order="142" ID="1713.100004300" title="Combined small cell carcinoma (small cell carcinoma and non-small cell component)">
+													<ChildItems>
+														<Question order="144" ID="15721.100004300" title="Specify Type of Non-small Cell Carcinoma Component">
+															<Property name="Hist_NonSmallCellCa_Type_145" type="reportText" order="145" val="Type of Non-small Cell Carcinoma Component" propName="145" />
+															<ResponseField name="Hist_NonSmallCellCa_Type_146" order="146">
+																<Response>
+																	<string name="Hist_NonSmallCellCa_Type_148" order="148" maxLength="4000" />
+																</Response>
+															</ResponseField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem order="149" ID="1719.100004300" title="Large cell neuroendocrine carcinoma" />
+												<ListItem order="150" ID="58002.100004300" title="Combined large cell neuroendocrine carcinoma (LCNEC and other non-small cell component) &#x9;(specify type of other non-small cell carcinoma component)">
+													<Property type="reportText" order="151" val="]Combined large cell neuroendocrine carcinoma (LCNEC and other non-small cell component) &#x9;(type of other non-small cell carcinoma component)" propName="151" />
+													<ListItemResponseField order="152" responseRequired="true">
+														<Response>
+															<string order="154" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+												<ListItem order="155" ID="1723.100004300" title="Typical carcinoid tumor" />
+												<ListItem order="156" ID="1724.100004300" title="Atypical carcinoid tumor" />
+												<ListItem order="157" ID="1720.100004300" title="Large cell carcinoma" />
+												<ListItem order="158" ID="1722.100004300" title="Adenosquamous carcinoma" />
+												<ListItem order="159" ID="15950.100004300" title="Pleomorphic carcinoma" />
+												<ListItem order="160" ID="15949.100004300" title="Spindle cell carcinoma" />
+												<ListItem order="161" ID="15948.100004300" title="Giant cell carcinoma" />
+												<ListItem order="162" ID="15952.100004300" title="Carcinosarcoma" />
+												<ListItem order="163" ID="15953.100004300" title="Pulmonary blastoma" />
+												<ListItem order="164" ID="15731.100004300" title="Lymphoepithelioma-like carcinoma" />
+												<ListItem order="165" ID="33391.100004300" title="NUT carcinoma" />
+												<ListItem order="166" ID="1726.100004300" title="Mucoepidermoid carcinoma" />
+												<ListItem order="167" ID="1725.100004300" title="Adenoid cystic carcinoma" />
+												<ListItem order="168" ID="15951.100004300" title="Epithelial-myoepithelial carcinoma" />
+												<ListItem order="169" ID="1730.100004300" title="Carcinoma, type cannot be determined">
+													<ListItemResponseField name="Ca_NOS_170" order="170">
+														<Response>
+															<string name="Ca_NOS_172" order="172" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+												<ListItem order="173" ID="15728.100004300" title="Non-small cell carcinoma, subtype cannot be determined">
+													<ListItemResponseField name="Non_SmCellCa_Subtype_CBD_174" order="174">
+														<Response>
+															<string name="Non_SmCellCa_Subtype_CBD_176" order="176" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+												<ListItem order="177" ID="1729.100004300" title="Other histologic type not listed above  (specify)">
+													<Property name="Oth_178" type="reportText" order="178" val="{no text}" propName="Oth178" />
+													<ListItemResponseField name="Oth_179" order="179" responseRequired="true">
+														<Response>
+															<string name="Oth_181" order="181" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+											</List>
+										</ListField>
+										<ChildItems>
+											<Question order="183" ID="33392.100004300" title="Histologic Type Comments" mustImplement="false" minCard="0">
+												<ResponseField order="184">
+													<Response>
+														<string order="186" maxLength="4000" />
+													</Response>
+												</ResponseField>
+											</Question>
+										</ChildItems>
+									</Question>
+									<Question order="187" ID="1731.100004300" title="Histologic Grade (Note D)" mustImplement="false" minCard="0">
+										<Property name="Grade_188" type="reportText" order="188" val="Histologic Grade" propName="Grade188" />
+										<ListField>
+											<List>
+												<ListItem order="191" ID="1732.100004300" title="Not applicable" mustImplement="false">
+													<ListItemResponseField name="NA_192" order="192">
+														<Response>
+															<string name="NA_194" order="194" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+												<ListItem order="195" ID="1733.100004300" title="GX: Cannot be assessed" mustImplement="false">
+													<ListItemResponseField name="GX_196" order="196">
+														<Response>
+															<string name="GX_198" order="198" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+												<ListItem order="199" ID="1734.100004300" title="G1: Well differentiated" mustImplement="false" />
+												<ListItem order="200" ID="1735.100004300" title="G2: Moderately differentiated" mustImplement="false" />
+												<ListItem order="201" ID="1736.100004300" title="G3: Poorly differentiated" mustImplement="false" />
+												<ListItem order="202" ID="1737.100004300" title="G4: Undifferentiated" mustImplement="false" />
+												<ListItem order="203" ID="1738.100004300" title="Other (specify)" mustImplement="false">
+													<Property name="Oth_204" type="reportText" order="204" val="{no text}" propName="Oth204" />
+													<ListItemResponseField name="Oth_205" order="205" responseRequired="true">
+														<Response>
+															<string name="Oth_207" order="207" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+											</List>
+										</ListField>
+									</Question>
+									<Question order="270" ID="48407.100004300" title="Invasive Tumor Size (applies to nonmucinous adenocarcinoma only) (Note A)">
+										<Property name="Tum_Size_271" type="reportText" order="271" val="Invasive Tumor Size" propName="TumSize271" />
+										<ListField>
+											<List>
+												<ListItem order="274" ID="45705.100004300" title="Not applicable" omitWhenSelected="true" />
+												<ListItem order="275" ID="49804.100004300" title="Greatest dimension (cm)">
+													<Property name="TSize1_276" type="reportText" order="276" val="Greatest dimension" propName="TSize1_276" />
+													<ListItemResponseField name="TSize1_277" order="277">
+														<Response>
+															<string name="TSize1_280" order="280" maxLength="5" />
+														</Response>
+														<TextAfterResponse val="cm" />
+														<ResponseUnits val="cm" />
+													</ListItemResponseField>
+													<ChildItems>
+														<Question order="283" ID="45536.100004300" title="Additional Dimension (cm)" mustImplement="false" minCard="0">
+															<Property name="Tum_Add_Dim_284" type="reportText" order="284" val="Additional Dimension" propName="TumAddDim284" />
+															<ResponseField name="Tum_Add_Dim_285" order="285">
+																<Response>
+																	<string name="Tum_Add_Dim_288" order="288" maxLength="5" />
+																</Response>
+																<TextAfterResponse val="cm" />
+																<ResponseUnits val="cm" />
+															</ResponseField>
+														</Question>
+														<Question order="290" ID="56943.100004300" title="Additional Dimension (cm)" mustImplement="false" minCard="0">
+															<Property name="Tum_Add_Dim_291" type="reportText" order="291" val="Additional Dimension" propName="TumAddDim291" />
+															<ResponseField name="Tum_Add_Dim_292" order="292">
+																<Response>
+																	<string name="Tum_Add_Dim_295" order="295" maxLength="5" />
+																</Response>
+																<TextAfterResponse val="cm" />
+																<ResponseUnits val="cm" />
+															</ResponseField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem order="297" ID="59645.100004300" title="Cannot be determined">
+													<ListItemResponseField name="CBD_298" order="298">
+														<Response>
+															<string name="CBD_300" order="300" maxLength="4000" />
+														</Response>
+													</ListItemResponseField>
+												</ListItem>
+											</List>
+										</ListField>
+									</Question>
+									<Question order="301" ID="46764.100004300" title="Tumor Focality (Note B)">
+										<Property type="reportText" order="302" val="Tumor Focality" propName="302" />
+										<ListField>
+											<List>
+												<ListItem order="305" ID="15688.100004300" title="Single tumor" />
+												<ListItem order="306" ID="41852.100004300" title="Separate tumor nodules of same histopathologic type (intrapulmonary metastases) in same lobe" />
+												<ListItem order="307" ID="53903.100004300" title="Separate tumor nodules of same histopathologic type (intrapulmonary metastases) in different lobes" />
+												<ListItem order="308" ID="33371.100004300" title="Synchronous primary tumors in same lobe" />
+												<ListItem order="309" ID="33374.100004300" title="Synchronous primary tumors in different lobes" />
+												<ListItem order="310" ID="40853.100004300" title="Multifocal lung adenocarcinoma with lepidic features" />
+												<ListItem order="311" ID="55300.100004300" title="Diffuse pneumonic-type adenocarcinoma" />
+												<ListItem order="312" ID="15689.100004300" title="Cannot be determined" />
+											</List>
+										</ListField>
+									</Question>
+									<Section order="313" ID="15659.100004300" title="Tumor Extent" minCard="0">
+										<ChildItems>
+											<Question order="315" ID="15671.100004300" title="Visceral Pleura Invasion (Note E)" minCard="0">
+												<Property name="Visceral_Pleura_Inv_316" type="reportText" propName="316" order="316" val="Visceral Pleura Invasion" />
+												<ListField>
+													<List>
+														<ListItem order="319" ID="15673.100004300" title="Not identified" />
+														<ListItem order="320" ID="15674.100004300" title="Present" />
+														<ListItem order="321" ID="15675.100004300" title="Cannot be determined">
+															<ListItemResponseField name="Indeterminate_322" order="322">
+																<Response>
+																	<string name="Indeterminate_324" order="324" maxLength="4000" />
+																</Response>
+															</ListItemResponseField>
+														</ListItem>
+													</List>
+												</ListField>
+											</Question>
+											<Question order="325" ID="43724.100004300" title="Tumor Extension (Note F)">
+												<Property type="reportText" order="326" val="Tumor Extension" propName="326" />
+												<ListField maxSelections="0">
+													<List>
+														<ListItem order="329" ID="15676.100004300" title="Not applicable" selectionDeselectsSiblings="true">
+															<ListItemResponseField name="NA_330" order="330">
+																<Response>
+																	<string name="NA_332" order="332" maxLength="4000" />
+																</Response>
+															</ListItemResponseField>
+														</ListItem>
+														<ListItem order="333" ID="1775.100004300" title="Not identified" selectionDeselectsSiblings="true" />
+														<ListItem order="334" ID="15734.100004300" title="Superficial spreading tumor with invasive component limited to bronchial wall" />
+														<ListItem order="335" ID="48576.100004300" title="Tumor involves main bronchus without involvement of the carina" />
+														<ListItem order="336" ID="15735.100004300" title="Parietal pleura" />
+														<ListItem order="337" ID="1776.100004300" title="Chest wall">
+															<ChildItems>
+																<Question order="339" ID="15954.100004300" title="Specify Involved Structure(s)" mustImplement="false" minCard="0">
+																	<Property name="Spfy_ChestWall_Ext_340" propName="350" type="reportText" order="340" val="Involved Structure(s)" />
+																	<ResponseField name="Spfy_ChestWall_Ext_341" order="341">
+																		<Response>
+																			<string name="Spfy_ChestWall_Ext_343" order="343" maxLength="4000" />
+																		</Response>
+																	</ResponseField>
+																</Question>
+															</ChildItems>
+														</ListItem>
+														<ListItem order="344" ID="15956.100004300" title="Phrenic nerve" />
+														<ListItem order="345" ID="1780.100004300" title="Parietal pericardium" />
+														<ListItem order="346" ID="1777.100004300" title="Diaphragm" />
+														<ListItem order="347" ID="1783.100004300" title="Mediastinum">
+															<ChildItems>
+																<Question order="349" ID="15957.100004300" title="Specify Involved Structure(s)" mustImplement="false" minCard="0">
+																	<Property name="Mediastinum_Ext_Loc_350" propName="350" type="reportText" order="350" val="Involved Structure(s)" />
+																	<ResponseField name="Mediastinum_Ext_Loc_351" order="351">
+																		<Response>
+																			<string name="Mediastinum_Ext_Loc_353" order="353" maxLength="4000" />
+																		</Response>
+																	</ResponseField>
+																</Question>
+															</ChildItems>
+														</ListItem>
+														<ListItem order="354" ID="1784.100004300" title="Heart" />
+														<ListItem order="355" ID="1785.100004300" title="Great vessels" />
+														<ListItem order="356" ID="15958.100004300" title="Trachea" />
+														<ListItem order="357" ID="42665.100004300" title="Recurrent laryngeal nerve" />
+														<ListItem order="358" ID="15959.100004300" title="Esophagus" />
+														<ListItem order="359" ID="15960.100004300" title="Vertebral body" />
+														<ListItem order="360" ID="15961.100004300" title="Carina" />
+														<ListItem order="361" ID="1786.100004300" title="Other (specify)">
+															<Property name="Oth_362" type="reportText" propName="362" order="362" val="{no text}" />
+															<ListItemResponseField name="Oth_363" order="363" responseRequired="true">
+																<Response>
+																	<string name="Oth_365" order="365" maxLength="4000" />
+																</Response>
+															</ListItemResponseField>
+														</ListItem>
+													</List>
+												</ListField>
+											</Question>
+										</ChildItems>
+									</Section>
+									<Section order="366" ID="1708.100004300" title="Accessory Tumor Findings">
+										<ChildItems>
+											<Question order="377" ID="1795.100004300" title="Lymph-Vascular Invasion (Note J)">
+												<Property name="LVI_378" type="reportText" propName="378" order="378" val="Lymph-Vascular Invasion" />
+												<ListField>
+													<List>
+														<ListItem order="381" ID="1796.100004300" title="Not identified" />
+														<ListItem order="382" ID="1797.100004300" title="Present">
+															<ChildItems>
+																<Question order="384" ID="30008.100004300" mustImplement="false" minCard="0">
+																	<ListField maxSelections="0">
+																		<List>
+																			<ListItem order="387" ID="30009.100004300" title="Lymphatic" mustImplement="false" />
+																			<ListItem order="388" ID="30010.100004300" title="Arterial" mustImplement="false" />
+																			<ListItem order="389" ID="30011.100004300" title="Venous" mustImplement="false" />
+																		</List>
+																	</ListField>
+																</Question>
+															</ChildItems>
+														</ListItem>
+														<ListItem order="390" ID="1798.100004300" title="Cannot be determined">
+															<ListItemResponseField name="Indeterminate_391" order="391">
+																<Response>
+																	<string name="Indeterminate_393" order="393" maxLength="4000" />
+																</Response>
+															</ListItemResponseField>
+														</ListItem>
+													</List>
+												</ListField>
+											</Question>
+										</ChildItems>
+									</Section>
+								</ChildItems>
+							</Section>
+							<Section order="674" ID="1739.100004300" title="STAGE (pTNM, AJCC 8th ed.) (Note L)">
+								<Property type="reportText" order="675" val="STAGE (pTNM)" propName="675" />
+								<ChildItems>
+									<Question order="689" ID="52260.100004300" title="Primary Tumor (pT)">
+										<ListField>
+											<List>
+												<ListItem order="692" ID="1741.100004300" title="pTX: Primary tumor cannot be assessed, or tumor proven by presence of malignant cells in sputum or bronchial washings but not visualized by imaging or bronchoscopy">
+													<Property name="pTX_693" type="reportText" order="693" val="pTX" propName="693" />
+												</ListItem>
+												<ListItem order="694" ID="1742.100004300" title="pT0: No evidence of primary tumor">
+													<Property name="pT0_695" type="reportText" order="695" val="pT0" propName="695" />
+												</ListItem>
+												<ListItem order="696" ID="40209.100004300" title="pTis: Carcinoma in situ / Squamous cell carcinoma in situ (SCIS) / Adenocarcinoma in situ (AIS): adenocarcinoma with pure lepidic pattern, &lt;= 3 cm in greatest dimension">
+													<Property type="reportText" order="697" val="pTis" propName="697" />
+												</ListItem>
+												<DisplayedItem order="698" ID="56359.100004300" title="pT1: Tumor &lt;= 3 cm in greatest dimension, surrounded by lung or visceral pleura, without bronchoscopic evidence of invasion more proximal than the lobar bronchus (i.e., not in the main bronchus)">
+													<Property type="reportText" order="699" val="{no text}" propName="699" />
+												</DisplayedItem>
+												<ListItem order="700" ID="53734.100004300" title="pTmi: Minimally invasive adenocarcinoma: adenocarcinoma (&lt;= 3 cm in greatest dimension) with a predominantly lepidic pattern and &lt;= 5 mm invasion in greatest dimension">
+													<Property type="reportText" order="701" val="pTmi" propName="701" />
+												</ListItem>
+												<ListItem order="702" ID="51616.100004300" title="pT1a: Tumor &lt;= 1 cm in greatest dimension. A superficial, spreading tumor of any size whose invasive component is limited to the bronchial wall and may extend proximal to the main bronchus also is classified as T1a, but these tumors are uncommon">
+													<Property type="reportText" order="703" val="pT1a" propName="703" />
+												</ListItem>
+												<ListItem order="704" ID="44477.100004300" title="pT1b: Tumor &gt; 1 cm but &lt;= 2 cm in greatest dimension">
+													<Property type="reportText" order="705" val="pT1b" propName="705" />
+												</ListItem>
+												<ListItem order="706" ID="42081.100004300" title="pT1c: Tumor &gt; 2 cm but &lt;= 3 cm in greatest dimension">
+													<Property type="reportText" order="707" val="pT1c" propName="707" />
+												</ListItem>
+												<DisplayedItem order="708" ID="41191.100004300" title="pT2: Tumor &gt; 3 cm but &lt;= 5 cm or having any of the following features: &#x9;Involves the main bronchus regardless of distance to the carina, but without involvement of the carina; OR Invades visceral pleura (PL1 or PL2); OR Associated with atelectasis or obstructive pneumonitis that extends to the hilar region, involving part or all of the lung">
+													<Property type="reportText" order="709" val="{no text}" propName="709" />
+												</DisplayedItem>
+												<DisplayedItem order="710" ID="54962.100004300" title="Note: T2 tumors with these features are classified as T2a if &lt;= 4 cm or if the size cannot be determined and T2b if &gt; 4 cm but &lt;= 5 cm.">
+													<Property type="reportText" order="711" val="{no text}" propName="711" />
+												</DisplayedItem>
+												<ListItem order="712" ID="54487.100004300" title="pT2a:&#x9; Tumor &gt; 3 cm, but &lt;= 4 cm in greatest dimension">
+													<Property type="reportText" order="713" val="pT2a" propName="713" />
+												</ListItem>
+												<ListItem order="714" ID="46349.100004300" title="pT2b:&#x9; Tumor &gt; 4 cm, but &lt;= 5 cm in greatest dimension">
+													<Property type="reportText" order="715" val="pT2b" propName="715" />
+												</ListItem>
+												<ListItem order="716" ID="45874.100004300" title="pT3:&#x9; Tumor &gt; 5 cm but &lt;= 7 cm in greatest dimension; or tumor of any size directly invading any of the following: parietal pleura (PL3) chest wall (including superior sulcus tumors),  phrenic nerve, parietal pericardium; or separate tumor nodule(s) in the same lobe as the primary">
+													<Property type="reportText" order="717" val="pT3" propName="717" />
+												</ListItem>
+												<ListItem order="718" ID="56528.100004300" title="pT4: &#x9;Tumor &gt; 7 cm in greatest dimension; or tumor of any size invading one or more of the following: diaphragm, mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body or carina; or separate tumor nodule(s) in an ipsilateral lobe different from that of the primary (Note A)">
+													<Property type="reportText" order="719" val="pT4" propName="719" />
+												</ListItem>
+											</List>
+										</ListField>
+									</Question>
+									<Question order="720" ID="1748.100004300" title="Regional Lymph Nodes (pN)">
+										<ListField>
+											<List>
+												<ListItem order="723" ID="1749.100004300" title="pNX: Regional lymph nodes cannot be assessed">
+													<Property name="pNX_724" type="reportText" order="724" val="pNX" propName="724" />
+												</ListItem>
+												<ListItem order="725" ID="1750.100004300" title="pN0: No regional lymph node metastasis">
+													<Property name="pN0_726" type="reportText" order="726" val="pN0" propName="726" />
+												</ListItem>
+												<ListItem order="727" ID="1751.100004300" title="pN1: Metastasis in ipsilateral peribronchial and / or ipsilateral hilar lymph nodes, and  intrapulmonary nodes including involvement by direct extension">
+													<Property name="pN1_728" type="reportText" order="728" val="pN1" propName="728" />
+												</ListItem>
+												<ListItem order="729" ID="1752.100004300" title="pN2: Metastasis in ipsilateral mediastinal and / or subcarinal lymph node(s)">
+													<Property name="pN2_730" type="reportText" order="730" val="pN2" propName="730" />
+												</ListItem>
+												<ListItem order="731" ID="1753.100004300" title="pN3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene or supraclavicular lymph node(s)">
+													<Property name="pN3_732" type="reportText" order="732" val="pN3" propName="732" />
+												</ListItem>
+											</List>
+										</ListField>
+									</Question>
+									<Question order="733" ID="47348.100004300" title="Distant Metastases (pM)">
+										<ListField>
+											<List>
+												<ListItem order="736" ID="15998.100004300" title="Not applicable - pM cannot be determined from the submitted specimen(s)" omitWhenSelected="true">
+													<Property name="NA_737" type="reportText" propName="737" order="737" val="Not applicable - pM cannot be determined from the submitted specimen(s)" />
+												</ListItem>
+												<ListItem order="738" ID="27248.100004300" title="pM1: Distant metastasis">
+													<Property name="pM1_739" type="reportText" order="739" propName="739" val="pM1" />
+												</ListItem>
+												<DisplayedItem order="740" ID="39210.100004300" title="# Most pleural (pericardial) effusions with lung cancer are a result of the tumor. In a few patients, however, multiple microscopic examinations of pleural (pericardial) fluid are negative for tumor, and the fluid is nonbloody and not an exudate. If these elements and clinical judgment dictate that the effusion is not related to the tumor, the effusion should be excluded as a staging descriptor.">
+													<Property type="reportText" order="741" val="{no text}" propName="741" />
+												</DisplayedItem>
+												<ListItem order="742" ID="47746.100004300" title="pM1a: Separate tumor nodule(s) in contralateral lobe; tumor with pleural or pericardial nodules or malignant pleural (or pericardial) effusion#">
+													<Property type="reportText" order="743" val="pM1a" propName="743" />
+												</ListItem>
+												<ListItem order="744" ID="47823.100004300" title="pM1b: Single extrathoracic metastasis in a single organ (including involvement of a single nonregional node)">
+													<Property type="reportText" order="745" val="pM1b" propName="745" />
+												</ListItem>
+												<ListItem order="746" ID="45951.100004300" title="pM1c:&#x9; Multiple extrathoracic metastases in single organ or in multiple organs">
+													<Property type="reportText" order="747" val="pM1c" propName="747" />
+												</ListItem>
+											</List>
+										</ListField>
+										<ChildItems>
+											<Question order="749" ID="16013.100004300" title="Specify Site(s), if known" minCard="0">
+												<Property name="pM_Loc_750" type="reportText" order="750" val="Site(s)" propName="750" />
+												<ResponseField name="pM_Loc_751" order="751">
+													<Response>
+														<string name="pM_Loc_753" order="753" maxLength="4000" />
+													</Response>
+												</ResponseField>
+											</Question>
+										</ChildItems>
+									</Question>
+								</ChildItems>
+							</Section>
+						</ChildItems>
+					</Section>
+					<Question order="789" ID="1804.100004300" title="Comment(s)" mustImplement="false" minCard="0">
+						<ResponseField name="Comments_790" order="790">
+							<Response>
+								<string name="Comments_792" order="792" maxLength="4000" />
+							</Response>
+						</ResponseField>
+					</Question>
+				</ChildItems>
+			</Body>
+			<Footer styleClass="left" ID="Footer.119.1000043">
+				<Property propName="copyright2" type="meta" styleClass="copyright" order="794" val="(c) 2017 College of American Pathologists.  All rights reserved.  License required for use." />
+			</Footer>
+		</FormDesign>
+	</XMLPackage>
+</SDCPackage>

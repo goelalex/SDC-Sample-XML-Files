@@ -535,7 +535,7 @@
 											<Property name="p_rptTxt_22897_1" order="335" propName="reportText" val="Not applicable" />
 											<ListItemResponseField name="lirf_22897_2" order="336">
 												<Response name="rsp_22897_3" order="337">
-													<string name="str_22897_4" order="338" maxLength="4000" />
+													<string name="str_22897_4" order="338" maxLength="4000"  />
 												</Response>
 											</ListItemResponseField>
 										</ListItem>
