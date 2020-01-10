@@ -27,52 +27,49 @@
 									<Question name="Q_77471" ID="77471.100004300" title="Report Date">
 										<ResponseField name="rf_77471_1">
 											<Response name="rsp_77471_2">
-												<date name="date_77471_3" />
+												<string name="date_77471_3" val="2020-01-16"/>
 											</Response>
 										</ResponseField>
 									</Question>
 									<Question name="Q_77472" ID="77472.100004300" title="Report Completed by">
 										<ResponseField name="rf_77472_1">
 											<Response name="rsp_77472_2">
-												<string name="str_77472_3" />
+												<string name="str_77472_3" val="Some Assistant"/>
 											</Response>
 										</ResponseField>
 									</Question>
 									<Question name="Q_77473" ID="77473.100004300" title="Provider Last Name">
 										<ResponseField name="rf_77473_1">
 											<Response name="rsp_77473_2">
-												<string name="str_77473_3" />
+												<string name="str_77473_3" val="Kukreti"/>
 											</Response>
 										</ResponseField>
 									</Question>
 									<Question name="Q_77474" ID="77474.100004300" title="Provider First Name">
 										<ResponseField name="rf_77474_1">
 											<Response name="rsp_77474_2">
-												<string name="str_77474_3" />
+												<string name="str_77474_3" val="Vishal"/>
 											</Response>
 										</ResponseField>
 									</Question>
-									<Question name="Q_77475" ID="77475.100004300" title="Provider ID">
-										<ResponseField name="rf_77475_1">
-											<Response name="rsp_77475_2">
-												<string name="str_77475_3" />
-											</Response>
-										</ResponseField>
-									</Question>
-									<Question name="Q_76442" ID="76442.100004300" title="Assistant Last Name" minCard="0">
-										<ResponseField name="rf_76442_1">
-											<Response name="rsp_76442_2">
-												<string name="str_76442_3" />
-											</Response>
-										</ResponseField>
-									</Question>
-									<Question name="Q_76443" ID="76443.100004300" title="Assistant First Name" minCard="0">
-										<ResponseField name="rf_76443_1">
-											<Response name="rsp_76443_2">
-												<string name="str_76443_3" />
-											</Response>
-										</ResponseField>
-									</Question>
+									<Section ID="S_76442" minCard="0" maxCard="0">
+										<ChildItems>
+											<Question name="Q_76442" ID="76442.100004300" title="Assistant Last Name" minCard="0">
+												<ResponseField name="rf_76442_1">
+													<Response name="rsp_76442_2">
+														<string name="str_76442_3" val="Bedford"/>
+													</Response>
+												</ResponseField>
+											</Question>
+											<Question name="Q_76443" ID="76443.100004300" title="Assistant First Name" minCard="0">
+												<ResponseField name="rf_76443_1">
+													<Response name="rsp_76443_2">
+														<string name="str_76443_3" val="Beivan"/>
+													</Response>
+												</ResponseField>
+											</Question>
+										</ChildItems>
+									</Section>
 								</ChildItems>
 							</Section>
 							<Section name="S_76218" ID="76218.100004300" title="Patient Information">
@@ -80,42 +77,42 @@
 									<Question name="Q_76428" ID="76428.100004300" title="Patient's Last Name">
 										<ResponseField name="rf_76428_1">
 											<Response name="rsp_76428_2">
-												<string name="str_76428_3" />
+												<string name="str_76428_3" val="Kwan"/>
 											</Response>
 										</ResponseField>
 									</Question>
 									<Question name="Q_76432" ID="76432.100004300" title="Patient's First Name">
 										<ResponseField name="rf_76432_1">
 											<Response name="rsp_76432_2">
-												<string name="str_76432_3" />
+												<string name="str_76432_3" val="Winter"/>
 											</Response>
 										</ResponseField>
 									</Question>
 									<Question name="Q_76433" ID="76433.100004300" title="Patient's Middle Name" minCard="0">
 										<ResponseField name="rf_76433_1">
 											<Response name="rsp_76433_2">
-												<string name="str_76433_3" />
+												<string name="str_76433_3" val="M"/>
 											</Response>
 										</ResponseField>
 									</Question>
 									<Question name="Q_76434" ID="76434.100004300" title="Patient's Date of Birth">
 										<ResponseField name="rf_76434_1">
 											<Response name="rsp_76434_2">
-												<date name="date_76434_3" />
+												<date name="date_76434_3" val="1956-01-09"/>
 											</Response>
 										</ResponseField>
 									</Question>
 									<Question name="Q_76435" ID="76435.100004300" title="Patient ID">
 										<ResponseField name="rf_76435_1">
 											<Response name="rsp_76435_2">
-												<string name="str_76435_3" />
+												<string name="str_76435_3" val="21098147015F"/>
 											</Response>
 										</ResponseField>
 									</Question>
 									<Question name="Q_76427" ID="76427.100004300" title="Patient Hospital Number">
 										<ResponseField name="rf_76427_1">
 											<Response name="rsp_76427_2">
-												<string name="str_76427_3" />
+												<string name="str_76427_3" val="1654987464654T"/>
 											</Response>
 										</ResponseField>
 									</Question>
@@ -155,7 +152,7 @@
 										<ListItem name="LI_76664" ID="76664.100004300" title="Lymphadenopathy " />
 										<ListItem name="LI_77357" ID="77357.100004300" title="Solitary pulmonary nodule" />
 										<ListItem name="LI_76665" ID="76665.100004300" title="Other ">
-											<ChildItems name="ch_76665_1">
+											<ChildItems name="ch_79665_1">
 												<Question name="Q_77557" ID="77557.100004300" title="Specify">
 													<ResponseField name="rf_77557_1">
 														<Response name="rsp_77557_2">
@@ -186,6 +183,42 @@
 						<ChildItems name="ch_76205_1">
 							<Section name="S_76458" ID="76458.100004300" title="Clinical Findings">
 								<ChildItems name="ch_76458_1">
+									<Question name="Q_76451" ID="76451.100004300" title="Was Pre-operative chemotherapy given for this malignancy">
+										<ListField name="lf_76451_1">
+											<List name="lst_76451_2">
+												<ListItem name="LI_76651_0" ID="76648.100004300" title="Yes" >
+													<ChildItems name="ch_76661_1">
+														<Question name="Q_76651_1" ID="77557.100004300" title="Optional Comments" minCard="0">
+															<ResponseField name="rf_77559_1">
+																<Response name="rsp_77559_2">
+																	<string name="str_77559_3" />
+																</Response>
+															</ResponseField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem name="LI_76651_1" ID="76649.100004300" title="No" />
+											</List>
+										</ListField>
+									</Question>
+									<Question name="Q_76453" ID="76451.100004300" title="Was Pre-operative radiotherapy given for this malignancy">
+										<ListField name="lf_76453_1">
+											<List name="lst_76453_2">
+												<ListItem name="LI_76653_0" ID="76648.100004300" title="Yes">
+													<ChildItems name="ch_76665_1">
+														<Question name="Q_77558" ID="77558.100004300" title="Optional Comments" minCard="0">
+															<ResponseField name="rf_77558_1">
+																<Response name="rsp_77558_2">
+																	<string name="str_77558_3" />
+																</Response>
+															</ResponseField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem name="LI_76653_1" ID="76649.100004300" title="No" />
+											</List>
+										</ListField>
+									</Question>
 									<Question name="Q_76486" ID="76486.100004300" title="Patient discussed at multi-disciplinary meeting" minCard="0">
 										<ListField name="lf_76486_1">
 											<List name="lst_76486_2">
@@ -212,33 +245,6 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76494" ID="76494.100004300" title="Pre-operative biopsy/ staging?">
-										<ListField name="lf_76494_1" maxSelections="0">
-											<List name="lst_76494_2">
-												<ListItem name="LI_76791" ID="76791.100004300" title="Bronchoscopy " />
-												<ListItem name="LI_76793" ID="76793.100004300" title="EBUS" />
-												<ListItem name="LI_76794" ID="76794.100004300" title="VATS biopsy " />
-												<ListItem name="LI_76795" ID="76795.100004300" title="Percutaneous " />
-												<ListItem name="LI_76799" ID="76799.100004300" title="Transthoracic Needle" />
-												<ListItem name="LI_76800" ID="76800.100004300" title="Biopsy " />
-												<ListItem name="LI_76796" ID="76796.100004300" title="Mediastinoscopy " />
-												<ListItem name="LI_76797" ID="76797.100004300" title="Pleural Fluid Analysis " />
-												<ListItem name="LI_76798" ID="76798.100004300" title="Endoscopic Ultrasound (EUS)" />
-												<ListItem name="LI_76801" ID="76801.100004300" title="Other ">
-													<ChildItems name="ch_76801_1">
-														<Question name="Q_77610" ID="77610.100004300" title="Specify">
-															<ResponseField name="rf_77610_1">
-																<Response name="rsp_77610_2">
-																	<string name="str_77610_3" />
-																</Response>
-															</ResponseField>
-														</Question>
-													</ChildItems>
-												</ListItem>
-												<ListItem name="LI_76802" ID="76802.100004300" title="None" selectionDeselectsSiblings="1" />
-											</List>
-										</ListField>
-									</Question>
 									<Question name="Q_76495" ID="76495.100004300" title="Pathology Diagnosis Comments">
 										<ResponseField name="rf_76495_1">
 											<Response name="rsp_76495_2">
@@ -250,7 +256,7 @@
 							</Section>
 							<Section name="S_Marg_Status_76177" ID="76177.100004300" title="Clinical Stage">
 								<ChildItems name="ch_76177_1">
-									<Question name="Q_76628" ID="76628.100004300" title="T Stage">
+									<Question name="Q_76628" ID="76628.100004300" title="cT Stage" minCard="0">
 										<ListField name="lf_76628_1">
 											<List name="lst_76628_2">
 												<ListItem name="LI_76803" ID="76803.100004300" title="Tx  Primary tumor cannot&#xA;be assessed, or tumor&#xA;proven by the presence of&#xA;malignant cells in  sputum&#xA;or bronchial washings  but&#xA;not visualized by imaging  or&#xA;bronchoscopy" />
@@ -267,7 +273,7 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76629" ID="76629.100004300" title="N Stage">
+									<Question name="Q_76629" ID="76629.100004300" title="cN Stage" minCard="0">
 										<ListField name="lf_76629_1">
 											<List name="lst_76629_2">
 												<ListItem name="LI_76814" ID="76814.100004300" title="Nx  Regional lymph nodes cannot be assessed" />
@@ -278,7 +284,7 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76630" ID="76630.100004300" title="M Stage">
+									<Question name="Q_76630" ID="76630.100004300" title="cM Stage" minCard="0">
 										<ListField name="lf_76630_1">
 											<List name="lst_76630_2">
 												<ListItem name="LI_76819" ID="76819.100004300" title="M0  No distant metastasis" />
@@ -288,29 +294,6 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76631" ID="76631.100004300" title="Clinical Stage">
-										<!-- are we removing clinical stage?  -->
-										<ListField name="lf_76631_1">
-											<List name="lst_76631_2">
-												<ListItem name="LI_76823" ID="76823.100004300" title="Occult Carcinoma" />
-												<ListItem name="LI_76824" ID="76824.100004300" title="Stage 0" />
-												<ListItem name="LI_76825" ID="76825.100004300" title="Stage IA" />
-												<ListItem name="LI_76826" ID="76826.100004300" title="Stage IB" />
-												<ListItem name="LI_76827" ID="76827.100004300" title="Stage IIA" />
-												<ListItem name="LI_76828" ID="76828.100004300" title="Stage IIIA" />
-												<ListItem name="LI_76829" ID="76829.100004300" title="Stage IIIB" />
-												<ListItem name="LI_76830" ID="76830.100004300" title="Stage IV" />
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76498" ID="76498.100004300" title="Clinical Staging Version (AJCC)" minCard="0">
-										<!-- we need permission for this I think -->
-										<ResponseField name="rf_76498_1">
-											<Response name="rsp_76498_2">
-												<string name="str_76498_3" />
-											</Response>
-										</ResponseField>
-									</Question>
 								</ChildItems>
 							</Section>
 						</ChildItems>
@@ -319,6 +302,25 @@
 						<ChildItems name="ch_76069_1">
 							<Section name="S_76418" ID="76418.100004300" title="Sign-In and Briefing" minCard="0">
 								<ChildItems name="ch_76418_1">
+									<Question name="Q_76619" ID="76619.100004300" title="Procedure Type" minCard="0">
+										<ListField name="lf_76619_1">
+											<List name="lst_76619_2">
+												<ListItem name="LI_77615_0" ID="77515.100004300" title="Robotic Technology" />
+												<ListItem name="LI_77615_1" ID="77516.100004300" title="Video-assisted thoracoscopic surgery (VATS)" />
+												<ListItem name="LI_77615_3" ID="77517.100004300" title="Other">
+													<ChildItems>
+														<Question ID="QI_77615_0" title="Specify">
+															<ResponseField >
+															<Response>
+																<string/>
+															</Response>
+															</ResponseField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+											</List>
+										</ListField>
+									</Question>
 									<Question name="Q_76519" ID="76519.100004300" title="Surgical Safety Checklist performed?" minCard="0">
 										<ListField name="lf_76519_1">
 											<List name="lst_76519_2">
@@ -378,11 +380,22 @@
 										</ListField>
 									</Question>
 									<Question name="Q_76524" ID="76524.100004300" title="Intervention 1 anesthetic technique">
-										<ResponseField>
-											<Response>
-												<string/>
-											</Response>
-										</ResponseField>
+										<ListField>
+											<List>
+												<ListItem name="LI_76524_0" ID="765240.100004300" title="1 - General" />
+												<ListItem name="LI_76524_1" ID="765241.100004300" title="2 -  Spinal" />
+												<ListItem name="LI_76524_2" ID="765241.100004300" title="3 - Epidural" />
+												<ListItem name="LI_76524_3" ID="765241.100004300" title="4 - Combined general and regional central /neuraxial (epidural or spinal)" />
+												<ListItem name="LI_76524_4" ID="765241.100004300" title="5 - Other nerve block (including regional peripheral anaesthesia)" />
+												<ListItem name="LI_76524_5" ID="765241.100004300" title="6 - Monitored anaesthesia care (monitoring by an anaesthetist giving sedation or analgesia, with or " />
+												<ListItem name="LI_76524_6" ID="765241.100004300" title="7 - Local anaesthesia (no anaesthetist present)" />
+												<ListItem name="LI_76524_7" ID="765241.100004300" title="8 - No anaesthetic or pre-admit interventions" />
+												<ListItem name="LI_76524_8" ID="765241.100004300" title="9 - Unmonitored anaesthesia" />
+												<ListItem name="LI_76524_9" ID="765241.100004300" title="0 - OOH procedures only" />
+												<ListItem name="LI_76524_10" ID="765241.100004300" title="C - combined spinal and epidural anaesthetic (CSE)" />
+												<ListItem name="LI_76524_11" ID="765241.100004300" title="U - Unknown anesthetic - when the type of anaesthetic given is not specified. " />
+											</List>
+										</ListField>
 									</Question>
 									<Question name="Q_76534" ID="76534.100004300" title="Use of warming" minCard="0">
 										<ListField name="lf_76534_1">
@@ -414,7 +427,7 @@
 											</List>
 										</ListField>
 									</Question>									
-									<Question name="Q_76531" ID="76531.100004300" title="Regional Pain Control">
+									<Question name="Q_76531" ID="76531.100004300" title="Regional Pain Control" minCard="0">
 										<ListField name="lf_76531_1" maxSelections="0">
 											<List name="lst_76531_2">
 												<ListItem name="LI_76874" ID="76874.100004300" title="Wound Infiltration" />
@@ -431,7 +444,7 @@
 							<Section name="S_76417" ID="76417.100004300" title="Operative Details">
 								<ChildItems name="ch_76417_1">
 									<Question name="Q_76500" ID="76500.100004300" title="Side of Surgery">
-										<ListField name="lf_76500_1">
+										<ListField name="lf_76500_1" maxSelections="0">
 											<List name="lst_76500_2">
 												<ListItem name="LI_76535" ID="76535.100004300" title="Right Side" />
 												<ListItem name="LI_76538" ID="76538.100004300" title="Left Side" />
@@ -444,27 +457,7 @@
 									<Question name="Q_76890" ID="76890.100004300" title="Describe Surgical Approach">
 										<ListField name="lf_76890_1" maxSelections="0">
 											<List name="lst_76890_2">
-												<ListItem name="LI_76891" ID="76891.100004300" title="VATS">
-													<ChildItems name="ch_76891_1">
-														<Question name="Q_77361" ID="77361.100004300" title="Access incision used">
-															<!-- if VATS selected in surgical approach then enable question -->
-															<ListField name="lf_77361_1">
-																<List name="lst_77361_2">
-																	<ListItem name="LI_77498" ID="77498.100004300" title="Yes" />
-																	<ListItem name="LI_77499" ID="77499.100004300" title="No" />
-																</List>
-															</ListField>
-														</Question>
-														<Question name="Q_77360" ID="77360.100004300" title="Number of Ports used:">
-															<!-- if VATS selected in surgical approach then enable question -->
-															<ResponseField name="rf_77360_1">
-																<Response name="rsp_77360_2">
-																	<string name="str_77360_3" />
-																</Response>
-															</ResponseField>
-														</Question>
-													</ChildItems>
-												</ListItem>
+												<ListItem name="LI_76891" ID="76891.100004300" title="VATS"/>
 												<ListItem name="LI_76892" ID="76892.100004300" title="VATS converted to Thoracotomy Test" />
 												<ListItem name="LI_76893" ID="76893.100004300" title="Thoracotomy  posterolateral divide serratus and latissimus" />
 												<ListItem name="LI_76894" ID="76894.100004300" title="Thoracotomy  posterolateral divide latissimus" />
@@ -493,276 +486,455 @@
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76545" ID="76545.100004300" title="Procedures Performed - Diaphragm/Phrenic Nerve">
-										<ListField name="lf_76545_1" maxSelections="0">
-											<List name="lst_76545_2">
-												<ListItem name="LI_76915" ID="76915.100004300" title="Not Applicable" />
-												<ListItem name="LI_76916" ID="76916.100004300" title="Resection of Diaphragm " />
-												<ListItem name="LI_76918" ID="76918.100004300" title="Primary repair of diaphragm " />
-												<ListItem name="LI_76917" ID="76917.100004300" title="Reconstruction of diaphragm" />
-												<ListItem name="LI_76919" ID="76919.100004300" title="Phrenic nerve resected" />
-												<ListItem name="LI_76920" ID="76920.100004300" title="Phrenic nerve crushed" />
-												<ListItem name="LI_76921" ID="76921.100004300" title="Other">
-													<ChildItems name="ch_76921_1">
-														<Question name="Q_77616" ID="77616.100004300" title="Specify">
-															<ResponseField name="rf_77616_1">
-																<Response name="rsp_77616_2">
-																	<string name="str_77616_3" />
-																</Response>
-															</ResponseField>
+									<Question ID="Q_akg21" title="Procedures Performed" name="Q_akg21">
+										<ListField>
+											<List>
+												<ListItem ID="LI_akg21_0" title="Procedures Performed - Diaphragm/Phrenic Nerve">
+													<ChildItems>
+														<Question name="Q_76545" ID="76545.100004300" title="Procedures Performed - Diaphragm/Phrenic Nerve">
+															<ListField name="lf_76545_1" maxSelections="0">
+																<List name="lst_76545_2">
+																	<ListItem name="LI_76915" ID="76915.100004300" title="Not Applicable" />
+																	<ListItem name="LI_76916" ID="76916.100004300" title="Resection of Diaphragm " />
+																	<ListItem name="LI_76918" ID="76918.100004300" title="Primary repair of diaphragm " />
+																	<ListItem name="LI_76917" ID="76917.100004300" title="Reconstruction of diaphragm" />
+																	<ListItem name="LI_76919" ID="76919.100004300" title="Phrenic nerve resected" />
+																	<ListItem name="LI_76920" ID="76920.100004300" title="Phrenic nerve crushed" />
+																	<ListItem name="LI_76921" ID="76921.100004300" title="Other">
+																		<ChildItems name="ch_76921_1">
+																			<Question name="Q_77616" ID="77616.100004300" title="Specify">
+																				<ResponseField name="rf_77616_1">
+																					<Response name="rsp_77616_2">
+																						<string name="str_77616_3" />
+																					</Response>
+																				</ResponseField>
+																			</Question>
+																		</ChildItems>
+																	</ListItem>
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem ID="LI_akg21_1" title="Procedure Performed - Chest/Abdominal Wall">
+													<ChildItems>
+														<Question name="Q_76544" ID="76544.100004300" title="Procedure Performed - Chest/Abdominal Wall">
+															<ListField name="lf_76544_1" maxSelections="0">
+																<List name="lst_76544_2">
+																	<ListItem name="LI_76922" ID="76922.100004300" title="Not applicable" />
+																	<ListItem name="LI_76923" ID="76923.100004300" title="Rib resection (single)" />
+																	<ListItem name="LI_76924" ID="76924.100004300" title="Chest wall resection" />
+																	<ListItem name="LI_76925" ID="76925.100004300" title="Chest wall reconstruction" />
+																	<ListItem name="LI_76926" ID="76926.100004300" title="Stenectomy complete" />
+																	<ListItem name="LI_76927" ID="76927.100004300" title="Sternectomy partial" />
+																	<ListItem name="LI_76928" ID="76928.100004300" title="Thoracic window" />
+																	<ListItem name="LI_76929" ID="76929.100004300" title="Closure thoracic window" />
+																	<ListItem name="LI_76930" ID="76930.100004300" title="Latissiumus muscle flap " />
+																	<ListItem name="LI_76932" ID="76932.100004300" title="Intercostal muscle flap " />
+																	<ListItem name="LI_76931" ID="76931.100004300" title="Serratus anterior muscle flap" />
+																	<ListItem name="LI_76933" ID="76933.100004300" title="Pericardial fat flap " />
+																	<ListItem name="LI_76934" ID="76934.100004300" title="Omentum flap " />
+																	<ListItem name="LI_76935" ID="76935.100004300" title="Other &#xA;">
+																		<ChildItems name="ch_76935_1">
+																			<Question name="Q_77617" ID="77617.100004300" title="Specify">
+																				<ResponseField name="rf_77617_1">
+																					<Response name="rsp_77617_2">
+																						<string name="str_77617_3" />
+																					</Response>
+																				</ResponseField>
+																			</Question>
+																		</ChildItems>
+																	</ListItem>
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem ID="LI_akg21_2" title="Procedure Performed - Pleura">
+													<ChildItems>
+														<Question name="Q_76546" ID="76546.100004300" title="Procedure Performed - Pleura">
+															<ListField name="lf_76546_1" maxSelections="0">
+																<List name="lst_76546_2">
+																	<ListItem name="LI_76936" ID="76936.100004300" title="Not applicable" selectionDeselectsSiblings="1" />
+																	<ListItem name="LI_76937" ID="76937.100004300" title="Evacuation of Pleural Effusion" />
+																	<ListItem name="LI_76938" ID="76938.100004300" title="Pleural Tent" />
+																	<ListItem name="LI_76939" ID="76939.100004300" title="Pleura biopsy " />
+																	<ListItem name="LI_76940" ID="76940.100004300" title="Pleurodesis " />
+																	<ListItem name="LI_76941" ID="76941.100004300" title="Pleurectomy " />
+																	<ListItem name="LI_76942" ID="76942.100004300" title="Decortication" />
+																	<ListItem name="LI_76943" ID="76943.100004300" title="Tunneled catheter insertion " />
+																	<ListItem name="LI_76944" ID="76944.100004300" title="Tunneled catheter removal " />
+																	<ListItem name="LI_76945" ID="76945.100004300" title="Other ">
+																		<ChildItems name="ch_76945_1">
+																			<Question name="Q_77618" ID="77618.100004300" title="Specify">
+																				<ResponseField name="rf_77618_1">
+																					<Response name="rsp_77618_2">
+																						<string name="str_77618_3" />
+																					</Response>
+																				</ResponseField>
+																			</Question>
+																		</ChildItems>
+																	</ListItem>
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem ID="LI_akg21_3" title="Procedures Performed - Lung">
+													<ChildItems>
+														<Question name="Q_76542" ID="76542.100004300" title="Procedures Performed - Lung">
+															<ListField name="lf_76542_1" maxSelections="0">
+																<List name="lst_76542_2">
+																	<ListItem name="LI_76946" ID="76946.100004300" title="Not applicable" selectionDeselectsSiblings="1" />
+																	<ListItem name="LI_76947" ID="76947.100004300" title="Wedge resection single" />
+																	<!-- If Wedge Resetction selected then enable Wedge resected -->
+																	<ListItem name="LI_76948" ID="76948.100004300" title="Wedge resection multiple" />
+																	<!-- If Wedge Resetction selected then enable Wedge resected -->
+																	<ListItem name="LI_76949" ID="76949.100004300" title="Segmentectomy " />
+																	<ListItem name="LI_76950" ID="76950.100004300" title="Lobectomy " />
+																	<!-- If Lobectomy selected then enable Lob Resected -->
+																	<ListItem name="LI_76951" ID="76951.100004300" title="Bilobectomy" />
+																	<!-- If Biblobectomy selected then enable Lob Resected -->
+																	<ListItem name="LI_76952" ID="76952.100004300" title="Pneumonectomy standard " />
+																	<ListItem name="LI_76953" ID="76953.100004300" title="Pneumonectomy completion " />
+																	<ListItem name="LI_76954" ID="76954.100004300" title="Pneumonectomy intrapericardial " />
+																	<ListItem name="LI_76955" ID="76955.100004300" title="Pneumonectomy carinal " />
+																	<ListItem name="LI_76956" ID="76956.100004300" title="Bronchial Sleeve" />
+																	<ListItem name="LI_76957" ID="76957.100004300" title="Pulmonary arterial sleeve" />
+																	<ListItem name="LI_76958" ID="76958.100004300" title="Other ">
+																		<ChildItems name="ch_76958_1">
+																			<Question name="Q_77619" ID="77619.100004300" title="Specify">
+																				<ResponseField name="rf_77619_1">
+																					<Response name="rsp_77619_2">
+																						<string name="str_77619_3" />
+																					</Response>
+																				</ResponseField>
+																			</Question>
+																		</ChildItems>
+																	</ListItem>
+																</List>
+															</ListField>
+														</Question>
+														<Question name="Q_76505" ID="76505.100004300" title="Wedge resected">
+															<!-- consider making 2 versions of this question, for "Wedge Resection Single" which is single select, and another for "Wedge Resection Multiple" that is multiselect -->
+															<ListField name="lf_76505_1" maxSelections="0">
+																<List name="lst_76505_2">
+																	<ListItem name="LI_76986" ID="76986.100004300" title="Right upper" />
+																	<ListItem name="LI_76987" ID="76987.100004300" title="Right middle" />
+																	<ListItem name="LI_76988" ID="76988.100004300" title="Right lower" />
+																	<ListItem name="LI_76989" ID="76989.100004300" title="Left upper" />
+																	<ListItem name="LI_76990" ID="76990.100004300" title="Left lower" />
+																</List>
+															</ListField>
+														</Question>
+														<Question name="Q_76502" ID="76502.100004300" title="Lobe resected">
+															<ListField name="lf_76502_1" maxSelections="0">
+																<List name="lst_76502_2">
+																	<ListItem name="LI_76960" ID="76960.100004300" title="Right upper" />
+																	<ListItem name="LI_76961" ID="76961.100004300" title="Right middle" />
+																	<ListItem name="LI_76962" ID="76962.100004300" title="Right lower" />
+																	<ListItem name="LI_76963" ID="76963.100004300" title="Left upper" />
+																	<ListItem name="LI_76964" ID="76964.100004300" title="Left lower" />
+																	<ListItem name="LI_76965" ID="76965.100004300" title="Completion lobectomy " />
+																</List>
+															</ListField>
+														</Question>
+														<Question name="Q_76503" ID="76503.100004300" title="Anatomic segment resected">
+															<ListField name="lf_76503_1" maxSelections="0">
+																<List name="lst_76503_2">
+																	<ListItem name="LI_76967" ID="76967.100004300" title="Right - Apical " />
+																	<ListItem name="LI_76968" ID="76968.100004300" title="Right - Anterior " />
+																	<ListItem name="LI_76969" ID="76969.100004300" title="Right - Posterior " />
+																	<ListItem name="LI_76970" ID="76970.100004300" title="Right - Medial " />
+																	<ListItem name="LI_76971" ID="76971.100004300" title="Right - Lateral" />
+																	<ListItem name="LI_76977" ID="76977.100004300" title="Right - Superior " />
+																	<ListItem name="LI_76978" ID="76978.100004300" title="Right -  Anterior basal" />
+																	<ListItem name="LI_76974" ID="76974.100004300" title="Right - Posterior basal" />
+																	<ListItem name="LI_76975" ID="76975.100004300" title="Right -  Medial basal" />
+																	<ListItem name="LI_76976" ID="76976.100004300" title="Right - Lateral basal" />
+																	<ListItem name="LI_76972" ID="76972.100004300" title="Left - Apicoposterior " />
+																	<ListItem name="LI_76973" ID="76973.100004300" title="Left - Anterior " />
+																	<ListItem name="LI_76979" ID="76979.100004300" title="Left - Superior lingular " />
+																	<ListItem name="LI_76981" ID="76981.100004300" title="Left - Superior segmental" />
+																	<ListItem name="LI_76980" ID="76980.100004300" title="Left  Inferior lingular" />
+																	<ListItem name="LI_76982" ID="76982.100004300" title="Left - Anteromedial basal" />
+																	<ListItem name="LI_76983" ID="76983.100004300" title="Left - Posterior basal" />
+																	<ListItem name="LI_76984" ID="76984.100004300" title="Left - Lateral basal" />
+																</List>
+															</ListField>
+														</Question>
+														<Question name="Q_76605" ID="76505.100004300" title="Pulmonary Arteries Ligated">
+															<!-- Applies to anything selected in Lung, except wedge sections-->
+															<ListField name="lf_76605_1" maxSelections="0">
+																<List name="lst_76605_2">
+																	<ListItem ID="769860.100004300" title="Right – Truncus Anterior " />
+																	<ListItem ID="769871.100004300" title="Right – Truncus Anterior – Apical Branch" />
+																	<ListItem ID="769882.100004300" title="Right – Truncus Anterior – Anterior Branch" />
+																	<ListItem ID="769893.100004300" title="Right – Truncus Anterior – Posterior Branch" />
+																	<ListItem ID="769904.100004300" title="Right – Posterior Ascending Artery" />
+																	<ListItem ID="769905.100004300" title="Right – Middle Lobe Artery" />
+																	<ListItem ID="769906.100004300" title="Right – Superior Segmental Artery" />
+																	<ListItem ID="769907.100004300" title="Right – Common Basal Artery" />
+																	<ListItem ID="769908.100004300" title="Right – Common Basal Artery – medial basal" />
+																	<ListItem ID="769909.100004300" title="Right – Common Basal Artery – anterior basal" />
+																	<ListItem ID="7699010.100004300" title="Right – Common Basal Artery – lateral basal" />
+																	<ListItem ID="7699011.100004300" title="Right – Common Basal Artery – posterior basal" />
+																	<ListItem ID="7699012.100004300" title="Right – Other Branch" />
+																	<ListItem ID="7699013.100004300" title="Left – Anterior" />
+																	<ListItem ID="7699014.100004300" title="Left – Apicoposterior Branch" />
+																	<ListItem ID="7699015.100004300" title="Left – Lingular Branch" />
+																	<ListItem ID="7699016.100004300" title="Left – Superior Segmental" />
+																	<ListItem ID="7699017.100004300" title="Left – Common Basal Artery" />
+																	<ListItem ID="7699018.100004300" title="Left – Common Basal Artery – anteromedial basal" />
+																	<ListItem ID="7699019.100004300" title="Left – Common Basal Artery – lateral basal" />
+																	<ListItem ID="7699020.100004300" title="Left – Common Basal Artery – posterior basal" />
+																	<ListItem ID="7699021.100004300" title="Left – Other Branch " />
+																</List>
+															</ListField>
+														</Question>
+														<Question name="Q_76560" ID="76560.100004300" title="Which bronchi were divided">
+															<ListField name="lf_76560_1" maxSelections="0">
+																<List name="lst_76560_2">
+																	<ListItem name="LI_77127" ID="77127.100004300" title="None" />
+																	<ListItem name="LI_77128" ID="77128.100004300" title="Right Mainstem Bronchus" />
+																	<ListItem name="LI_77129" ID="77129.100004300" title="Right Upper Lobe Bronchus" />
+																	<ListItem name="LI_77130" ID="77130.100004300" title="Right Upper Lobe - Apical" />
+																	<ListItem name="LI_77131" ID="77131.100004300" title="Right Upper Lobe - Anterior" />
+																	<ListItem name="LI_77132" ID="77132.100004300" title="Right Upper Lobe - Posterior" />
+																	<ListItem name="LI_77133" ID="77133.100004300" title="Right Middle Lobe" />
+																	<ListItem name="LI_77134" ID="77134.100004300" title="Bronchus" />
+																	<ListItem name="LI_77135" ID="77135.100004300" title="Right Middle Lobe - Medial" />
+																	<ListItem name="LI_77136" ID="77136.100004300" title="Right Middle Lobe - Lateral" />
+																	<ListItem name="LI_77137" ID="77137.100004300" title="Bronchus Intermedius" />
+																	<ListItem name="LI_77138" ID="77138.100004300" title="Right Lower Lobe Bronchus" />
+																	<ListItem name="LI_77139" ID="77139.100004300" title="Right Lower Lobe - Superior Segmental" />
+																	<ListItem name="LI_77140" ID="77140.100004300" title="Right Lower Lobe - Common Basal" />
+																	<ListItem name="LI_77141" ID="77141.100004300" title="Right Lower Lobe - Common Basal - anterior" />
+																	<ListItem name="LI_77142" ID="77142.100004300" title="Right Lower Lobe - Common Basal - medical basal" />
+																	<ListItem name="LI_77143" ID="77143.100004300" title="Right Lower Lobe - Common Basal - lateral basal" />
+																	<ListItem name="LI_77144" ID="77144.100004300" title="Right Lower Lobe - Common Basal - posterior basal" />
+																</List>
+															</ListField>
+														</Question>
+														<Question name="Q_76557" ID="76557.100004300" title="How were the bronchi closed">
+															<ListField name="lf_76557_1">
+																<List name="lst_76557_2">
+																	<ListItem name="LI_77145" ID="77145.100004300" title="Suture" />
+																	<ListItem name="LI_77146" ID="77146.100004300" title="GIA Stapler" />
+																	<ListItem name="LI_77147" ID="77147.100004300" title="Transverse Stapler Other">
+																		<ChildItems name="ch_77147_1">
+																			<Question name="Q_77623" ID="77623.100004300" title="Specify">
+																				<ResponseField name="rf_77623_1">
+																					<Response name="rsp_77623_2">
+																						<string name="str_77623_3" />
+																					</Response>
+																				</ResponseField>
+																			</Question>
+																		</ChildItems>
+																	</ListItem>
+																</List>
+															</ListField>
+														</Question>
+														<Question name="Q_76559" ID="76559.100004300" title="Were any bronchi covered?">
+															<ListField name="lf_76559_1">
+																<List name="lst_76559_2">
+																	<ListItem name="LI_77163" ID="77163.100004300" title="Yes" >
+																		<ChildItems>
+																			<Question ID="Q77163" title="Which Bronchi were covered">
+																				<ListField>
+																					<List>
+																						<ListItem ID="LI77163_0" title="Right mainstem bronchus"/>
+																						<ListItem ID="LI77163_1" title="Right upper lobe bronchus"/>
+																						<ListItem ID="LI77163_2" title="Right upper lobe - Apical"/>
+																						<ListItem ID="LI77163_3" title="Right upper lobe - Anterior"/>
+																						<ListItem ID="LI77163_4" title="Right upper lobe - Posterior"/>
+																						<ListItem ID="LI77163_5" title="Right middle lobe bronchus"/>
+																						<ListItem ID="LI77163_6" title="Right middle lobe - Medial"/>
+																						<ListItem ID="LI77163_7" title="Right middle lobe - Lateral"/>
+																						<ListItem ID="LI77163_8" title="Bronchus intermedius"/>
+																						<ListItem ID="LI77163_9" title="Right lower lobe bronchus"/>
+																						<ListItem ID="LI77163_10" title="Right lower lobe - Superior segmental"/>
+																						<ListItem ID="LI77163_11" title="Right lower lobe - Common basal"/>
+																						<ListItem ID="LI77163_12" title="Right lower lobe - Common basal - Anterior"/>
+																						<ListItem ID="LI77163_13" title="Right lower lobe - Common basal - Medial basal"/>
+																						<ListItem ID="LI77163_14" title="Right lower lobe - Common basal - Lateral basal"/>
+																						<ListItem ID="LI77163_15" title="Right lower lobe - Common basal - Posterior basal"/>
+																						<ListItem ID="LI77163_16" title="Left mainstem bronchus"/>
+																						<ListItem ID="LI77163_17" title="Left upper lobe bronchus"/>
+																						<ListItem ID="LI77163_18" title="Left upper lobe - Apicoposterior"/>
+																						<ListItem ID="LI77163_19" title="Left upper lobe - Anterior"/>
+																						<ListItem ID="LI77163_20" title="Left upper lobe - Lingula"/>
+																						<ListItem ID="LI77163_21" title="Left upper lobe - Lingula - Superior"/>
+																						<ListItem ID="LI77163_22" title="Left upper lobe - Lingula - Inferior"/>
+																						<ListItem ID="LI77163_23" title="Left lower lobe bronchus"/>
+																						<ListItem ID="LI77163_24" title="Left lower lobe - Superior segmental"/>
+																						<ListItem ID="LI77163_25" title="Left lower lobe - Common basal"/>
+																						<ListItem ID="LI77163_26" title="Left lower lobe - Common basal - Anteromedial basal"/>
+																						<ListItem ID="LI77163_27" title="Left lower lobe - Common basal - Lateral basal"/>
+																						<ListItem ID="LI77163_28" title="Left lower lobe - Common basal - Posterior basal "/>
+																					</List>
+																				</ListField>
+																			</Question>
+																			<Question ID="Q77164" title="What was the bronchus covered with">
+																				<ListField>
+																					<List>
+																						<ListItem ID="LI77164_0" title="Intercostal"/>
+																						<ListItem ID="LI77164_1" title="Pericardium"/>
+																						<ListItem ID="LI77164_2" title="Pericardial fat"/>
+																						<ListItem ID="LI77164_3" title="Serratus"/>
+																						<ListItem ID="LI77164_4" title="Latissimus"/>
+																						<ListItem ID="LI77164_5" title="Pleura"/>
+																						<ListItem ID="LI77164_6" title="Other">
+																							<ChildItems>
+																								<Question ID="LI77164_Q1" title="Specify">
+																									<ResponseField>
+																										<Response>
+																											<string/>
+																										</Response>
+																									</ResponseField>
+																								</Question>
+																							</ChildItems>
+																						</ListItem>
+																					</List>
+																				</ListField>
+																			</Question>
+																		</ChildItems>
+																	</ListItem>
+																	<ListItem name="LI_77164" ID="77164.100004300" title="No" />
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem ID="LI_akg21_4" title="Procedures Performed - Mediastinum/Neck">
+													<ChildItems>
+														<Question name="Q_76507" ID="76507.100004300" title="Procedures Performed - Mediastinum/Neck">
+															<ListField name="lf_76507_1" maxSelections="0">
+																<List name="lst_76507_2">
+																	<ListItem name="LI_76991" ID="76991.100004300" title="Not applicable" selectionDeselectsSiblings="1" />
+																	<ListItem name="LI_76992" ID="76992.100004300" title="Biopsy mediastinal mass" />
+																	<ListItem name="LI_76993" ID="76993.100004300" title="Mediastinal lymph node biopsy" />
+																	<ListItem name="LI_76994" ID="76994.100004300" title="Resection mediastinal mass" />
+																	<ListItem name="LI_76995" ID="76995.100004300" title="Transcervical extended medistinal lymphadenectomy (TEMLA)" />
+																	<ListItem name="LI_76996" ID="76996.100004300" title="Neck node biopsy " />
+																	<ListItem name="LI_76997" ID="76997.100004300" title="Thymectomy" />
+																	<ListItem name="LI_76998" ID="76998.100004300" title="EBUS - Transbronchial Biopsy Lymph Node" />
+																	<ListItem name="LI_76999" ID="76999.100004300" title="EBUS - Transbronchial Biopsy Lung Mass" />
+																	<ListItem name="LI_77000" ID="77000.100004300" title="Other">
+																		<ChildItems name="ch_77000_1">
+																			<Question name="Q_77620" ID="77620.100004300" title="Specify">
+																				<ResponseField name="rf_77620_1">
+																					<Response name="rsp_77620_2">
+																						<string name="str_77620_3" />
+																					</Response>
+																				</ResponseField>
+																			</Question>
+																		</ChildItems>
+																	</ListItem>
+																	<ListItem name="LI_77001" ID="77001.100004300" title="EUS" />
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem ID="LI_akg21_5" title="Procedures Performed - Heart/Pericardium/Vascular">
+													<ChildItems>
+														<Question name="Q_76506" ID="76506.100004300" title="Procedures Performed - Heart/Pericardium/Vascular">
+															<ListField name="lf_76506_1" maxSelections="0">
+																<List name="lst_76506_2">
+																	<ListItem name="LI_77004" ID="77004.100004300" title="Pericardial window" />
+																	<ListItem name="LI_77005" ID="77005.100004300" title="Pericardiectomy" />
+																	<ListItem name="LI_77003" ID="77003.100004300" title="Not applicable" selectionDeselectsSiblings="1" />
+																	<ListItem name="LI_77006" ID="77006.100004300" title="Repair/reconstruction SVC" />
+																	<ListItem name="LI_77007" ID="77007.100004300" title="Repair/reconstruction of innominate vein" />
+																	<ListItem name="LI_77008" ID="77008.100004300" title="Repair/reconstruction pulmonary artery" />
+																	<ListItem name="LI_77009" ID="77009.100004300" title="Repair/reconstruction pulmonary vein" />
+																	<ListItem name="LI_77010" ID="77010.100004300" title="Division of azygous vein" />
+																	<ListItem name="LI_77011" ID="77011.100004300" title="Other">
+																		<ChildItems name="ch_77011_1">
+																			<Question name="Q_77633" ID="77633.100004300" title="Specify">
+																				<ResponseField name="rf_77633_1">
+																					<Response name="rsp_77633_2">
+																						<string name="str_77633_3" />
+																					</Response>
+																				</ResponseField>
+																			</Question>
+																		</ChildItems>
+																	</ListItem>
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem ID="LI_akg21_5">
+													<ChildItems>
+														<Question name="Q_76509" ID="76509.100004300" title="Procedures Performed - Tracheobronchial">
+															<ListField name="lf_76509_1" maxSelections="0">
+																<List name="lst_76509_2">
+																	<ListItem name="LI_77027" ID="77027.100004300" title="Not applicable" selectionDeselectsSiblings="1" />
+																	<ListItem name="LI_77028" ID="77028.100004300" title="Trachea stent" />
+																	<ListItem name="LI_77029" ID="77029.100004300" title="Montgomery T-tube" />
+																	<ListItem name="LI_77013" ID="77013.100004300" title="Removal of foreign body" />
+																	<ListItem name="LI_77014" ID="77014.100004300" title="Broncho-alveolar lavage (BAL)" />
+																	<ListItem name="LI_77015" ID="77015.100004300" title="Sleeve/bronchial resection (only)" />
+																	<ListItem name="LI_77016" ID="77016.100004300" title="Tracheostomy - open" />
+																	<ListItem name="LI_77017" ID="77017.100004300" title="Tracheostomy - Percutaneous" />
+																	<ListItem name="LI_77018" ID="77018.100004300" title="Tracheostomy - Urgent" />
+																	<ListItem name="LI_77019" ID="77019.100004300" title="Tracheal repair" />
+																	<ListItem name="LI_77020" ID="77020.100004300" title="Tracheal tumor resection" />
+																	<ListItem name="LI_77021" ID="77021.100004300" title="Carinal resection" />
+																	<ListItem name="LI_77022" ID="77022.100004300" title="Bronchotomy" />
+																	<ListItem name="LI_77023" ID="77023.100004300" title="Bronchial repair" />
+																	<ListItem name="LI_77024" ID="77024.100004300" title="Bronchoplasty" />
+																	<ListItem name="LI_77025" ID="77025.100004300" title="TE fistula repair" />
+																	<ListItem name="LI_77026" ID="77026.100004300" title="Bronchial stent&#xA;" />
+																	<ListItem name="LI_77033" ID="77033.100004300" title="Trachea stent" />
+																	<ListItem name="LI_77032" ID="77032.100004300" title="Montgomery T-tube" />
+																	<ListItem name="LI_77031" ID="77031.100004300" title="Removal, tracheobronchial stent including Montgomery" />
+																	<ListItem name="LI_77030" ID="77030.100004300" title="Cricotracheal resection" />
+																	<ListItem name="LI_77034" ID="77034.100004300" title="Laryngo/fissure" />
+																	<ListItem name="LI_77036" ID="77036.100004300" title="PDT" />
+																	<ListItem name="LI_77035" ID="77035.100004300" title="Other">
+																		<ChildItems name="ch_77035_1">
+																			<Question name="Q_77622" ID="77622.100004300" title="Specify">
+																				<ResponseField name="rf_77622_1">
+																					<Response name="rsp_77622_2">
+																						<string name="str_77622_3" />
+																					</Response>
+																				</ResponseField>
+																			</Question>
+																		</ChildItems>
+																	</ListItem>
+																</List>
+															</ListField>
+														</Question>
+													</ChildItems>
+												</ListItem>
+												<ListItem ID="LI_akg21_6" title="Procedures Performed - Endoscopy">
+													<ChildItems>
+														<Question name="Q_76510" ID="76510.100004300" title="Endoscopy Findings">
+															<ListField name="lf_76510_1" maxSelections="0">
+																<List name="lst_76510_2">
+																	<ListItem name="LI_77039" ID="77039.100004300" title="None" selectionDeselectsSiblings="1" />
+																	<ListItem name="LI_77040" ID="77040.100004300" title="Flexible bronchoscopy" />
+																	<ListItem name="LI_77037" ID="77037.100004300" title="Rigid bronchoscopy" />
+																	<ListItem name="LI_77038" ID="77038.100004300" title="Laser endobronchial lesion" />
+																</List>
+															</ListField>
 														</Question>
 													</ChildItems>
 												</ListItem>
 											</List>
 										</ListField>
 									</Question>
-									<Question name="Q_76544" ID="76544.100004300" title="Procedure Performed - Chest/Abdominal Wall">
-										<ListField name="lf_76544_1" maxSelections="0">
-											<List name="lst_76544_2">
-												<ListItem name="LI_76922" ID="76922.100004300" title="Not applicable" />
-												<ListItem name="LI_76923" ID="76923.100004300" title="Rib resection (single)" />
-												<ListItem name="LI_76924" ID="76924.100004300" title="Chest wall resection" />
-												<ListItem name="LI_76925" ID="76925.100004300" title="Chest wall reconstruction" />
-												<ListItem name="LI_76926" ID="76926.100004300" title="Stenectomy complete" />
-												<ListItem name="LI_76927" ID="76927.100004300" title="Sternectomy partial" />
-												<ListItem name="LI_76928" ID="76928.100004300" title="Thoracic window" />
-												<ListItem name="LI_76929" ID="76929.100004300" title="Closure thoracic window" />
-												<ListItem name="LI_76930" ID="76930.100004300" title="Latissiumus muscle flap " />
-												<ListItem name="LI_76932" ID="76932.100004300" title="Intercostal muscle flap " />
-												<ListItem name="LI_76931" ID="76931.100004300" title="Serratus anterior muscle flap" />
-												<ListItem name="LI_76933" ID="76933.100004300" title="Pericardial fat flap " />
-												<ListItem name="LI_76934" ID="76934.100004300" title="Omentum flap " />
-												<ListItem name="LI_76935" ID="76935.100004300" title="Other &#xA;">
-													<ChildItems name="ch_76935_1">
-														<Question name="Q_77617" ID="77617.100004300" title="Specify">
-															<ResponseField name="rf_77617_1">
-																<Response name="rsp_77617_2">
-																	<string name="str_77617_3" />
-																</Response>
-															</ResponseField>
-														</Question>
-													</ChildItems>
-												</ListItem>
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76546" ID="76546.100004300" title="Procedure Performed - Pleura">
-										<ListField name="lf_76546_1" maxSelections="0">
-											<List name="lst_76546_2">
-												<ListItem name="LI_76936" ID="76936.100004300" title="Not applicable" selectionDeselectsSiblings="1" />
-												<ListItem name="LI_76937" ID="76937.100004300" title="Evacuation of Pleural Effusion" />
-												<ListItem name="LI_76938" ID="76938.100004300" title="Pleural Tent" />
-												<ListItem name="LI_76939" ID="76939.100004300" title="Pleura biopsy " />
-												<ListItem name="LI_76940" ID="76940.100004300" title="Pleurodesis " />
-												<ListItem name="LI_76941" ID="76941.100004300" title="Pleurectomy " />
-												<ListItem name="LI_76942" ID="76942.100004300" title="Decortication" />
-												<ListItem name="LI_76943" ID="76943.100004300" title="Tunneled catheter insertion " />
-												<ListItem name="LI_76944" ID="76944.100004300" title="Tunneled catheter removal " />
-												<ListItem name="LI_76945" ID="76945.100004300" title="Other ">
-													<ChildItems name="ch_76945_1">
-														<Question name="Q_77618" ID="77618.100004300" title="Specify">
-															<ResponseField name="rf_77618_1">
-																<Response name="rsp_77618_2">
-																	<string name="str_77618_3" />
-																</Response>
-															</ResponseField>
-														</Question>
-													</ChildItems>
-												</ListItem>
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76542" ID="76542.100004300" title="Procedures Performed - Lung">
-										<ListField name="lf_76542_1" maxSelections="0">
-											<List name="lst_76542_2">
-												<ListItem name="LI_76946" ID="76946.100004300" title="Not applicable" selectionDeselectsSiblings="1" />
-												<ListItem name="LI_76947" ID="76947.100004300" title="Wedge resection single" />
-												<!-- If Wedge Resetction selected then enable Wedge resected -->
-												<ListItem name="LI_76948" ID="76948.100004300" title="Wedge resection multiple" />
-												<!-- If Wedge Resetction selected then enable Wedge resected -->
-												<ListItem name="LI_76949" ID="76949.100004300" title="Segmentectomy " />
-												<ListItem name="LI_76950" ID="76950.100004300" title="Lobectomy " />
-												<!-- If Lobectomy selected then enable Lob Resected -->
-												<ListItem name="LI_76951" ID="76951.100004300" title="Bilobectomy" />
-												<!-- If Biblobectomy selected then enable Lob Resected -->
-												<ListItem name="LI_76952" ID="76952.100004300" title="Pneumonectomy standard " />
-												<ListItem name="LI_76953" ID="76953.100004300" title="Pneumonectomy completion " />
-												<ListItem name="LI_76954" ID="76954.100004300" title="Pneumonectomy intrapericardial " />
-												<ListItem name="LI_76955" ID="76955.100004300" title="Pneumonectomy carinal " />
-												<ListItem name="LI_76956" ID="76956.100004300" title="Bronchial Sleeve" />
-												<ListItem name="LI_76957" ID="76957.100004300" title="Pulmonary arterial sleeve" />
-												<ListItem name="LI_76958" ID="76958.100004300" title="Other ">
-													<ChildItems name="ch_76958_1">
-														<Question name="Q_77619" ID="77619.100004300" title="Specify">
-															<ResponseField name="rf_77619_1">
-																<Response name="rsp_77619_2">
-																	<string name="str_77619_3" />
-																</Response>
-															</ResponseField>
-														</Question>
-													</ChildItems>
-												</ListItem>
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76502" ID="76502.100004300" title="Lob resected">
-										<ListField name="lf_76502_1" maxSelections="0">
-											<List name="lst_76502_2">
-												<ListItem name="LI_76960" ID="76960.100004300" title="Right upper" />
-												<ListItem name="LI_76961" ID="76961.100004300" title="Right middle" />
-												<ListItem name="LI_76962" ID="76962.100004300" title="Right lower" />
-												<ListItem name="LI_76963" ID="76963.100004300" title="Left upper" />
-												<ListItem name="LI_76964" ID="76964.100004300" title="Left lower" />
-												<ListItem name="LI_76965" ID="76965.100004300" title="Completion lobectomy " />
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76503" ID="76503.100004300" title="Anatomic segment resected">
-										<ListField name="lf_76503_1" maxSelections="0">
-											<List name="lst_76503_2">
-												<ListItem name="LI_76967" ID="76967.100004300" title="Right - Apical " />
-												<ListItem name="LI_76968" ID="76968.100004300" title="Right - Anterior " />
-												<ListItem name="LI_76969" ID="76969.100004300" title="Right - Posterior " />
-												<ListItem name="LI_76970" ID="76970.100004300" title="Right - Medial " />
-												<ListItem name="LI_76971" ID="76971.100004300" title="Right - Lateral" />
-												<ListItem name="LI_76977" ID="76977.100004300" title="Right - Superior " />
-												<ListItem name="LI_76978" ID="76978.100004300" title="Right -  Anterior basal" />
-												<ListItem name="LI_76974" ID="76974.100004300" title="Right - Posterior basal" />
-												<ListItem name="LI_76975" ID="76975.100004300" title="Right -  Medial basal" />
-												<ListItem name="LI_76976" ID="76976.100004300" title="Right - Lateral basal" />
-												<ListItem name="LI_76972" ID="76972.100004300" title="Left - Apicoposterior " />
-												<ListItem name="LI_76973" ID="76973.100004300" title="Left - Anterior " />
-												<ListItem name="LI_76979" ID="76979.100004300" title="Left - Superior lingular " />
-												<ListItem name="LI_76981" ID="76981.100004300" title="Left - Superior segmental" />
-												<ListItem name="LI_76980" ID="76980.100004300" title="Left  Inferior lingular" />
-												<ListItem name="LI_76982" ID="76982.100004300" title="Left - Anteromedial basal" />
-												<ListItem name="LI_76983" ID="76983.100004300" title="Left - Posterior basal" />
-												<ListItem name="LI_76984" ID="76984.100004300" title="Left - Lateral basal" />
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76505" ID="76505.100004300" title="Wedge resected">
-										<!-- consider making 2 versions of this question, for "Wedge Resection Single" which is single select, and another for "Wedge Resection Multiple" that is multiselect -->
-										<ListField name="lf_76505_1" maxSelections="0">
-											<List name="lst_76505_2">
-												<ListItem name="LI_76986" ID="76986.100004300" title="Right upper" />
-												<ListItem name="LI_76987" ID="76987.100004300" title="Right middle" />
-												<ListItem name="LI_76988" ID="76988.100004300" title="Right lower" />
-												<ListItem name="LI_76989" ID="76989.100004300" title="Left upper" />
-												<ListItem name="LI_76990" ID="76990.100004300" title="Left lower" />
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76507" ID="76507.100004300" title="Procedures Performed - Mediastinum/Neck">
-										<ListField name="lf_76507_1" maxSelections="0">
-											<List name="lst_76507_2">
-												<ListItem name="LI_76991" ID="76991.100004300" title="Not applicable" selectionDeselectsSiblings="1" />
-												<ListItem name="LI_76992" ID="76992.100004300" title="Biopsy mediastinal mass" />
-												<ListItem name="LI_76993" ID="76993.100004300" title="Mediastinal lymph node biopsy" />
-												<ListItem name="LI_76994" ID="76994.100004300" title="Resection mediastinal mass" />
-												<ListItem name="LI_76995" ID="76995.100004300" title="Transcervical extended medistinal lymphadenectomy (TEMLA)" />
-												<ListItem name="LI_76996" ID="76996.100004300" title="Neck node biopsy " />
-												<ListItem name="LI_76997" ID="76997.100004300" title="Thymectomy" />
-												<ListItem name="LI_76998" ID="76998.100004300" title="EBUS - Transbronchial Biopsy Lymph Node" />
-												<ListItem name="LI_76999" ID="76999.100004300" title="EBUS - Transbronchial Biopsy Lung Mass" />
-												<ListItem name="LI_77000" ID="77000.100004300" title="Other &#xA;">
-													<ChildItems name="ch_77000_1">
-														<Question name="Q_77620" ID="77620.100004300" title="Specify">
-															<ResponseField name="rf_77620_1">
-																<Response name="rsp_77620_2">
-																	<string name="str_77620_3" />
-																</Response>
-															</ResponseField>
-														</Question>
-													</ChildItems>
-												</ListItem>
-												<ListItem name="LI_77001" ID="77001.100004300" title="EUS" />
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76506" ID="76506.100004300" title="Procedures Performed - Heart/Pericardium/Vascular">
-										<ListField name="lf_76506_1" maxSelections="0">
-											<List name="lst_76506_2">
-												<ListItem name="LI_77004" ID="77004.100004300" title="Pericardial window" />
-												<ListItem name="LI_77005" ID="77005.100004300" title="Pericardiectomy" />
-												<ListItem name="LI_77003" ID="77003.100004300" title="Not applicable" selectionDeselectsSiblings="1" />
-												<ListItem name="LI_77006" ID="77006.100004300" title="Repair/reconstruction SVC" />
-												<ListItem name="LI_77007" ID="77007.100004300" title="Repair/reconstruction of innominate vein" />
-												<ListItem name="LI_77008" ID="77008.100004300" title="Repair/reconstruction pulmonary artery" />
-												<ListItem name="LI_77009" ID="77009.100004300" title="Repair/reconstruction pulmonary vein" />
-												<ListItem name="LI_77010" ID="77010.100004300" title="Division of azygous vein" />
-												<ListItem name="LI_77011" ID="77011.100004300" title="Other&#xA;">
-													<ChildItems name="ch_77011_1">
-														<Question name="Q_77633" ID="77633.100004300" title="Specify">
-															<ResponseField name="rf_77633_1">
-																<Response name="rsp_77633_2">
-																	<string name="str_77633_3" />
-																</Response>
-															</ResponseField>
-														</Question>
-													</ChildItems>
-												</ListItem>
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76509" ID="76509.100004300" title="Procedures Performed - Tracheobronchial;">
-										<ListField name="lf_76509_1" maxSelections="0">
-											<List name="lst_76509_2">
-												<ListItem name="LI_77027" ID="77027.100004300" title="Not applicable" selectionDeselectsSiblings="1" />
-												<ListItem name="LI_77028" ID="77028.100004300" title="Trachea stent" />
-												<ListItem name="LI_77029" ID="77029.100004300" title="Montgomery T-tube" />
-												<ListItem name="LI_77013" ID="77013.100004300" title="Removal of foreign body" />
-												<ListItem name="LI_77014" ID="77014.100004300" title="Broncho-alveolar lavage (BAL)" />
-												<ListItem name="LI_77015" ID="77015.100004300" title="Sleeve/bronchial resection (only)" />
-												<ListItem name="LI_77016" ID="77016.100004300" title="Tracheostomy - open" />
-												<ListItem name="LI_77017" ID="77017.100004300" title="Tracheostomy - Percutaneous" />
-												<ListItem name="LI_77018" ID="77018.100004300" title="Tracheostomy - Urgent" />
-												<ListItem name="LI_77019" ID="77019.100004300" title="Tracheal repair" />
-												<ListItem name="LI_77020" ID="77020.100004300" title="Tracheal tumor resection" />
-												<ListItem name="LI_77021" ID="77021.100004300" title="Carinal resection" />
-												<ListItem name="LI_77022" ID="77022.100004300" title="Bronchotomy" />
-												<ListItem name="LI_77023" ID="77023.100004300" title="Bronchial repair" />
-												<ListItem name="LI_77024" ID="77024.100004300" title="Bronchoplasty" />
-												<ListItem name="LI_77025" ID="77025.100004300" title="TE fistula repair" />
-												<ListItem name="LI_77026" ID="77026.100004300" title="Bronchial stent&#xA;" />
-												<ListItem name="LI_77033" ID="77033.100004300" title="Trachea stent" />
-												<ListItem name="LI_77032" ID="77032.100004300" title="Montgomery T-tube" />
-												<ListItem name="LI_77031" ID="77031.100004300" title="Removal, tracheobronchial stent including Montgomery" />
-												<ListItem name="LI_77030" ID="77030.100004300" title="Cricotracheal resection" />
-												<ListItem name="LI_77034" ID="77034.100004300" title="Laryngo/fissure" />
-												<ListItem name="LI_77036" ID="77036.100004300" title="PDT" />
-												<ListItem name="LI_77035" ID="77035.100004300" title="Other">
-													<ChildItems name="ch_77035_1">
-														<Question name="Q_77622" ID="77622.100004300" title="Specify">
-															<ResponseField name="rf_77622_1">
-																<Response name="rsp_77622_2">
-																	<string name="str_77622_3" />
-																</Response>
-															</ResponseField>
-														</Question>
-													</ChildItems>
-												</ListItem>
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76510" ID="76510.100004300" title="Procedures Performed - Endoscopy">
-										<ListField name="lf_76510_1" maxSelections="0">
-											<List name="lst_76510_2">
-												<ListItem name="LI_77039" ID="77039.100004300" title="None" selectionDeselectsSiblings="1" />
-												<ListItem name="LI_77040" ID="77040.100004300" title="Flexible bronchoscopy" />
-												<ListItem name="LI_77037" ID="77037.100004300" title="Rigid bronchoscopy" />
-												<ListItem name="LI_77038" ID="77038.100004300" title="Laser endobronchial lesion" />
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76508" ID="76508.100004300" title="Endoscopy Findings">
-										<ResponseField name="rf_76508_1">
-											<Response name="rsp_76508_2">
-												<string name="str_76508_3" />
+									<Question ID="Q_akg34" title="Optional Procedures Performed" minCard="0">
+										<ResponseField>
+											<Response>
+												<string/>
 											</Response>
 										</ResponseField>
 									</Question>
-									<!-- revisit the Procedures performed section for more refining--> 
+									<!-- stopped here on 2020-01-09 -->
 									<Question name="Q_76504" ID="76504.100004300" title="Veins Ligated">
 										<ListField name="lf_76504_1">
 											<List name="lst_76504_2">
@@ -789,58 +961,7 @@
 												<ListItem name="LI_77122" ID="77122.100004300" title="No" />
 											</List>
 										</ListField>
-									</Question>
-									<Question name="Q_76560" ID="76560.100004300" title="Which bronchi were divided">
-										<ListField name="lf_76560_1">
-											<List name="lst_76560_2">
-												<ListItem name="LI_77127" ID="77127.100004300" title="None" />
-												<ListItem name="LI_77128" ID="77128.100004300" title="Right Mainstem Bronchus" />
-												<ListItem name="LI_77129" ID="77129.100004300" title="Right Upper Lobe Bronchus" />
-												<ListItem name="LI_77130" ID="77130.100004300" title="Right Upper Lobe - Apical" />
-												<ListItem name="LI_77131" ID="77131.100004300" title="Right Upper Lobe - Anterior" />
-												<ListItem name="LI_77132" ID="77132.100004300" title="Right Upper Lobe - Posterior" />
-												<ListItem name="LI_77133" ID="77133.100004300" title="Right Middle Lobe" />
-												<ListItem name="LI_77134" ID="77134.100004300" title="Bronchus" />
-												<ListItem name="LI_77135" ID="77135.100004300" title="Right Middle Lobe - Medial" />
-												<ListItem name="LI_77136" ID="77136.100004300" title="Right Middle Lobe - Lateral" />
-												<ListItem name="LI_77137" ID="77137.100004300" title="Bronchus Intermedius" />
-												<ListItem name="LI_77138" ID="77138.100004300" title="Right Lower Lobe Bronchus" />
-												<ListItem name="LI_77139" ID="77139.100004300" title="Right Lower Lobe - Superior Segmental" />
-												<ListItem name="LI_77140" ID="77140.100004300" title="Right Lower Lobe - Common Basal" />
-												<ListItem name="LI_77141" ID="77141.100004300" title="Right Lower Lobe - Common Basal - anterior" />
-												<ListItem name="LI_77142" ID="77142.100004300" title="Right Lower Lobe - Common Basal - medical basal" />
-												<ListItem name="LI_77143" ID="77143.100004300" title="Right Lower Lobe - Common Basal - lateral basal" />
-												<ListItem name="LI_77144" ID="77144.100004300" title="Right Lower Lobe - Common Basal - posterior basal" />
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76557" ID="76557.100004300" title="How were the bronchi closed">
-										<ListField name="lf_76557_1">
-											<List name="lst_76557_2">
-												<ListItem name="LI_77145" ID="77145.100004300" title="Suture" />
-												<ListItem name="LI_77146" ID="77146.100004300" title="GIA Stapler" />
-												<ListItem name="LI_77147" ID="77147.100004300" title="Transverse Stapler Other">
-													<ChildItems name="ch_77147_1">
-														<Question name="Q_77623" ID="77623.100004300" title="Specify">
-															<ResponseField name="rf_77623_1">
-																<Response name="rsp_77623_2">
-																	<string name="str_77623_3" />
-																</Response>
-															</ResponseField>
-														</Question>
-													</ChildItems>
-												</ListItem>
-											</List>
-										</ListField>
-									</Question>
-									<Question name="Q_76559" ID="76559.100004300" title="Were any bronchi covered?">
-										<ListField name="lf_76559_1">
-											<List name="lst_76559_2">
-												<ListItem name="LI_77163" ID="77163.100004300" title="Yes" />
-												<ListItem name="LI_77164" ID="77164.100004300" title="No" />
-											</List>
-										</ListField>
-									</Question>
+									</Question>								
 									<Question name="Q_76565" ID="76565.100004300" title="Lung expansion tested">
 										<ListField name="lf_76565_1">
 											<List name="lst_76565_2">
@@ -1356,8 +1477,37 @@
 							</Section>
 						</ChildItems>
 					</Section>
-					<Section name="S_76206" ID="76206.100004300" title="Comments">
+					<Section name="S_76206" ID="76206.100004300" title="Summary">
 						<ChildItems>
+							<Question name="q_akg2" ID="q_akg2" title="Summary Statement of Procedure">
+								<ResponseField>
+									<Response name="rsp_akg2">
+										<string name="str_akg2" />
+									</Response>
+								</ResponseField>
+							</Question>
+							<Question name="q_akg3" ID="q_akg3" title="Patient Estimated Blood Loss (cc)">
+								<ResponseField>
+									<Response name="rsp_akg3">
+										<string name="str_akg3" />
+									</Response>
+								</ResponseField>
+							</Question>
+							<Question name="q_akg4" ID="q_akg4" title="Extubation in OR?">
+								<ResponseField>
+									<Response name="rsp_akg4">
+										<string name="str_akg4" />
+									</Response>
+								</ResponseField>
+							</Question>
+							<Question name="q_akg5" ID="q_akg5" title="Post Operative Diagnosis">
+								<!-- Should we specify that this is post operative clinical diagnosis? -->
+								<ResponseField>
+									<Response name="rsp_akg5">
+										<string name="str_akg5" />
+									</Response>
+								</ResponseField>
+							</Question>
 							<Question name="q_akg1" ID="q_akg1" title="Comments">
 								<ResponseField>
 									<Response name="rsp_akg1">
