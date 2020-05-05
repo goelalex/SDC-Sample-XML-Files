@@ -1,0 +1,1267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="sdctemplate.xslt"?>
+<FormDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="COVID-19.394_1.000.000.CTP1_sdcFDF" baseURI="www.cap.org/eCC" fullURI="_baseURI=www.cap.org/eCC&amp;_lineage=COVID-19.394&amp;_version=1.000.000.CTP1&amp;_docType=sdcFDF" formTitle="CDC HUMAN INFECTION WITH 2019 NOVEL CORONAVIRUS PERSON UNDER INVESTIGATION (PUI) AND CASE REPORT FORM" lineage="COVID-19.394" filename="COVID-19.394_1.000.000.CTP1_sdcFDF.xml" version="1.000.000.CTP1" xmlns="urn:ihe:qrph:sdc:2016">
+ <Property name="Copyright" type="CAPeCC_static_text" styleClass="copyright" order="1" propName="Copyright" val="(c) 2020 College of American Pathologists.  All rights reserved.  License required for use." />
+ <Property name="GenericHeaderText" type="CAPeCC_static_text" order="2" propName="GenericHeaderText" val="Centers for Disease Control and Prevention (CDC) Case Report Form for Human Infection with 2019 Novel Coronavirus" />
+ <Property name="Category" type="CAPeCC_meta" order="3" propName="Category" val="Other" />
+ <Property name="OfficialName" type="CAPeCC_meta" order="4" propName="OfficialName" val="CDC HUMAN INFECTION WITH 2019 NOVEL CORONAVIRUS PERSON UNDER INVESTIGATION (PUI) AND CASE REPORT FORM" />
+ <Property name="CAP_ProtocolName" type="CAPeCC_meta" order="5" propName="CAP_ProtocolName" val="COVID-19" />
+ <Property name="CAP_ProtocolShortName" type="CAPeCC_meta" order="6" propName="CAP_ProtocolShortName" val="COVID-19" />
+ <Property name="CAP_ProtocolVersion" type="CAPeCC_meta" order="7" propName="CAP_ProtocolVersion" val="1.0.0.0" />
+ <Property name="TemplateID" type="CAPeCC_meta" order="8" propName="TemplateID" val="394.100004300" />
+ <Property name="Restrictions" type="CAPeCC_meta" order="9" propName="Restrictions" />
+ <Property name="CAP_Required" type="CAPeCC_meta" order="10" propName="CAP_Required" val="false" />
+ <Property name="WebPostingDate" type="CAPeCC_meta dt.dateTime" order="11" propName="WebPostingDate" val="4/14/2020" />
+ <Property name="ApprovalStatus" type="CAPeCC_meta" order="12" propName="ReleaseStatus" val="CTP1" />
+ <Body name="Body" order="13" ID="COVID-19.394_1.000.000.CTP1_sdcFDF_Body">
+  <ChildItems name="ch_Body" order="14">
+   <DisplayedItem name="DI_53859" order="15" ID="53859.100004300" title="Public reporting burden of this collection of information is estimated to average 30 minutes per response, including the time for reviewing instructions, searching existing data sources, gathering and maintaining the data needed, and completing and reviewing the collection of information. An agency may not conduct or sponsor, and a person is not required to respond to a collection of information unless it displays a currently valid OMB control number. Send comments regarding this burden estimate or any other aspect of this collection of information including suggestions for reducing this burden to CDC / ATSDR Reports Clearance Officer; 1600 Clifton Road NE, MS D-74 Atlanta, Georgia 30333; ATTN: PRA (0920-1011).">
+    <Property name="p_rptTxt_53859_1" order="16" propName="reportText" val="{no text}" />
+   </DisplayedItem>
+   <Section name="S_49926" order="17" ID="49926.100004300" title="Human Infection with 2019 Novel Coronavirus &#xD;&#xA;Person Under Investigation (PUI) and Case Report Form" mustImplement="false" minCard="0">
+    <ChildItems name="ch_49926_1" order="18">
+     <Question name="Q_53865" order="19" ID="53865.100004300" title="Patient Identifier Information" mustImplement="false" minCard="0">
+      <ListField name="lf_53865_1" order="20">
+       <List name="lst_53865_2" order="21">
+        <DisplayedItem name="DI_53940" order="22" ID="53940.100004300" title="Patient identifier information is not transmitted to CDC">
+         <Property name="p_rptTxt_53940_1" order="23" propName="reportText" val="{no text}" />
+        </DisplayedItem>
+        <ListItem name="LI_53934" order="24" ID="53934.100004300" title="First name">
+         <ListItemResponseField name="lirf_53934_1" order="25" responseRequired="true">
+          <Response name="rsp_53934_2" order="26">
+           <string name="str_53934_3" order="27" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_53868" order="28" ID="53868.100004300" title="Last name">
+         <ListItemResponseField name="lirf_53868_1" order="29" responseRequired="true">
+          <Response name="rsp_53868_2" order="30">
+           <string name="str_53868_3" order="31" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_53874" order="32" ID="53874.100004300" title="Date of birth (MM / DD / YYYY)">
+         <ListItemResponseField name="lirf_53874_1" order="33" responseRequired="true">
+          <Response name="rsp_53874_2" order="34">
+           <string name="str_53874_3" order="35" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_53659" order="36" ID="53659.100004300" title="Reporting Jurisdiction" mustImplement="false" minCard="0">
+      <ResponseField name="rf_53659_1" order="37">
+       <Response name="rsp_53659_2" order="38">
+        <string name="str_53659_3" order="39" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <Question name="Q_54063" order="40" ID="54063.100004300" title="Case State / Local ID" mustImplement="false" minCard="0">
+      <ResponseField name="rf_54063_1" order="41">
+       <Response name="rsp_54063_2" order="42">
+        <string name="str_54063_3" order="43" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <Question name="Q_54080" order="44" ID="54080.100004300" title="Reporting Health Department" mustImplement="false" minCard="0">
+      <ResponseField name="rf_54080_1" order="45">
+       <Response name="rsp_54080_2" order="46">
+        <string name="str_54080_3" order="47" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <Question name="Q_54086" order="48" ID="54086.100004300" title="CDC 2019-nCoV ID" mustImplement="false" minCard="0">
+      <ResponseField name="rf_54086_1" order="49">
+       <Response name="rsp_54086_2" order="50">
+        <string name="str_54086_3" order="51" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <DisplayedItem name="DI_54478" order="52" ID="54478.100004300" title="# Only complete if case-patient is a known contact of prior source case-patient. Assign Contact ID using CDC 2019-nCoV ID and sequential contact ID, e.g., Confirmed case CA102034567 has contacts CA102034567-01 and CA102034567-02." mustImplement="false">
+      <Property name="p_rptTxt_54478_1" order="53" propName="reportText" val="{no text}" />
+     </DisplayedItem>
+     <Question name="Q_53642" order="54" ID="53642.100004300" title="Contact ID#" mustImplement="false" minCard="0">
+      <ResponseField name="rf_53642_1" order="55">
+       <Response name="rsp_53642_2" order="56">
+        <string name="str_53642_3" order="57" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <DisplayedItem name="DI_53648" order="58" ID="53648.100004300" title="## For NNDSS reporters, use GenV2 or NETSS patient identifier." mustImplement="false">
+      <Property name="p_rptTxt_53648_1" order="59" propName="reportText" val="{no text}" />
+     </DisplayedItem>
+     <Question name="Q_50061" order="60" ID="50061.100004300" title="NNDSS Loc. Rec. ID / Case ID##" mustImplement="false" minCard="0">
+      <ResponseField name="rf_50061_1" order="61">
+       <Response name="rsp_50061_2" order="62">
+        <string name="str_50061_3" order="63" />
+       </Response>
+      </ResponseField>
+     </Question>
+    </ChildItems>
+   </Section>
+   <Section name="S_54040" order="64" ID="54040.100004300" title="Section 1: Interviewer Information" mustImplement="false" minCard="0">
+    <ChildItems name="ch_54040_1" order="65">
+     <Question name="Q_53613" order="66" ID="53613.100004300" title="Name of Interviewer" mustImplement="false" minCard="0">
+      <ListField name="lf_53613_1" order="67">
+       <List name="lst_53613_2" order="68">
+        <ListItem name="LI_53619" order="69" ID="53619.100004300" title="Last">
+         <ListItemResponseField name="lirf_53619_1" order="70" responseRequired="true">
+          <Response name="rsp_53619_2" order="71">
+           <string name="str_53619_3" order="72" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_54051" order="73" ID="54051.100004300" title="First">
+         <ListItemResponseField name="lirf_54051_1" order="74" responseRequired="true">
+          <Response name="rsp_54051_2" order="75">
+           <string name="str_54051_3" order="76" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_53628" order="77" ID="53628.100004300" title="Affiliation / Organization" mustImplement="false" minCard="0">
+      <ListField name="lf_53628_1" order="78">
+       <List name="lst_53628_2" order="79">
+        <ListItem name="LI_53668" order="80" ID="53668.100004300" title="Affiliation / Organization Name">
+         <ListItemResponseField name="lirf_53668_1" order="81" responseRequired="true">
+          <Response name="rsp_53668_2" order="82">
+           <string name="str_53668_3" order="83" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_53679" order="84" ID="53679.100004300" title="Telephone">
+         <ListItemResponseField name="lirf_53679_1" order="85" responseRequired="true">
+          <Response name="rsp_53679_2" order="86">
+           <string name="str_53679_3" order="87" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_53685" order="88" ID="53685.100004300" title="Email">
+         <ListItemResponseField name="lirf_53685_1" order="89" responseRequired="true">
+          <Response name="rsp_53685_2" order="90">
+           <string name="str_53685_3" order="91" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+       </List>
+      </ListField>
+     </Question>
+    </ChildItems>
+   </Section>
+   <Section name="S_50069" order="92" ID="50069.100004300" title="Section 2: Basic Information" mustImplement="false" minCard="0">
+    <ChildItems name="ch_50069_1" order="93">
+     <Question name="Q_53690" order="94" ID="53690.100004300" title="What is the Current Status of This Person?" mustImplement="false" minCard="0">
+      <ListField name="lf_53690_1" order="95">
+       <List name="lst_53690_2" order="96">
+        <DisplayedItem name="DI_53908" order="97" ID="53908.100004300" title="# Testing performed by state, local, or CDC lab">
+         <Property name="p_rptTxt_53908_1" order="98" propName="reportText" val="{no text}" />
+        </DisplayedItem>
+        <DisplayedItem name="DI_50218" order="99" ID="50218.100004300" title="## At this time, all confirmatory testing occurs at CDC">
+         <Property name="p_rptTxt_50218_1" order="100" propName="reportText" val="{no text}" />
+        </DisplayedItem>
+        <ListItem name="LI_50078" order="101" ID="50078.100004300" title="PUI, testing pending#">
+         <Property name="p_rptTxt_50078_1" order="102" propName="reportText" val="PUI, testing pending" />
+        </ListItem>
+        <ListItem name="LI_53691" order="103" ID="53691.100004300" title="PUI, tested negative#">
+         <Property name="p_rptTxt_53691_1" order="104" propName="reportText" val="PUI, tested negative" />
+        </ListItem>
+        <ListItem name="LI_53739" order="105" ID="53739.100004300" title="Presumptive case (positive local test), confirmatory testing pending##">
+         <Property name="p_rptTxt_53739_1" order="106" propName="reportText" val="Presumptive case (positive local test), confirmatory testing pending" />
+        </ListItem>
+        <ListItem name="LI_53699" order="107" ID="53699.100004300" title="Presumptive case (positive local test), confirmatory testing negative##">
+         <Property name="p_rptTxt_53699_1" order="108" propName="reportText" val="Presumptive case (positive local test), confirmatory testing negative" />
+        </ListItem>
+        <ListItem name="LI_53708" order="109" ID="53708.100004300" title="Laboratory-confirmed case##">
+         <Property name="p_rptTxt_53708_1" order="110" propName="reportText" val="Laboratory-confirmed case" />
+        </ListItem>
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_50387" order="111" ID="50387.100004300" title="Report Date of PUI to CDC (MM / DD / YYYY)" mustImplement="false" minCard="0">
+      <Property name="p_rptTxt_50387_1" order="112" propName="reportText" val="Report Date of PUI to CDC" />
+      <ResponseField name="rf_50387_2" order="113">
+       <Response name="rsp_50387_3" order="114">
+        <string name="str_50387_4" order="115" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <Question name="Q_53711" order="116" ID="53711.100004300" title="Report Date of Case to CDC (MM / DD / YYYY)" mustImplement="false" minCard="0">
+      <Property name="p_rptTxt_53711_1" order="117" propName="reportText" val="Report Date of Case to CDC" />
+      <ResponseField name="rf_53711_2" order="118">
+       <Response name="rsp_53711_3" order="119">
+        <string name="str_53711_4" order="120" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <Question name="Q_54068" order="121" ID="54068.100004300" title="Country of Residence" mustImplement="false" minCard="0">
+      <ResponseField name="rf_54068_1" order="122">
+       <Response name="rsp_54068_2" order="123">
+        <string name="str_54068_3" order="124" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <Question name="Q_54074" order="125" ID="54074.100004300" title="State of Residence" mustImplement="false" minCard="0">
+      <ResponseField name="rf_54074_1" order="126">
+       <Response name="rsp_54074_2" order="127">
+        <string name="str_54074_3" order="128" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <Question name="Q_54043" order="129" ID="54043.100004300" title="Ethnicity" mustImplement="false" minCard="0">
+      <ListField name="lf_54043_1" order="130">
+       <List name="lst_54043_2" order="131">
+        <ListItem name="LI_53693" order="132" ID="53693.100004300" title="Hispanic / Latino" />
+        <ListItem name="LI_53897" order="133" ID="53897.100004300" title="Non-Hispanic / Latino" />
+        <ListItem name="LI_54057" order="134" ID="54057.100004300" title="Not specified" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_53656" order="135" ID="53656.100004300" title="Sex" mustImplement="false" minCard="0">
+      <ListField name="lf_53656_1" order="136">
+       <List name="lst_53656_2" order="137">
+        <ListItem name="LI_50384" order="138" ID="50384.100004300" title="Male" />
+        <ListItem name="LI_53636" order="139" ID="53636.100004300" title="Female" />
+        <ListItem name="LI_53630" order="140" ID="53630.100004300" title="Unknown" />
+        <ListItem name="LI_50052" order="141" ID="50052.100004300" title="Other (specify)">
+         <Property name="p_rptTxt_50052_1" order="142" propName="reportText" val="{no text}" />
+         <ListItemResponseField name="lirf_50052_2" order="143" responseRequired="true">
+          <Response name="rsp_50052_3" order="144">
+           <string name="str_50052_4" order="145" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_53696" order="146" ID="53696.100004300" title="Race" mustImplement="false" minCard="0">
+      <ListField name="lf_53696_1" order="147">
+       <List name="lst_53696_2" order="148">
+        <ListItem name="LI_53705" order="149" ID="53705.100004300" title="Asian" />
+        <ListItem name="LI_53713" order="150" ID="53713.100004300" title="American Indian / Alaska Native" />
+        <ListItem name="LI_53719" order="151" ID="53719.100004300" title="Black" />
+        <ListItem name="LI_53722" order="152" ID="53722.100004300" title="Native Hawaiian / Other Pacific Islander" />
+        <ListItem name="LI_50661" order="153" ID="50661.100004300" title="White" />
+        <ListItem name="LI_54060" order="154" ID="54060.100004300" title="Unknown" />
+        <ListItem name="LI_53716" order="155" ID="53716.100004300" title="Other (specify)">
+         <Property name="p_rptTxt_53716_1" order="156" propName="reportText" val="{no text}" />
+         <ListItemResponseField name="lirf_53716_2" order="157" responseRequired="true">
+          <Response name="rsp_53716_3" order="158">
+           <string name="str_53716_4" order="159" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_50678" order="160" ID="50678.100004300" title="Date of Birth (MM / DD / YYYY)" mustImplement="false" minCard="0">
+      <Property name="p_rptTxt_50678_1" order="161" propName="reportText" val="Date of Birth" />
+      <ResponseField name="rf_50678_2" order="162">
+       <Response name="rsp_50678_3" order="163">
+        <string name="str_50678_4" order="164" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <Question name="Q_50804" order="165" ID="50804.100004300" title="Age" mustImplement="false" minCard="0">
+      <ResponseField name="rf_50804_1" order="166">
+       <Response name="rsp_50804_2" order="167">
+        <integer name="intr_50804_3" order="168" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <Question name="Q_53725" order="169" ID="53725.100004300" title="Age Units (years / months / days)" mustImplement="false" minCard="0">
+      <ResponseField name="rf_53725_1" order="170">
+       <Response name="rsp_53725_2" order="171">
+        <string name="str_53725_3" order="172" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <Question name="Q_53731" order="173" ID="53731.100004300" title="Date of First Positive Specimen Collection (MM / DD / YYYY)" mustImplement="false" minCard="0">
+      <ListField name="lf_53731_1" order="174">
+       <List name="lst_53731_2" order="175">
+        <ListItem name="LI_53733" order="176" ID="53733.100004300" title="Date">
+         <ListItemResponseField name="lirf_53733_1" order="177" responseRequired="true">
+          <Response name="rsp_53733_2" order="178">
+           <string name="str_53733_3" order="179" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_54077" order="180" ID="54077.100004300" title="Unknown" />
+        <ListItem name="LI_50822" order="181" ID="50822.100004300" title="Not applicable" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54085" order="182" ID="54085.100004300" title="Did the Patient Develop Pneumonia?" mustImplement="false" minCard="0">
+      <ListField name="lf_54085_1" order="183">
+       <List name="lst_54085_2" order="184">
+        <ListItem name="LI_53753" order="185" ID="53753.100004300" title="Yes" />
+        <ListItem name="LI_54349" order="186" ID="54349.100004300" title="No" />
+        <ListItem name="LI_53762" order="187" ID="53762.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54183" order="188" ID="54183.100004300" title="Did the Patient Have Acute Respiratory Distress Syndrome?" mustImplement="false" minCard="0">
+      <ListField name="lf_54183_1" order="189">
+       <List name="lst_54183_2" order="190">
+        <ListItem name="LI_54194" order="191" ID="54194.100004300" title="Yes" />
+        <ListItem name="LI_54200" order="192" ID="54200.100004300" title="No" />
+        <ListItem name="LI_53828" order="193" ID="53828.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_53771" order="194" ID="53771.100004300" title="Did the Patient Have Another Diagnosis / Etiology for Their Illness?" mustImplement="false" minCard="0">
+      <ListField name="lf_53771_1" order="195">
+       <List name="lst_53771_2" order="196">
+        <ListItem name="LI_54126" order="197" ID="54126.100004300" title="Yes" />
+        <ListItem name="LI_53811" order="198" ID="53811.100004300" title="No" />
+        <ListItem name="LI_53814" order="199" ID="53814.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_53911" order="200" ID="53911.100004300" title="Did the Patient Have an Abnormal Chest X-ray?" mustImplement="false" minCard="0">
+      <ListField name="lf_53911_1" order="201">
+       <List name="lst_53911_2" order="202">
+        <ListItem name="LI_53822" order="203" ID="53822.100004300" title="Yes" />
+        <ListItem name="LI_54160" order="204" ID="54160.100004300" title="No" />
+        <ListItem name="LI_53914" order="205" ID="53914.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54209" order="206" ID="54209.100004300" title="Was the Patient Hospitalized?" mustImplement="false" minCard="0">
+      <ListField name="lf_54209_1" order="207">
+       <List name="lst_54209_2" order="208">
+        <ListItem name="LI_53920" order="209" ID="53920.100004300" title="Yes">
+         <ChildItems name="ch_53920_1" order="210">
+          <Question name="Q_53845" order="211" ID="53845.100004300" title="Specify Admission Date 1 (MM / DD / YYYY)" mustImplement="false" minCard="0">
+           <Property name="p_rptTxt_53845_1" order="212" propName="reportText" val="Admission Date 1" />
+           <ResponseField name="rf_53845_2" order="213">
+            <Response name="rsp_53845_3" order="214">
+             <string name="str_53845_4" order="215" />
+            </Response>
+           </ResponseField>
+          </Question>
+          <Question name="Q_53854" order="216" ID="53854.100004300" title="Specify Discharge Date 1 (MM / DD / YYYY)" mustImplement="false" minCard="0">
+           <Property name="p_rptTxt_53854_1" order="217" propName="reportText" val="Discharge Date 1" />
+           <ResponseField name="rf_53854_2" order="218">
+            <Response name="rsp_53854_3" order="219">
+             <string name="str_53854_4" order="220" />
+            </Response>
+           </ResponseField>
+          </Question>
+         </ChildItems>
+        </ListItem>
+        <ListItem name="LI_53837" order="221" ID="53837.100004300" title="No" />
+        <ListItem name="LI_54217" order="222" ID="54217.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54166" order="223" ID="54166.100004300" title="Was the Patient Admitted to an Intensive Care Unit (ICU)?" mustImplement="false" minCard="0">
+      <ListField name="lf_54166_1" order="224">
+       <List name="lst_54166_2" order="225">
+        <ListItem name="LI_54169" order="226" ID="54169.100004300" title="Yes" />
+        <ListItem name="LI_54177" order="227" ID="54177.100004300" title="No" />
+        <ListItem name="LI_53919" order="228" ID="53919.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54249" order="229" ID="54249.100004300" title="Did the Patient Receive Mechanical Ventilation (MV) / Intubation?" mustImplement="false" minCard="0">
+      <ListField name="lf_54249_1" order="230">
+       <List name="lst_54249_2" order="231">
+        <ListItem name="LI_53954" order="232" ID="53954.100004300" title="Yes">
+         <ChildItems name="ch_53954_1" order="233">
+          <Question name="Q_54360" order="234" ID="54360.100004300" title="Total Days with MV (days)" mustImplement="false" minCard="0">
+           <Property name="p_rptTxt_54360_1" order="235" propName="reportText" val="Total Days with MV" />
+           <ResponseField name="rf_54360_2" order="236">
+            <Response name="rsp_54360_3" order="237">
+             <integer name="intr_54360_4" order="238" maxInclusive="100" minInclusive="1" />
+            </Response>
+           </ResponseField>
+          </Question>
+         </ChildItems>
+        </ListItem>
+        <ListItem name="LI_53945" order="239" ID="53945.100004300" title="No" />
+        <ListItem name="LI_54252" order="240" ID="54252.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_53871" order="241" ID="53871.100004300" title="Did the Patient Receive ECMO?" mustImplement="false" minCard="0">
+      <ListField name="lf_53871_1" order="242">
+       <List name="lst_53871_2" order="243">
+        <ListItem name="LI_53877" order="244" ID="53877.100004300" title="Yes" />
+        <ListItem name="LI_53928" order="245" ID="53928.100004300" title="No" />
+        <ListItem name="LI_54226" order="246" ID="54226.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54232" order="247" ID="54232.100004300" title="Did the Patient Die as a Result of This Illness?" mustImplement="false" minCard="0">
+      <ListField name="lf_54232_1" order="248">
+       <List name="lst_54232_2" order="249">
+        <ListItem name="LI_53931" order="250" ID="53931.100004300" title="Yes">
+         <ChildItems name="ch_53931_1" order="251">
+          <Question name="Q_55471" order="252" ID="55471.100004300" title="Date of Death (MM / DD / YYYY)" mustImplement="false" minCard="0">
+           <Property name="p_rptTxt_55471_1" order="253" propName="reportText" val="Date of Death" />
+           <ListField name="lf_55471_2" order="254">
+            <List name="lst_55471_3" order="255">
+             <ListItem name="LI_53971" order="256" ID="53971.100004300" title="Specify Date of Death">
+              <Property name="p_rptTxt_53971_1" order="257" propName="reportText" val="{no text}" />
+              <ListItemResponseField name="lirf_53971_2" order="258" responseRequired="true">
+               <Response name="rsp_53971_3" order="259">
+                <string name="str_53971_4" order="260" />
+               </Response>
+              </ListItemResponseField>
+             </ListItem>
+             <ListItem name="LI_54366" order="261" ID="54366.100004300" title="Unknown" />
+            </List>
+           </ListField>
+          </Question>
+         </ChildItems>
+        </ListItem>
+        <ListItem name="LI_54234" order="262" ID="54234.100004300" title="No" />
+        <ListItem name="LI_54242" order="263" ID="54242.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54260" order="264" ID="54260.100004300" title="Symptoms Present During Course of Illness" mustImplement="false" minCard="0">
+      <ListField name="lf_54260_1" order="265">
+       <List name="lst_54260_2" order="266">
+        <ListItem name="LI_54269" order="267" ID="54269.100004300" title="Symptomatic">
+         <ChildItems name="ch_54269_1" order="268">
+          <Question name="Q_54283" order="269" ID="54283.100004300" title="Onset Date" mustImplement="false" minCard="0">
+           <ListField name="lf_54283_1" order="270">
+            <List name="lst_54283_2" order="271">
+             <ListItem name="LI_53980" order="272" ID="53980.100004300" title="Specify date (MM / DD / YYYY)">
+              <Property name="p_rptTxt_53980_1" order="273" propName="reportText" val="{no text}" />
+              <ListItemResponseField name="lirf_53980_2" order="274" responseRequired="true">
+               <Response name="rsp_53980_3" order="275">
+                <string name="str_53980_4" order="276" />
+               </Response>
+              </ListItemResponseField>
+             </ListItem>
+             <ListItem name="LI_54377" order="277" ID="54377.100004300" title="Unknown" />
+            </List>
+           </ListField>
+          </Question>
+          <Question name="Q_54274" order="278" ID="54274.100004300" title="Status of Symptoms / Symptom Resolution" mustImplement="false" minCard="0">
+           <ListField name="lf_54274_1" order="279">
+            <List name="lst_54274_2" order="280">
+             <ListItem name="LI_54375" order="281" ID="54375.100004300" title="Date of symptom resolution (MM / DD / YYYY)">
+              <Property name="p_rptTxt_54375_1" order="282" propName="reportText" val="Date of symptom resolution" />
+              <ListItemResponseField name="lirf_54375_2" order="283" responseRequired="true">
+               <Response name="rsp_54375_3" order="284">
+                <string name="str_54375_4" order="285" />
+               </Response>
+              </ListItemResponseField>
+             </ListItem>
+             <ListItem name="LI_54317" order="286" ID="54317.100004300" title="Still symptomatic" />
+             <ListItem name="LI_54003" order="287" ID="54003.100004300" title="Unknown symptom status" />
+             <ListItem name="LI_54309" order="288" ID="54309.100004300" title="Symptoms resolved, unknown date" />
+            </List>
+           </ListField>
+          </Question>
+         </ChildItems>
+        </ListItem>
+        <ListItem name="LI_54266" order="289" ID="54266.100004300" title="Asymptomatic" />
+        <ListItem name="LI_54277" order="290" ID="54277.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54251" order="291" ID="54251.100004300" title="Is the Patient a Health Care Worker in the United States?" mustImplement="false" minCard="0">
+      <ListField name="lf_54251_1" order="292">
+       <List name="lst_54251_2" order="293">
+        <ListItem name="LI_54326" order="294" ID="54326.100004300" title="Yes" />
+        <ListItem name="LI_54369" order="295" ID="54369.100004300" title="No" />
+        <ListItem name="LI_54378" order="296" ID="54378.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54286" order="297" ID="54286.100004300" title="Does the Patient Have a History of Being in a Healthcare Facility (as a patient, worker or visitor) in China?" mustImplement="false" minCard="0">
+      <ListField name="lf_54286_1" order="298">
+       <List name="lst_54286_2" order="299">
+        <ListItem name="LI_54292" order="300" ID="54292.100004300" title="Yes" />
+        <ListItem name="LI_53988" order="301" ID="53988.100004300" title="No" />
+        <ListItem name="LI_54300" order="302" ID="54300.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54334" order="303" ID="54334.100004300" title="In the 14 Days Prior to Illness Onset, Did the Patient Have Any of the Following Exposures?" mustImplement="false" minCard="0">
+      <ListField name="lf_54334_1" order="304" maxSelections="0">
+       <List name="lst_54334_2" order="305">
+        <ListItem name="LI_53728" order="306" ID="53728.100004300" title="Travel to Wuhan" />
+        <ListItem name="LI_54083" order="307" ID="54083.100004300" title="Travel to Hubei" />
+        <ListItem name="LI_53745" order="308" ID="53745.100004300" title="Travel to Mainland China" />
+        <ListItem name="LI_54409" order="309" ID="54409.100004300" title="Travel to Other Non-US Country (specify)">
+         <Property name="p_rptTxt_54409_1" order="310" propName="reportText" val="Travel to Other Non-US Country" />
+         <ListItemResponseField name="lirf_54409_2" order="311" responseRequired="true">
+          <Response name="rsp_54409_3" order="312">
+           <string name="str_54409_4" order="313" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_53974" order="314" ID="53974.100004300" title="Household contact with another lab-confirmed COVID-19 case-patient" />
+        <ListItem name="LI_54418" order="315" ID="54418.100004300" title="Community contact with another lab-confirmed COVID-19 case-patient" />
+        <ListItem name="LI_54435" order="323" ID="54435.100004300" title="Animal exposure" />
+        <ListItem name="LI_54335" order="324" ID="54335.100004300" title="Exposure to a cluster of patients with severe acute lower respiratory distress of unknown etiology" />
+        <ListItem name="LI_54294" order="325" ID="54294.100004300" title="Other (specify)">
+         <Property name="p_rptTxt_54294_1" order="326" propName="reportText" val="{no text}" />
+         <ListItemResponseField name="lirf_54294_2" order="327" responseRequired="true">
+          <Response name="rsp_54294_3" order="328">
+           <string name="str_54294_4" order="329" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_54403" order="330" ID="54403.100004300" title="Unknown" />
+       </List>
+      </ListField>
+      <ChildItems name="ch_54334_1" order="316">
+       <Question name="Q_54443" order="317" ID="54443.100004300" title="Any Healthcare Contact With Another Lab-confirmed COVID-19 Case-Patient" mustImplement="false" minCard="0">
+        <ListField name="lf_54443_1" order="318" maxSelections="0">
+         <List name="lst_54443_2" order="319">
+          <ListItem name="LI_54426" order="320" ID="54426.100004300" title="Patient" />
+          <ListItem name="LI_54452" order="321" ID="54452.100004300" title="Visitor" />
+          <ListItem name="LI_54005" order="322" ID="54005.100004300" title="HCW" />
+         </List>
+        </ListField>
+       </Question>
+      </ChildItems>
+     </Question>
+     <Question name="Q_54386" order="331" ID="54386.100004300" title="If the Patient Had Contact with Another COVID-19 Case, Was This Person a U.S. Case?" mustImplement="false" minCard="0">
+      <ListField name="lf_54386_1" order="332">
+       <List name="lst_54386_2" order="333">
+        <ListItem name="LI_54011" order="334" ID="54011.100004300" title="Yes (specify nCoV ID of source case)">
+         <Property name="p_rptTxt_54011_1" order="335" propName="reportText" val="Yes (nCoV ID of source case)" />
+         <ListItemResponseField name="lirf_54011_2" order="336" responseRequired="true">
+          <Response name="rsp_54011_3" order="337">
+           <string name="str_54011_4" order="338" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_54392" order="339" ID="54392.100004300" title="No" />
+        <ListItem name="LI_54400" order="340" ID="54400.100004300" title="Unknown" />
+        <ListItem name="LI_54792" order="341" ID="54792.100004300" title="Not applicable" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54787" order="342" ID="54787.100004300" title="Under What Process was the PUI or Case First Identified?" mustImplement="false" minCard="0">
+      <ListField name="lf_54787_1" order="343" maxSelections="0">
+       <List name="lst_54787_2" order="344">
+        <ListItem name="LI_54031" order="345" ID="54031.100004300" title="Clinical evaluation leading to PUI determination" />
+        <ListItem name="LI_54469" order="346" ID="54469.100004300" title="Contact tracing of case patient" />
+        <ListItem name="LI_54054" order="347" ID="54054.100004300" title="Routine surveillance" />
+        <ListItem name="LI_54037" order="348" ID="54037.100004300" title="EpiX notification of travelers (DGMQID, if checked)">
+         <Property name="p_rptTxt_54037_1" order="349" propName="reportText" val="EpiX notification of travelers (DGMQID)" />
+         <ListItemResponseField name="lirf_54037_2" order="350" responseRequired="true">
+          <Response name="rsp_54037_3" order="351">
+           <string name="str_54037_4" order="352" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_54475" order="353" ID="54475.100004300" title="Unknown" />
+        <ListItem name="LI_54014" order="354" ID="54014.100004300" title="Other (specify)">
+         <Property name="p_rptTxt_54014_1" order="355" propName="reportText" val="{no text}" />
+         <ListItemResponseField name="lirf_54014_2" order="356" responseRequired="true">
+          <Response name="rsp_54014_3" order="357">
+           <string name="str_54014_4" order="358" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+       </List>
+      </ListField>
+     </Question>
+    </ChildItems>
+   </Section>
+   <Section name="S_54323" order="359" ID="54323.100004300" title="Section 3: Symptoms, Clinical Course, Past Medical History and Social History" mustImplement="false" minCard="0">
+    <ChildItems name="ch_54323_1" order="360">
+     <Question name="Q_54701" order="361" ID="54701.100004300" title="Collected From:" mustImplement="false" minCard="0">
+      <ListField name="lf_54701_1" order="362" maxSelections="0">
+       <List name="lst_54701_2" order="363">
+        <ListItem name="LI_54329" order="364" ID="54329.100004300" title="Patient interview" />
+        <ListItem name="LI_54397" order="365" ID="54397.100004300" title="Medical record review" />
+       </List>
+      </ListField>
+     </Question>
+     <DisplayedItem name="DI_54398" order="366" ID="54398.100004300" title="Symptoms Patient Experienced During This Illness">
+      <Property name="p_rptTxt_54398_1" order="367" propName="reportText" val="{no text}" />
+     </DisplayedItem>
+     <Question name="Q_54704" order="368" ID="54704.100004300" title="Fever Greater Than 100.4F (38C)" mustImplement="false" minCard="0">
+      <ListField name="lf_54704_1" order="369">
+       <List name="lst_54704_2" order="370">
+        <ListItem name="LI_54709" order="371" ID="54709.100004300" title="Yes" />
+        <ListItem name="LI_54406" order="372" ID="54406.100004300" title="No" />
+        <ListItem name="LI_54412" order="373" ID="54412.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54810" order="374" ID="54810.100004300" title="Subjective Fever (Felt Feverish)" mustImplement="false" minCard="0">
+      <ListField name="lf_54810_1" order="375">
+       <List name="lst_54810_2" order="376">
+        <ListItem name="LI_54710" order="377" ID="54710.100004300" title="Yes" />
+        <ListItem name="LI_54415" order="378" ID="54415.100004300" title="No" />
+        <ListItem name="LI_54718" order="379" ID="54718.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54818" order="380" ID="54818.100004300" title="Chills" mustImplement="false" minCard="0">
+      <ListField name="lf_54818_1" order="381">
+       <List name="lst_54818_2" order="382">
+        <ListItem name="LI_54727" order="383" ID="54727.100004300" title="Yes" />
+        <ListItem name="LI_54744" order="384" ID="54744.100004300" title="No" />
+        <ListItem name="LI_54761" order="385" ID="54761.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54767" order="386" ID="54767.100004300" title="Muscle Aches (Myalgia)" mustImplement="false" minCard="0">
+      <ListField name="lf_54767_1" order="387">
+       <List name="lst_54767_2" order="388">
+        <ListItem name="LI_54420" order="389" ID="54420.100004300" title="Yes" />
+        <ListItem name="LI_54781" order="390" ID="54781.100004300" title="No" />
+        <ListItem name="LI_54770" order="391" ID="54770.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54821" order="392" ID="54821.100004300" title="Sore Throat" mustImplement="false" minCard="0">
+      <ListField name="lf_54821_1" order="393">
+       <List name="lst_54821_2" order="394">
+        <ListItem name="LI_54429" order="395" ID="54429.100004300" title="Yes" />
+        <ListItem name="LI_54432" order="396" ID="54432.100004300" title="No" />
+        <ListItem name="LI_54827" order="397" ID="54827.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54835" order="398" ID="54835.100004300" title="Runny Nose (Rhinorrhea)" mustImplement="false" minCard="0">
+      <ListField name="lf_54835_1" order="399">
+       <List name="lst_54835_2" order="400">
+        <ListItem name="LI_54844" order="401" ID="54844.100004300" title="Yes" />
+        <ListItem name="LI_54438" order="402" ID="54438.100004300" title="No" />
+        <ListItem name="LI_54446" order="403" ID="54446.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54853" order="404" ID="54853.100004300" title="Cough (New Onset or Worsening of Chronic Cough)" mustImplement="false" minCard="0">
+      <ListField name="lf_54853_1" order="405">
+       <List name="lst_54853_2" order="406">
+        <ListItem name="LI_54870" order="407" ID="54870.100004300" title="Yes" />
+        <ListItem name="LI_54790" order="408" ID="54790.100004300" title="No" />
+        <ListItem name="LI_55230" order="409" ID="55230.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54876" order="410" ID="54876.100004300" title="Shortness of Breath (Dyspnea)" mustImplement="false" minCard="0">
+      <ListField name="lf_54876_1" order="411">
+       <List name="lst_54876_2" order="412">
+        <ListItem name="LI_54449" order="413" ID="54449.100004300" title="Yes" />
+        <ListItem name="LI_54878" order="414" ID="54878.100004300" title="No" />
+        <ListItem name="LI_54884" order="415" ID="54884.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54455" order="416" ID="54455.100004300" title="Nausea or Vomiting" mustImplement="false" minCard="0">
+      <ListField name="lf_54455_1" order="417">
+       <List name="lst_54455_2" order="418">
+        <ListItem name="LI_55245" order="419" ID="55245.100004300" title="Yes" />
+        <ListItem name="LI_54887" order="420" ID="54887.100004300" title="No" />
+        <ListItem name="LI_54463" order="421" ID="54463.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54472" order="422" ID="54472.100004300" title="Headache" mustImplement="false" minCard="0">
+      <ListField name="lf_54472_1" order="423">
+       <List name="lst_54472_2" order="424">
+        <ListItem name="LI_54480" order="425" ID="54480.100004300" title="Yes" />
+        <ListItem name="LI_54893" order="426" ID="54893.100004300" title="No" />
+        <ListItem name="LI_54481" order="427" ID="54481.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54896" order="428" ID="54896.100004300" title="Abdominal Pain" mustImplement="false" minCard="0">
+      <ListField name="lf_54896_1" order="429">
+       <List name="lst_54896_2" order="430">
+        <ListItem name="LI_54904" order="431" ID="54904.100004300" title="Yes" />
+        <ListItem name="LI_54910" order="432" ID="54910.100004300" title="No" />
+        <ListItem name="LI_54489" order="433" ID="54489.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54918" order="434" ID="54918.100004300" title="Diarrhea (Greater Than or Equal to 3 Loose / Looser Than Normal Stools / 24 hr Period)" mustImplement="false" minCard="0">
+      <ListField name="lf_54918_1" order="435">
+       <List name="lst_54918_2" order="436">
+        <ListItem name="LI_54498" order="437" ID="54498.100004300" title="Yes" />
+        <ListItem name="LI_54919" order="438" ID="54919.100004300" title="No" />
+        <ListItem name="LI_54927" order="439" ID="54927.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54936" order="440" ID="54936.100004300" title="Other (specify)" mustImplement="false" minCard="0">
+      <Property name="p_rptTxt_54936_1" order="441" propName="reportText" val="{no text}" />
+      <ResponseField name="rf_54936_2" order="442">
+       <Response name="rsp_54936_3" order="443">
+        <string name="str_54936_4" order="444" />
+       </Response>
+      </ResponseField>
+     </Question>
+     <DisplayedItem name="DI_54798" order="445" ID="54798.100004300" title="Pre-existing Medical Conditions">
+      <Property name="p_rptTxt_54798_1" order="446" propName="reportText" val="{no text}" />
+     </DisplayedItem>
+     <Question name="Q_54506" order="447" ID="54506.100004300" title="Pre-existing Medical Conditions" mustImplement="false" minCard="0">
+      <ListField name="lf_54506_1" order="448">
+       <List name="lst_54506_2" order="449">
+        <ListItem name="LI_54512" order="450" ID="54512.100004300" title="Yes" />
+        <ListItem name="LI_54515" order="451" ID="54515.100004300" title="No" />
+        <ListItem name="LI_54521" order="452" ID="54521.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54944" order="453" ID="54944.100004300" title="Chronic Lung Disease (Asthma / Emphysema / COPD)" mustImplement="false" minCard="0">
+      <ListField name="lf_54944_1" order="454">
+       <List name="lst_54944_2" order="455">
+        <ListItem name="LI_54807" order="456" ID="54807.100004300" title="Yes" />
+        <ListItem name="LI_54523" order="457" ID="54523.100004300" title="No" />
+        <ListItem name="LI_54953" order="458" ID="54953.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54529" order="459" ID="54529.100004300" title="Diabetes Mellitus" mustImplement="false" minCard="0">
+      <ListField name="lf_54529_1" order="460">
+       <List name="lst_54529_2" order="461">
+        <ListItem name="LI_54959" order="462" ID="54959.100004300" title="Yes" />
+        <ListItem name="LI_54532" order="463" ID="54532.100004300" title="No" />
+        <ListItem name="LI_54538" order="464" ID="54538.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54961" order="465" ID="54961.100004300" title="Cardiovascular Disease" mustImplement="false" minCard="0">
+      <ListField name="lf_54961_1" order="466">
+       <List name="lst_54961_2" order="467">
+        <ListItem name="LI_54541" order="468" ID="54541.100004300" title="Yes" />
+        <ListItem name="LI_54970" order="469" ID="54970.100004300" title="No" />
+        <ListItem name="LI_54976" order="470" ID="54976.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54979" order="471" ID="54979.100004300" title="Chronic Renal Disease" mustImplement="false" minCard="0">
+      <ListField name="lf_54979_1" order="472">
+       <List name="lst_54979_2" order="473">
+        <ListItem name="LI_54546" order="474" ID="54546.100004300" title="Yes" />
+        <ListItem name="LI_54987" order="475" ID="54987.100004300" title="No" />
+        <ListItem name="LI_54993" order="476" ID="54993.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54555" order="477" ID="54555.100004300" title="Chronic Liver Disease" mustImplement="false" minCard="0">
+      <ListField name="lf_54555_1" order="478">
+       <List name="lst_54555_2" order="479">
+        <ListItem name="LI_54996" order="480" ID="54996.100004300" title="Yes" />
+        <ListItem name="LI_55262" order="481" ID="55262.100004300" title="No" />
+        <ListItem name="LI_55001" order="482" ID="55001.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55002" order="483" ID="55002.100004300" title="Immunocompromised Condition" mustImplement="false" minCard="0">
+      <ListField name="lf_55002_1" order="484">
+       <List name="lst_55002_2" order="485">
+        <ListItem name="LI_54563" order="486" ID="54563.100004300" title="Yes" />
+        <ListItem name="LI_55004" order="487" ID="55004.100004300" title="No" />
+        <ListItem name="LI_55010" order="488" ID="55010.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55013" order="489" ID="55013.100004300" title="Neurologic / Neurodevelopmental / Intellectual Disability" mustImplement="false" minCard="0">
+      <ListField name="lf_55013_1" order="490">
+       <List name="lst_55013_2" order="491">
+        <ListItem name="LI_55019" order="492" ID="55019.100004300" title="Yes (specify)">
+         <Property name="p_rptTxt_55019_1" order="493" propName="reportText" val="Yes" />
+         <ListItemResponseField name="lirf_55019_2" order="494" responseRequired="true">
+          <Response name="rsp_55019_3" order="495">
+           <string name="str_55019_4" order="496" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_55271" order="497" ID="55271.100004300" title="No" />
+        <ListItem name="LI_55279" order="498" ID="55279.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54564" order="499" ID="54564.100004300" title="Other Chronic Diseases" mustImplement="false" minCard="0">
+      <ListField name="lf_54564_1" order="500">
+       <List name="lst_54564_2" order="501">
+        <ListItem name="LI_55021" order="502" ID="55021.100004300" title="Yes (specify)">
+         <Property name="p_rptTxt_55021_1" order="503" propName="reportText" val="Yes" />
+         <ListItemResponseField name="lirf_55021_2" order="504" responseRequired="true">
+          <Response name="rsp_55021_3" order="505">
+           <string name="str_55021_4" order="506" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_54813" order="507" ID="54813.100004300" title="No" />
+        <ListItem name="LI_54572" order="508" ID="54572.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55026" order="509" ID="55026.100004300" title="If Female, Currently Pregnant" mustImplement="false" minCard="0">
+      <ListField name="lf_55026_1" order="510">
+       <List name="lst_55026_2" order="511">
+        <ListItem name="LI_54581" order="512" ID="54581.100004300" title="Yes" />
+        <ListItem name="LI_55027" order="513" ID="55027.100004300" title="No" />
+        <ListItem name="LI_55036" order="514" ID="55036.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55285" order="515" ID="55285.100004300" title="Current Smoker" mustImplement="false" minCard="0">
+      <ListField name="lf_55285_1" order="516">
+       <List name="lst_55285_2" order="517">
+        <ListItem name="LI_54589" order="518" ID="54589.100004300" title="Yes" />
+        <ListItem name="LI_54598" order="519" ID="54598.100004300" title="No" />
+        <ListItem name="LI_55044" order="520" ID="55044.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54604" order="521" ID="54604.100004300" title="Former Smoker" mustImplement="false" minCard="0">
+      <ListField name="lf_54604_1" order="522">
+       <List name="lst_54604_2" order="523">
+        <ListItem name="LI_55053" order="524" ID="55053.100004300" title="Yes" />
+        <ListItem name="LI_54815" order="525" ID="54815.100004300" title="No" />
+        <ListItem name="LI_54607" order="526" ID="54607.100004300" title="Unknown" />
+       </List>
+      </ListField>
+     </Question>
+     <DisplayedItem name="DI_54615" order="527" ID="54615.100004300" title="Respiratory Diagnostic Testing">
+      <Property name="p_rptTxt_54615_1" order="528" propName="reportText" val="{no text}" />
+     </DisplayedItem>
+     <Question name="Q_55062" order="529" ID="55062.100004300" title="Influenza Rapid Ag A" mustImplement="false" minCard="0">
+      <ListField name="lf_55062_1" order="530">
+       <List name="lst_55062_2" order="531">
+        <ListItem name="LI_55288" order="532" ID="55288.100004300" title="Positive" />
+        <ListItem name="LI_54824" order="533" ID="54824.100004300" title="Negative" />
+        <ListItem name="LI_54621" order="534" ID="54621.100004300" title="Pending" />
+        <ListItem name="LI_55076" order="535" ID="55076.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55079" order="536" ID="55079.100004300" title="Influenza Rapid Ag B" mustImplement="false" minCard="0">
+      <ListField name="lf_55079_1" order="537">
+       <List name="lst_55079_2" order="538">
+        <ListItem name="LI_54624" order="539" ID="54624.100004300" title="Positive" />
+        <ListItem name="LI_55085" order="540" ID="55085.100004300" title="Negative" />
+        <ListItem name="LI_55296" order="541" ID="55296.100004300" title="Pending" />
+        <ListItem name="LI_54632" order="542" ID="54632.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55087" order="543" ID="55087.100004300" title="Influenza PCR A" mustImplement="false" minCard="0">
+      <ListField name="lf_55087_1" order="544">
+       <List name="lst_55087_2" order="545">
+        <ListItem name="LI_54638" order="546" ID="54638.100004300" title="Positive" />
+        <ListItem name="LI_55093" order="547" ID="55093.100004300" title="Negative" />
+        <ListItem name="LI_54641" order="548" ID="54641.100004300" title="Pending" />
+        <ListItem name="LI_55096" order="549" ID="55096.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55102" order="550" ID="55102.100004300" title="Influenza PCR B" mustImplement="false" minCard="0">
+      <ListField name="lf_55102_1" order="551">
+       <List name="lst_55102_2" order="552">
+        <ListItem name="LI_54830" order="553" ID="54830.100004300" title="Positive" />
+        <ListItem name="LI_55104" order="554" ID="55104.100004300" title="Negative" />
+        <ListItem name="LI_54647" order="555" ID="54647.100004300" title="Pending" />
+        <ListItem name="LI_55105" order="556" ID="55105.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55113" order="557" ID="55113.100004300" title="RSV" mustImplement="false" minCard="0">
+      <ListField name="lf_55113_1" order="558">
+       <List name="lst_55113_2" order="559">
+        <ListItem name="LI_55302" order="560" ID="55302.100004300" title="Positive" />
+        <ListItem name="LI_55305" order="561" ID="55305.100004300" title="Negative" />
+        <ListItem name="LI_55119" order="562" ID="55119.100004300" title="Pending" />
+        <ListItem name="LI_55130" order="563" ID="55130.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54649" order="564" ID="54649.100004300" title="Human Metapneumovirus (HMPV)" mustImplement="false" minCard="0">
+      <ListField name="lf_54649_1" order="565">
+       <List name="lst_54649_2" order="566">
+        <ListItem name="LI_54655" order="567" ID="54655.100004300" title="Positive" />
+        <ListItem name="LI_54833" order="568" ID="54833.100004300" title="Negative" />
+        <ListItem name="LI_54658" order="569" ID="54658.100004300" title="Pending" />
+        <ListItem name="LI_55136" order="570" ID="55136.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55145" order="571" ID="55145.100004300" title="Parainfluenza (1-4)" mustImplement="false" minCard="0">
+      <ListField name="lf_55145_1" order="572">
+       <List name="lst_55145_2" order="573">
+        <ListItem name="LI_54664" order="574" ID="54664.100004300" title="Positive" />
+        <ListItem name="LI_54672" order="575" ID="54672.100004300" title="Negative" />
+        <ListItem name="LI_54681" order="576" ID="54681.100004300" title="Pending" />
+        <ListItem name="LI_55153" order="577" ID="55153.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55162" order="578" ID="55162.100004300" title="Adenovirus" mustImplement="false" minCard="0">
+      <ListField name="lf_55162_1" order="579">
+       <List name="lst_55162_2" order="580">
+        <ListItem name="LI_55311" order="581" ID="55311.100004300" title="Positive" />
+        <ListItem name="LI_54689" order="582" ID="54689.100004300" title="Negative" />
+        <ListItem name="LI_54690" order="583" ID="54690.100004300" title="Pending" />
+        <ListItem name="LI_55168" order="584" ID="55168.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54838" order="585" ID="54838.100004300" title="Rhinovirus / Enterovirus" mustImplement="false" minCard="0">
+      <ListField name="lf_54838_1" order="586">
+       <List name="lst_54838_2" order="587">
+        <ListItem name="LI_54698" order="588" ID="54698.100004300" title="Positive" />
+        <ListItem name="LI_54707" order="589" ID="54707.100004300" title="Negative" />
+        <ListItem name="LI_55314" order="590" ID="55314.100004300" title="Pending" />
+        <ListItem name="LI_55170" order="591" ID="55170.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55179" order="592" ID="55179.100004300" title="Coronavirus (OC43, 229E, HKU1, NL63)" mustImplement="false" minCard="0">
+      <ListField name="lf_55179_1" order="593">
+       <List name="lst_55179_2" order="594">
+        <ListItem name="LI_55185" order="595" ID="55185.100004300" title="Positive" />
+        <ListItem name="LI_55188" order="596" ID="55188.100004300" title="Negative" />
+        <ListItem name="LI_54847" order="597" ID="54847.100004300" title="Pending" />
+        <ListItem name="LI_55196" order="598" ID="55196.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54721" order="599" ID="54721.100004300" title="M. pneumoniae" mustImplement="false" minCard="0">
+      <ListField name="lf_54721_1" order="600">
+       <List name="lst_54721_2" order="601">
+        <ListItem name="LI_54724" order="602" ID="54724.100004300" title="Positive" />
+        <ListItem name="LI_54850" order="603" ID="54850.100004300" title="Negative" />
+        <ListItem name="LI_54730" order="604" ID="54730.100004300" title="Pending" />
+        <ListItem name="LI_54732" order="605" ID="54732.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_55202" order="606" ID="55202.100004300" title="C. pneumoniae" mustImplement="false" minCard="0">
+      <ListField name="lf_55202_1" order="607">
+       <List name="lst_55202_2" order="608">
+        <ListItem name="LI_54738" order="609" ID="54738.100004300" title="Positive" />
+        <ListItem name="LI_55204" order="610" ID="55204.100004300" title="Negative" />
+        <ListItem name="LI_54856" order="611" ID="54856.100004300" title="Pending" />
+        <ListItem name="LI_55205" order="612" ID="55205.100004300" title="Not Done" />
+       </List>
+      </ListField>
+     </Question>
+     <Question name="Q_54858" order="613" ID="54858.100004300" title="Other (specify)" mustImplement="false" minCard="0">
+      <ResponseField name="rf_54858_1" order="614">
+       <Response name="rsp_54858_2" order="615">
+        <string name="str_54858_3" order="616" />
+       </Response>
+      </ResponseField>
+      <ChildItems name="ch_54858_4" order="617">
+       <Question name="Q_55680" order="618" ID="55680.100004300" title="Other" mustImplement="false" minCard="0">
+        <ListField name="lf_55680_1" order="619">
+         <List name="lst_55680_2" order="620">
+          <ListItem name="LI_54864" order="621" ID="54864.100004300" title="Positive" />
+          <ListItem name="LI_54867" order="622" ID="54867.100004300" title="Negative" />
+          <ListItem name="LI_55322" order="623" ID="55322.100004300" title="Pending" />
+          <ListItem name="LI_55213" order="624" ID="55213.100004300" title="Not Done" />
+         </List>
+        </ListField>
+       </Question>
+      </ChildItems>
+     </Question>
+     <DisplayedItem name="DI_55328" order="625" ID="55328.100004300" title="Specimens for COVID-19 Testing">
+      <Property name="p_rptTxt_55328_1" order="626" propName="reportText" val="{no text}" />
+     </DisplayedItem>
+     <Question name="Q_55219" order="627" ID="55219.100004300" title="NP Swab" mustImplement="false" minCard="0">
+      <ListField name="lf_55219_1" order="628" maxSelections="0">
+       <List name="lst_55219_2" order="629">
+        <ListItem name="LI_55222" order="630" ID="55222.100004300" title="Specimen ID">
+         <ListItemResponseField name="lirf_55222_1" order="631" responseRequired="true">
+          <Response name="rsp_55222_2" order="632">
+           <string name="str_55222_3" order="633" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_54741" order="634" ID="54741.100004300" title="Date Collected">
+         <ListItemResponseField name="lirf_54741_1" order="635" responseRequired="true">
+          <Response name="rsp_54741_2" order="636">
+           <string name="str_54741_3" order="637" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+       </List>
+      </ListField>
+      <ChildItems name="ch_55219_4" order="638">
+       <Question name="Q_55228" order="639" ID="55228.100004300" title="State Lab Tested" mustImplement="false" minCard="0">
+        <ListField name="lf_55228_1" order="640">
+         <List name="lst_55228_2" order="641">
+          <ListItem name="LI_54747" order="642" ID="54747.100004300" title="Yes">
+           <ChildItems name="ch_54747_1" order="643">
+            <Question name="Q_55339" order="644" ID="55339.100004300" title="State Lab Result" mustImplement="false" minCard="0">
+             <ResponseField name="rf_55339_1" order="645">
+              <Response name="rsp_55339_2" order="646">
+               <string name="str_55339_3" order="647" />
+              </Response>
+             </ResponseField>
+            </Question>
+           </ChildItems>
+          </ListItem>
+          <ListItem name="LI_54873" order="648" ID="54873.100004300" title="No" />
+         </List>
+        </ListField>
+       </Question>
+       <Question name="Q_55345" order="649" ID="55345.100004300" title="Sent to CDC" mustImplement="false" minCard="0">
+        <ListField name="lf_55345_1" order="650">
+         <List name="lst_55345_2" order="651">
+          <ListItem name="LI_55354" order="652" ID="55354.100004300" title="Yes">
+           <ChildItems name="ch_55354_1" order="653">
+            <Question name="Q_54758" order="654" ID="54758.100004300" title="CDC Lab Result" mustImplement="false" minCard="0">
+             <ResponseField name="rf_54758_1" order="655">
+              <Response name="rsp_54758_2" order="656">
+               <string name="str_54758_3" order="657" />
+              </Response>
+             </ResponseField>
+            </Question>
+           </ChildItems>
+          </ListItem>
+          <ListItem name="LI_54750" order="658" ID="54750.100004300" title="No" />
+         </List>
+        </ListField>
+       </Question>
+      </ChildItems>
+     </Question>
+     <Question name="Q_54764" order="659" ID="54764.100004300" title="OP Swab" mustImplement="false" minCard="0">
+      <ListField name="lf_54764_1" order="660" maxSelections="0">
+       <List name="lst_54764_2" order="661">
+        <ListItem name="LI_54773" order="662" ID="54773.100004300" title="Specimen ID">
+         <ListItemResponseField name="lirf_54773_1" order="663" responseRequired="true">
+          <Response name="rsp_54773_2" order="664">
+           <string name="str_54773_3" order="665" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_54875" order="666" ID="54875.100004300" title="Date Collected">
+         <ListItemResponseField name="lirf_54875_1" order="667" responseRequired="true">
+          <Response name="rsp_54875_2" order="668">
+           <string name="str_54875_3" order="669" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+       </List>
+      </ListField>
+      <ChildItems name="ch_54764_4" order="670">
+       <Question name="Q_54775" order="671" ID="54775.100004300" title="State Lab Tested" mustImplement="false" minCard="0">
+        <ListField name="lf_54775_1" order="672">
+         <List name="lst_54775_2" order="673">
+          <ListItem name="LI_55362" order="674" ID="55362.100004300" title="Yes">
+           <ChildItems name="ch_55362_1" order="675">
+            <Question name="Q_55371" order="676" ID="55371.100004300" title="State Lab Result" mustImplement="false" minCard="0">
+             <ResponseField name="rf_55371_1" order="677">
+              <Response name="rsp_55371_2" order="678">
+               <string name="str_55371_3" order="679" />
+              </Response>
+             </ResponseField>
+            </Question>
+           </ChildItems>
+          </ListItem>
+          <ListItem name="LI_54890" order="680" ID="54890.100004300" title="No" />
+         </List>
+        </ListField>
+       </Question>
+       <Question name="Q_55231" order="681" ID="55231.100004300" title="Sent to CDC" mustImplement="false" minCard="0">
+        <ListField name="lf_55231_1" order="682">
+         <List name="lst_55231_2" order="683">
+          <ListItem name="LI_55377" order="684" ID="55377.100004300" title="Yes">
+           <ChildItems name="ch_55377_1" order="685">
+            <Question name="Q_54913" order="686" ID="54913.100004300" title="CDC Lab Result" mustImplement="false" minCard="0">
+             <ResponseField name="rf_54913_1" order="687">
+              <Response name="rsp_54913_2" order="688">
+               <string name="str_54913_3" order="689" />
+              </Response>
+             </ResponseField>
+            </Question>
+           </ChildItems>
+          </ListItem>
+          <ListItem name="LI_54907" order="690" ID="54907.100004300" title="No" />
+         </List>
+        </ListField>
+       </Question>
+      </ChildItems>
+     </Question>
+     <Question name="Q_54916" order="691" ID="54916.100004300" title="Sputum" mustImplement="false" minCard="0">
+      <ListField name="lf_54916_1" order="692" maxSelections="0">
+       <List name="lst_54916_2" order="693">
+        <ListItem name="LI_55686" order="694" ID="55686.100004300" title="Specimen ID">
+         <ListItemResponseField name="lirf_55686_1" order="695" responseRequired="true">
+          <Response name="rsp_55686_2" order="696">
+           <string name="str_55686_3" order="697" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_55388" order="698" ID="55388.100004300" title="Date Collected">
+         <ListItemResponseField name="lirf_55388_1" order="699" responseRequired="true">
+          <Response name="rsp_55388_2" order="700">
+           <string name="str_55388_3" order="701" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+       </List>
+      </ListField>
+      <ChildItems name="ch_54916_4" order="702">
+       <Question name="Q_55394" order="703" ID="55394.100004300" title="State Lab Tested" mustImplement="false" minCard="0">
+        <ListField name="lf_55394_1" order="704">
+         <List name="lst_55394_2" order="705">
+          <ListItem name="LI_55397" order="706" ID="55397.100004300" title="Yes">
+           <ChildItems name="ch_55397_1" order="707">
+            <Question name="Q_55688" order="708" ID="55688.100004300" title="State Lab Result" mustImplement="false" minCard="0">
+             <ResponseField name="rf_55688_1" order="709">
+              <Response name="rsp_55688_2" order="710">
+               <string name="str_55688_3" order="711" />
+              </Response>
+             </ResponseField>
+            </Question>
+           </ChildItems>
+          </ListItem>
+          <ListItem name="LI_54930" order="712" ID="54930.100004300" title="No" />
+         </List>
+        </ListField>
+       </Question>
+       <Question name="Q_55405" order="713" ID="55405.100004300" title="Sent to CDC" mustImplement="false" minCard="0">
+        <ListField name="lf_55405_1" order="714">
+         <List name="lst_55405_2" order="715">
+          <ListItem name="LI_54933" order="716" ID="54933.100004300" title="Yes">
+           <ChildItems name="ch_54933_1" order="717">
+            <Question name="Q_55414" order="718" ID="55414.100004300" title="CDC Lab Result" mustImplement="false" minCard="0">
+             <ResponseField name="rf_55414_1" order="719">
+              <Response name="rsp_55414_2" order="720">
+               <string name="str_55414_3" order="721" />
+              </Response>
+             </ResponseField>
+            </Question>
+           </ChildItems>
+          </ListItem>
+          <ListItem name="LI_55411" order="722" ID="55411.100004300" title="No" />
+         </List>
+        </ListField>
+       </Question>
+      </ChildItems>
+     </Question>
+     <Question name="Q_54939" order="723" ID="54939.100004300" title="Other (specify)" mustImplement="false" minCard="0">
+      <ResponseField name="rf_54939_1" order="724">
+       <Response name="rsp_54939_2" order="725">
+        <string name="str_54939_3" order="726" />
+       </Response>
+      </ResponseField>
+      <ChildItems name="ch_54939_4" order="727">
+       <Question name="Q_54947" order="728" ID="54947.100004300" title="Other" mustImplement="false" minCard="0">
+        <ListField name="lf_54947_1" order="729" maxSelections="0">
+         <List name="lst_54947_2" order="730">
+          <ListItem name="LI_54950" order="731" ID="54950.100004300" title="Specimen ID">
+           <ListItemResponseField name="lirf_54950_1" order="732" responseRequired="true">
+            <Response name="rsp_54950_2" order="733">
+             <string name="str_54950_3" order="734" />
+            </Response>
+           </ListItemResponseField>
+          </ListItem>
+          <ListItem name="LI_55239" order="735" ID="55239.100004300" title="Date Collected">
+           <ListItemResponseField name="lirf_55239_1" order="736" responseRequired="true">
+            <Response name="rsp_55239_2" order="737">
+             <string name="str_55239_3" order="738" />
+            </Response>
+           </ListItemResponseField>
+          </ListItem>
+         </List>
+        </ListField>
+        <ChildItems name="ch_54947_4" order="739">
+         <Question name="Q_55428" order="740" ID="55428.100004300" title="State Lab Tested" mustImplement="false" minCard="0">
+          <ListField name="lf_55428_1" order="741">
+           <List name="lst_55428_2" order="742">
+            <ListItem name="LI_54955" order="743" ID="54955.100004300" title="Yes">
+             <ChildItems name="ch_54955_1" order="744">
+              <Question name="Q_54956" order="745" ID="54956.100004300" title="State Lab Result" mustImplement="false" minCard="0">
+               <ResponseField name="rf_54956_1" order="746">
+                <Response name="rsp_54956_2" order="747">
+                 <string name="str_54956_3" order="748" />
+                </Response>
+               </ResponseField>
+              </Question>
+             </ChildItems>
+            </ListItem>
+            <ListItem name="LI_55689" order="749" ID="55689.100004300" title="No" />
+           </List>
+          </ListField>
+         </Question>
+         <Question name="Q_55431" order="750" ID="55431.100004300" title="Sent to CDC" mustImplement="false" minCard="0">
+          <ListField name="lf_55431_1" order="751">
+           <List name="lst_55431_2" order="752">
+            <ListItem name="LI_54964" order="753" ID="54964.100004300" title="Yes">
+             <ChildItems name="ch_54964_1" order="754">
+              <Question name="Q_55437" order="755" ID="55437.100004300" title="CDC Lab Result" mustImplement="false" minCard="0">
+               <ResponseField name="rf_55437_1" order="756">
+                <Response name="rsp_55437_2" order="757">
+                 <string name="str_55437_3" order="758" />
+                </Response>
+               </ResponseField>
+              </Question>
+             </ChildItems>
+            </ListItem>
+            <ListItem name="LI_54967" order="759" ID="54967.100004300" title="No" />
+           </List>
+          </ListField>
+         </Question>
+        </ChildItems>
+       </Question>
+      </ChildItems>
+     </Question>
+     <Question name="Q_54973" order="760" ID="54973.100004300" title="Additional State / Local Specimen IDs" mustImplement="false" minCard="0">
+      <ListField name="lf_54973_1" order="761" maxSelections="0">
+       <List name="lst_54973_2" order="762">
+        <ListItem name="LI_54984" order="763" ID="54984.100004300" title="Identification (specify)">
+         <Property name="p_rptTxt_54984_1" order="764" propName="reportText" val="Identification" />
+         <ListItemResponseField name="lirf_54984_2" order="765" responseRequired="true">
+          <Response name="rsp_54984_3" order="766">
+           <string name="str_54984_4" order="767" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_54990" order="768" ID="54990.100004300" title="Identification (specify)">
+         <Property name="p_rptTxt_54990_1" order="769" propName="reportText" val="Identification" />
+         <ListItemResponseField name="lirf_54990_2" order="770" responseRequired="true">
+          <Response name="rsp_54990_3" order="771">
+           <string name="str_54990_4" order="772" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_55445" order="773" ID="55445.100004300" title="Identification (specify)">
+         <Property name="p_rptTxt_55445_1" order="774" propName="reportText" val="Identification" />
+         <ListItemResponseField name="lirf_55445_2" order="775" responseRequired="true">
+          <Response name="rsp_55445_3" order="776">
+           <string name="str_55445_4" order="777" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_55697" order="778" ID="55697.100004300" title="Identification (specify)">
+         <Property name="p_rptTxt_55697_1" order="779" propName="reportText" val="Identification" />
+         <ListItemResponseField name="lirf_55697_2" order="780" responseRequired="true">
+          <Response name="rsp_55697_3" order="781">
+           <string name="str_55697_4" order="782" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+        <ListItem name="LI_54999" order="783" ID="54999.100004300" title="Identification (specify)">
+         <Property name="p_rptTxt_54999_1" order="784" propName="reportText" val="Identification" />
+         <ListItemResponseField name="lirf_54999_2" order="785" responseRequired="true">
+          <Response name="rsp_54999_3" order="786">
+           <string name="str_54999_4" order="787" />
+          </Response>
+         </ListItemResponseField>
+        </ListItem>
+       </List>
+      </ListField>
+     </Question>
+    </ChildItems>
+   </Section>
+  </ChildItems>
+ </Body>
+ <Footer name="footer" order="788" ID="Footer.COVID-19.394_1.000.000.CTP1_sdcFDF">
+  <Property type="meta" styleClass="copyright" order="789" propName="CopyrightFooter" val="(c) 2020 College of American Pathologists.  All rights reserved.  License required for use." />
+ </Footer>
+</FormDesign>
